@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<Workforce>
+  <Product>
+
+    <prd_name>
+      toy
+    </prd_name>
+    <prd_code>
+      toy_code
+    </prd_code>
+    <prd_description>
+      toy_description
+    </prd_description>
+    </Product>
+</Workforce>
+<Workforce>
+
+  <Product>
+    <prd_name>
+       computer
+    </prd_name>
+    <prd_code>
+computer_code
+    </prd_code>
+    <prd_description>
+      computer_description
+    </prd_description>
+    </Product>
+</Workforce>
+<Workforce>
+
+  <Product>
+    <prd_name>
+     mobile
+    </prd_name>
+    <prd_code>
+      mobile_code
+    </prd_code>
+    <prd_description>
+      mobile_description
+    </prd_description>
+  </Product>
+</Workforce>
+
+  <Workforce>
+  <Product>
+
+    <prd_name>
+     apple
+    </prd_name>
+    <prd_code>
+      apple_code
+    </prd_code>
+    <prd_description>
+      apple_description
+    </prd_description>
+
+
+  </Product>
+    </Workforce>
+
+  <Workforce>
+  <Product>
+
+    <prd_name>
+        hook
+    </prd_name>
+    <prd_code>
+      hook_code
+    </prd_code>
+    <prd_description>
+      hook_description
+    </prd_description>
+
+  </Product>
+    </Workforce>
+
+  <Workforce>
+  <Product>
+
+    <prd_name>
+      notebook
+    </prd_name>
+    <prd_code>
+      notebook_code
+    </prd_code>
+    <prd_description>
+      notebook_description
+    </prd_description>
+
+  </Product>
+    </Workforce>
+</root>

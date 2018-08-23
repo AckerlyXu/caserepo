@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mails>
+  <mailProperties subject="mySubject">
+    <from>fromtext</from>
+    <to>totext</to>
+  </mailProperties>
+  <mailProperties subject="mySubject1">
+    <from>from1text</from>
+    <to>to1text</to>
+  </mailProperties>
+</mails>

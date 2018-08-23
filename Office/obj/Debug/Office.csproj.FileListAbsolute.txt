@@ -1,0 +1,8 @@
+D:\develop\vsworkspace\WebFormCases\Office\bin\Debug\Office.exe.config
+D:\develop\vsworkspace\WebFormCases\Office\bin\Debug\Office.exe
+D:\develop\vsworkspace\WebFormCases\Office\bin\Debug\Office.pdb
+D:\develop\vsworkspace\WebFormCases\Office\obj\Debug\Office.csproj.ResolveComReference.cache
+D:\develop\vsworkspace\WebFormCases\Office\obj\Debug\Office.csproj.CoreCompileInputs.cache
+D:\develop\vsworkspace\WebFormCases\Office\obj\Debug\Office.exe
+D:\develop\vsworkspace\WebFormCases\Office\obj\Debug\Office.pdb
+D:\develop\vsworkspace\WebFormCases\Office\obj\Debug\Office.csprojAssemblyReference.cache

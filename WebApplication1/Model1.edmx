@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EntityExeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Contact_Service">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tag_servicesId" Type="int" />
+          <Property Name="ContactsId" Type="int" />
+          <Property Name="ContactTypeId" Type="int" />
+        </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="firstName" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContactTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tag_services">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Libelle" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ContactsContact_Service">
+          <End Role="Contacts" Type="Self.Contacts" Multiplicity="0..1" />
+          <End Role="Contact_Service" Type="Self.Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="ContactsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactTypeContact_Service">
+          <End Role="ContactTypes" Type="Self.ContactTypes" Multiplicity="0..1" />
+          <End Role="Contact_Service" Type="Self.Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="ContactTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tag_servicesContact_Service">
+          <End Role="Tag_services" Type="Self.Tag_services" Multiplicity="0..1" />
+          <End Role="Contact_Service" Type="Self.Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tag_services">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="Tag_servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EntityExeModelStoreContainer">
+          <EntitySet Name="Contact_Service" EntityType="Self.Contact_Service" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContactTypes" EntityType="Self.ContactTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tag_services" EntityType="Self.Tag_services" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ContactsContact_Service" Association="Self.FK_ContactsContact_Service">
+            <End Role="Contacts" EntitySet="Contacts" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactTypeContact_Service" Association="Self.FK_ContactTypeContact_Service">
+            <End Role="ContactTypes" EntitySet="ContactTypes" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tag_servicesContact_Service" Association="Self.FK_Tag_servicesContact_Service">
+            <End Role="Tag_services" EntitySet="Tag_services" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EntityExeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Contact_Service">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tag_servicesId" Type="Int32" />
+          <Property Name="ContactsId" Type="Int32" />
+          <Property Name="ContactTypeId" Type="Int32" />
+          <NavigationProperty Name="Contact" Relationship="Self.FK_ContactsContact_Service" FromRole="Contact_Service" ToRole="Contacts" />
+          <NavigationProperty Name="ContactType" Relationship="Self.FK_ContactTypeContact_Service" FromRole="Contact_Service" ToRole="ContactTypes" />
+          <NavigationProperty Name="Tag_services" Relationship="EntityExeModel.FK_Tag_servicesContact_Service" FromRole="Contact_Service" ToRole="Tag_services" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="firstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Contact_Service" Relationship="Self.FK_ContactsContact_Service" FromRole="Contacts" ToRole="Contact_Service" />
+        </EntityType>
+        <EntityType Name="ContactType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Contact_Service" Relationship="Self.FK_ContactTypeContact_Service" FromRole="ContactTypes" ToRole="Contact_Service" />
+        </EntityType>
+        <Association Name="FK_ContactsContact_Service">
+          <End Role="Contacts" Type="Self.Contact" Multiplicity="0..1" />
+          <End Role="Contact_Service" Type="Self.Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="ContactsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactTypeContact_Service">
+          <End Role="ContactTypes" Type="Self.ContactType" Multiplicity="0..1" />
+          <End Role="Contact_Service" Type="Self.Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="ContactTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EntityExeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Contact_Service" EntityType="Self.Contact_Service" />
+          <EntitySet Name="Contacts" EntityType="Self.Contact" />
+          <EntitySet Name="ContactTypes" EntityType="Self.ContactType" />
+          <AssociationSet Name="FK_ContactsContact_Service" Association="Self.FK_ContactsContact_Service">
+            <End Role="Contacts" EntitySet="Contacts" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactTypeContact_Service" Association="Self.FK_ContactTypeContact_Service">
+            <End Role="ContactTypes" EntitySet="ContactTypes" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+          <EntitySet Name="Tag_services" EntityType="EntityExeModel.Tag_services" />
+          <AssociationSet Name="FK_Tag_servicesContact_Service" Association="EntityExeModel.FK_Tag_servicesContact_Service">
+            <End Role="Tag_services" EntitySet="Tag_services" />
+            <End Role="Contact_Service" EntitySet="Contact_Service" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Tag_services">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Libelle" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Contact_Service" Relationship="EntityExeModel.FK_Tag_servicesContact_Service" FromRole="Tag_services" ToRole="Contact_Service" />
+        </EntityType>
+        <Association Name="FK_Tag_servicesContact_Service">
+          <End Type="EntityExeModel.Tag_services" Role="Tag_services" Multiplicity="0..1" />
+          <End Type="EntityExeModel.Contact_Service" Role="Contact_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tag_services">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact_Service">
+              <PropertyRef Name="Tag_servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EntityExeModelStoreContainer" CdmEntityContainer="EntityExeEntities">
+          <EntitySetMapping Name="Contact_Service">
+            <EntityTypeMapping TypeName="EntityExeModel.Contact_Service">
+              <MappingFragment StoreEntitySet="Contact_Service">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="Tag_servicesId" ColumnName="Tag_servicesId" />
+                <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+                <ScalarProperty Name="ContactTypeId" ColumnName="ContactTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="EntityExeModel.Contact">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactTypes">
+            <EntityTypeMapping TypeName="EntityExeModel.ContactType">
+              <MappingFragment StoreEntitySet="ContactTypes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tag_services">
+            <EntityTypeMapping TypeName="EntityExeModel.Tag_services">
+              <MappingFragment StoreEntitySet="Tag_services">
+                <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

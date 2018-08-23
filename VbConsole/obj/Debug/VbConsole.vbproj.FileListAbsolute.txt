@@ -1,0 +1,12 @@
+D:\develop\vsworkspace\WebFormCases\VbConsole\bin\Debug\VbConsole.exe.config
+D:\develop\vsworkspace\WebFormCases\VbConsole\bin\Debug\VbConsole.exe
+D:\develop\vsworkspace\WebFormCases\VbConsole\bin\Debug\VbConsole.pdb
+D:\develop\vsworkspace\WebFormCases\VbConsole\bin\Debug\VbConsole.xml
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.vbprojAssemblyReference.cache
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.vbproj.ResolveComReference.cache
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.Resources.resources
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.vbproj.GenerateResource.cache
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.vbproj.CoreCompileInputs.cache
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.exe
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.xml
+D:\develop\vsworkspace\WebFormCases\VbConsole\obj\Debug\VbConsole.pdb

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityExeModelStoreContainer" CdmEntityContainer="EntityExeEntities">
+    <EntitySetMapping Name="Contact_Service">
+      <EntityTypeMapping TypeName="EntityExeModel.Contact_Service">
+        <MappingFragment StoreEntitySet="Contact_Service">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="Tag_servicesId" ColumnName="Tag_servicesId" />
+          <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+          <ScalarProperty Name="ContactTypeId" ColumnName="ContactTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="EntityExeModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactTypes">
+      <EntityTypeMapping TypeName="EntityExeModel.ContactType">
+        <MappingFragment StoreEntitySet="ContactTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tag_services">
+      <EntityTypeMapping TypeName="EntityExeModel.Tag_services">
+        <MappingFragment StoreEntitySet="Tag_services">
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,10 @@
+﻿ Dim querystring As String = "SELECT COUNT(*) FROM [Relays]"
+
+    Using sqlConnection As SqlConnection = New SqlConnection("YOUR CONNECTION STRING")
+        Using cmd As SqlCommand = New SqlCommand(querystring, sqlConnection)
+            sqlConnection.Open()
+            Dim cnt As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            sqlConnection.Close()
+        End Using
+    End Using
+

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery.validate.js"></script>
+</head>
+<body>
+    <form method="post" action="JSValidate.aspx" id="form1" onsubmit="doSubmit()">
+        <input type="text" name="name" value="" id="txt" />
+     
+    </form>
+    <script>
+        $(function () {
+
+            $("#txt").on("keypress", function () {
+                console.log($("#txt").val());
+                var regex = new RegExp("\^\\d{0,9}\$");
+                console.log(regex);
+                console.log(regex.test($("#txt").val()));
+
+            })
+        })
+       
+    </script>
+</body>
+</html>

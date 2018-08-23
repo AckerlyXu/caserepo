@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div align="center" id="container">
+        <font color=#04418e size="6">eWeb Products</font><br><br>
+        <div id="search">
+            <datalist id="dl_search" style="overflow-y: auto!important"></datalist>
+            <select name="filter" id="filter">
+                <option value="All" selected="selected">All</option>
+
+                <option value="Coding and Billing">Coding and Billing</option>
+                <option value="Data Products">Data Products</option>
+                <option value="Design and Construction">Design and Construction</option>
+                <option value="Environmental Services">Environmental Services</option>
+                <option value="Facilities Management">Facilities Management</option>
+                <option value="Health Information Technology">Health Information Technology</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Leadership and Governance">Leadership and Governance</option>
+                <option value="Learning Product">Learning Product</option>
+                <option value="Marketing and Communications">Marketing and Communications</option>
+                <option value="Materials Management">Materials Management</option>
+                <option value="Membership">Membership</option>
+                <option value="Nursing Leadership">Nursing Leadership</option>
+                <option value="Patient Safety Quality and Advocacy">Patient Safety Quality and Advocacy</option>
+                <option value="Planning and Strategy">Planning and Strategy</option>
+                <option value="Risk Management">Risk Management</option>
+                <option value="Social Work">Social Work</option>
+                <option value="Volunteers and Auxilians">Volunteers and Auxilians</option>
+                <option value="Workforce">Workforce</option>
+            </select>
+            <!--<input type="text" id="txt_search" list="dl_search" data-list="txt_search" data-listid="dl_search" name="txt_search" size="100"/>-->
+            <input id="txt_search" size="100" />
+            <script>
+                $(function () {
+
+                    //Object to load and query the product XML doc
+                    var productXmlSource = function (url, type, dataType) {
+                        let xDoc;
+
+                        //Get the XML doc and save it in xDoc
+                        async function getXml(url, type, dataType) {
+                            try {
+                                xDoc = await $.ajax({ url: url, type: type, dataType: dataType });
+                            }
+                            catch (error) {
+                                console.error(error);
+                            }
+                        }
+
+                        //Invoke the get
+                        getXml(url, type, dataType);
+
+                        //Filter
+                        return {
+                            getProductsByCategory: function (category) {
+                                if (category == 'All') {
+                                    return xDoc.querySelectorAll('PRODUCT');
+                                }
+                                return xDoc.querySelectorAll('PRODUCT[Category="' + category + '"] prd_name');
+                            }
+                        };
+                    };
+
+                    var DataList = [];
+                    //select change handler
+                    $('#filter').change(function () {
+                        DataList = [];
+
+                        var productNodes = xmlDataSource.getProductsByCategory(this.value);
+
+                        $.each(productNodes, function (index, value) {
+                            DataList.push(value.innerHTML);
+                        });
+
+                        console.log(DataList);
+                    });
+
+                    //Load and persist the XML doc
+                    var xmlDataSource = productXmlSource("Products.xml", "GET", "xml");
+
+                });//Load
+
+            </script>
+        </div>
+        <br> <br>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+﻿<urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http:// www.mywebsite.com/en</loc>
+
+</url>
+  <url xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <loc>http:// www.mywebsite.com/</loc>
+<xhtml:link rel="alternate" hreflang="en"  href="http:// www.mywebsite.com/en" />
+<xhtml:link rel="alternate" hreflang="it"  href="http:// www.mywebsite.com/it" />
+<xhtml:link rel="alternate" hreflang="fr"  href="http:// www.mywebsite.com/fr" />
+<xhtml:link rel="alternate" hreflang="es"  href="http:// www.mywebsite.com/es" />
+</url>
+</urlset>

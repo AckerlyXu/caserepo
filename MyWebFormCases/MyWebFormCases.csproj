@@ -1,0 +1,2228 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6C2EB1C-A419-46D5-AF91-8A867E45C027}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWebFormCases</RootNamespace>
+    <AssemblyName>MyWebFormCases</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44328</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AjaxExtensionLeaning\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.12\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.1.1\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.1.2\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.1.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddContacts.aspx" />
+    <Content Include="ajaxUpdatePanel\ajaxWebForm.aspx" />
+    <Content Include="ajaxUpdatePanel\doPostBackJs.aspx" />
+    <Content Include="ajaxUpdatePanel\updatePanelWithTimer.aspx" />
+    <Content Include="api\googleApi.aspx" />
+    <Content Include="bootstrap\append.html" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\css\layout.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\css\pygment_trac.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-0.0.11\js\pt-BR.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\.gitattributes" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\.gitignore" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\css\bootstrap-datetimepicker.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\Gruntfile.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\bootstrap-datetimepicker.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.az.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.bn.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ee.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.hy.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ka.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ms.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.no.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.rs-latin.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.rs.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sw.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ua.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\index.html" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v2\jquery\jquery-1.8.3.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\jquery\jquery-1.8.3.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_day.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_day_meridian.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_decade.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_full.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_hour.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_hour_meridian.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_month.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\screenshot\standard_year.png" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\coverage.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\jquery-1.7.1.min.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\mock.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\qunit-logging.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\qunit.css" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\qunit.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\assets\utils.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\run-qunit.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\component.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\events.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\formats.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\inline.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\keyboard_navigation\2011.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\keyboard_navigation\2012.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\keyboard_navigation\all.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\mouse_navigation\2011.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\mouse_navigation\2012.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\mouse_navigation\all.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\suites\options.js" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\tests.html" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\tests.min.html" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\_coverage.html" />
+    <Content Include="bootstrap\bootStrapModalGridView.aspx" />
+    <Content Include="bootstrap\BootstrapValidationNotWorking.aspx" />
+    <Content Include="bootstrap\BootstrapValidator.aspx" />
+    <Content Include="bootstrap\DataTimeWidth.aspx" />
+    <Content Include="bootstrap\dateTime.html" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\moment.js" />
+    <Content Include="bootstrap\gridLayout.aspx" />
+    <Content Include="bootstrap\MakeTableFullOfScreen.aspx" />
+    <Content Include="bootstrap\ModalClosedPostBack.aspx" />
+    <Content Include="bootstrap\ModalOccurTwice.aspx" />
+    <Content Include="bootstrap\pagination.css" />
+    <Content Include="bootstrap\pagination.html" />
+    <Content Include="bootstrap\paginationOnSlide.aspx" />
+    <Content Include="bootstrap\paginationOnSlideTwo.aspx" />
+    <Content Include="bootstrap\ResponsiveLinkGroup.aspx" />
+    <Content Include="bootstrap\tableWidth.html" />
+    <Content Include="bootstrap\template.aspx" />
+    <Content Include="bootstrap\text.html" />
+    <Content Include="Connected Services\ServiceReference1\MyWebFormCases.ServiceReference1.getDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference3\MyWebFormCases.ServiceReference3.Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference3\MyWebFormCases.ServiceReference3.GetCategoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference3\WebService.disco" />
+    <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference3\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="DataBase\CarouselWithAdo.aspx" />
+    <Content Include="DataBase\DateSetXsdWeb.aspx" />
+    <Content Include="DataBase\LabelIWithStored.aspx" />
+    <Content Include="DataBase\MySqlTest.aspx" />
+    <Content Include="DataBase\RemoveRepeated.aspx" />
+    <Content Include="DropDownListDemo\DisableDropDownList.aspx" />
+    <Content Include="DropDownListDemo\DropdownSelectListBox.aspx" />
+    <Content Include="DropDownListDemo\DropDownWithMultipleCheckbox.aspx" />
+    <Content Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx" />
+    <Content Include="ExtraControls\DropDownUserControl.ascx" />
+    <Content Include="ExtraControls\KeepStateViewState.aspx" />
+    <Content Include="ExtraControls\RepeaterAggregate.aspx" />
+    <Content Include="ExtraControls\RepeaterWithCalendar.aspx" />
+    <Content Include="ExtraControls\RequireValidatel.aspx" />
+    <Content Include="ExtraControls\UseDropDownUserControl.aspx" />
+    <Content Include="ExtraControls\UsingRepeaterToShowDataFromMultipleTables.aspx" />
+    <Content Include="ExtraControls\WizardStyle.aspx" />
+    <Content Include="FileDemo\FileMoveTest.aspx" />
+    <Content Include="Format\copy\qlik_video.jpg" />
+    <Content Include="Format\copy\qlik_video2.jpg" />
+    <Content Include="Format\copy\sisense_video.jpg" />
+    <Content Include="Format\copy\tableau_video.jpg" />
+    <Content Include="Format\copy\targit_video.jpg" />
+    <Content Include="Format\copy\yellowfin_video.jpg" />
+    <Content Include="Format\FormatDecimal.aspx" />
+    <Content Include="Format\FormatNumberInGridView.aspx" />
+    <Content Include="Format\GenerateSmallerPicture.aspx" />
+    <Content Include="Format\GridViewSelectDataMakeItRed.aspx" />
+    <Content Include="Format\imageTest\edit_add.png" />
+    <Content Include="Format\imageTest\edit_remove.png" />
+    <Content Include="Format\imageTest\filesave.png" />
+    <Content Include="Format\imageTest\filter.png" />
+    <Content Include="Format\imageTest\help.png" />
+    <Content Include="Format\imageTest\large_chart.png" />
+    <Content Include="Format\imageTest\large_clipart.png" />
+    <Content Include="Format\imageTest\qlik_video.jpg" />
+    <Content Include="Format\imageTest\qlik_video2.jpg" />
+    <Content Include="Format\imageTest\sisense_video.jpg" />
+    <Content Include="Format\imageTest\tableau_video.jpg" />
+    <Content Include="Format\imageTest\targit_video.jpg" />
+    <Content Include="Format\imageTest\validatebox_warning.png" />
+    <Content Include="Format\imageTest\yellowfin_video.jpg" />
+    <Content Include="gridview\CheckBoxListDemo.aspx" />
+    <Content Include="gridview\dataTableWithGridView.aspx" />
+    <Content Include="gridview\EditWithHiddenField.aspx" />
+    <Content Include="gridview\EditWithModelPopup.aspx" />
+    <Content Include="gridview\GridviewAndDropDownList.aspx" />
+    <Content Include="gridview\gridviewDropdownListPaging.aspx" />
+    <Content Include="gridview\gridViewEntity.aspx" />
+    <Content Include="gridview\GridViewHeaderFormat.aspx" />
+    <Content Include="gridview\SerialNumberRecord.aspx" />
+    <Content Include="gridview\SetModelDataColumnThroughColumnName.aspx" />
+    <Content Include="Html5\WebForm1.aspx" />
+    <Content Include="hyperlinkdopostback.aspx" />
+    <Content Include="hyperlinkuse.aspx" />
+    <Content Include="javascript\dataTypeXml.aspx" />
+    <Content Include="javascript\HtmlPage1.html" />
+    <Content Include="javascript\HtmlPage2.html" />
+    <Content Include="javascript\JqueryValidator.aspx" />
+    <Content Include="javascript\JSValidate.aspx" />
+    <Content Include="javascript\MatchItemAndHighlight.aspx" />
+    <Content Include="javascript\Products.xml" />
+    <Content Include="javascript\ValidateNumberAndDecimal.aspx" />
+    <Content Include="javascript\WebBootValidator.aspx" />
+    <Content Include="javascript\WebForm1.aspx" />
+    <Content Include="javascript\WebForm2.aspx" />
+    <Content Include="javascript\XMLFile1.xml" />
+    <Content Include="jquery-ui.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\build\css\bootstrap-datetimepicker-standalone.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\build\css\bootstrap-datetimepicker.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\build\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\build\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-144x144.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-192x192.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-36x36.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-48x48.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-72x72.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\android-chrome-96x96.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-114x114.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-120x120.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-144x144.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-152x152.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-180x180.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-57x57.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-60x60.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-72x72.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-76x76.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon-precomposed.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\apple-touch-icon.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\base.html" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\browserconfig.xml" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\content.html" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\css\base.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\css\prettify-1.0.css" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\favicon-16x16.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\favicon-32x32.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\favicon-96x96.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\favicon.ico" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\js\base.js" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\js\prettify-1.0.min.js" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\mstile-144x144.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\mstile-150x150.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\mstile-310x150.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\mstile-310x310.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\mstile-70x70.png" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\nav.html" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\toc.html" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\Gruntfile.js" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\js\bootstrap-datetimepicker.js" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\nuget\NuGet.exe" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\tasks\bump_version.js" />
+    <Content Include="jqueryUiPlugin\Calculator.aspx" />
+    <Content Include="jqueryUiPlugin\calculator\jcalculator.css" />
+    <Content Include="jqueryUiPlugin\calculator\jcalculator.js" />
+    <Content Include="jqueryUiPlugin\DataTableAdo.aspx" />
+    <Content Include="jqueryUiPlugin\DataTableSortAjax.aspx" />
+    <Content Include="jqueryUiPlugin\Datetime\MutiselectDatetimeExtensionForJqueryUi.aspx" />
+    <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\jquery-ui.multidatespicker.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\jquery-ui.multidatespicker.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\css.html" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\css.html" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\css1.html" />
+    <Content Include="jqueryUiPlugin\JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx" />
+    <Content Include="jqueryUiPlugin\jqueryDataTableStart.aspx" />
+    <Content Include="ListViewDemo\listViewClassification.aspx" />
+    <Content Include="ListViewDemo\LoopThroughListView.aspx" />
+    <Content Include="log.txt" />
+    <Content Include="Models\DatatableShowDataWhennoData.aspx" />
+    <Content Include="myText.txt" />
+    <Content Include="NewFolder1\TextFile1.txt" />
+    <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_asc.png" />
+    <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_asc_disabled.png" />
+    <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_both.png" />
+    <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_desc.png" />
+    <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_desc_disabled.png" />
+    <Content Include="Services\ajaxToolKitTest.aspx" />
+    <Content Include="Services\WebService.asmx" />
+    <Content Include="sqlserver\datatablehasdatawhennodata.aspx" />
+    <Content Include="sqlserver\insertIntoDatabase.aspx" />
+    <Content Include="test.html" />
+    <Content Include="TextBoxOnChange.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebUserControl1.ascx" />
+    <Content Include="xml\mutiMailProperties.xml" />
+    <Content Include="xml\title.xml" />
+    <Content Include="xml\XmlSerializerDemo.aspx" />
+    <Content Include="xml\XmlTextWriting2.aspx" />
+    <Content Include="xml\XmlTextWritingStart.aspx" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\.jshintrc" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\.npmignore" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\.travis.yml" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\bower.json" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\build\build.less" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\build\build_standalone.less" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\less\datetimepicker.less" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\LICENSE" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\minify.sh" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\package.json" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\README.md" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\sample in bootstrap v3\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\README.md" />
+    <None Include="Connected Services\ServiceReference1\myWebService.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceReference2\ArrayData.disco" />
+    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+    <Content Include="Connected Services\ServiceReference2\MyWebFormCases.ServiceReference2.Employ.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference2\MyWebFormCases.ServiceReference2.GetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="DataBase\DataBaseWithMituThread.aspx" />
+    <Content Include="DropDownListDemo\dropDownReader.aspx" />
+    <Content Include="DropDownListDemo\PassValueToServer.aspx" />
+    <Content Include="DropDownListDemo\RemoveItem.aspx" />
+    <Content Include="ExtraControls\Ajax CalenderMakeDateSelected.aspx" />
+    <Content Include="ExtraControls\RadNumericTextBox.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Format\decimalFormat.aspx" />
+    <Content Include="Format\GridViewRowFormat.aspx" />
+    <Content Include="Format\TimeZoneConvert.aspx" />
+    <Content Include="FrameWork\FluentNhibernate.aspx" />
+    <Content Include="GetDatetime.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="gridview\ChangeColorConditional.aspx" />
+    <Content Include="gridview\DatePickerAndGridView.aspx" />
+    <Content Include="gridview\dynamicallyAddRow.aspx" />
+    <Content Include="gridview\GridViewClassification.aspx" />
+    <Content Include="Html5\VoiceCapture.aspx" />
+    <Content Include="Identity\Index.aspx" />
+    <Content Include="Identity\Login.aspx" />
+    <Content Include="Identity\Register.aspx" />
+    <Content Include="images\icons\back.png" />
+    <Content Include="images\icons\blank.gif" />
+    <Content Include="images\icons\cancel.png" />
+    <Content Include="images\icons\clear.png" />
+    <Content Include="images\icons\cut.png" />
+    <Content Include="images\icons\edit_add.png" />
+    <Content Include="images\icons\edit_remove.png" />
+    <Content Include="images\icons\filesave.png" />
+    <Content Include="images\icons\filter.png" />
+    <Content Include="images\icons\help.png" />
+    <Content Include="images\icons\large_chart.png" />
+    <Content Include="images\icons\large_clipart.png" />
+    <Content Include="images\icons\large_picture.png" />
+    <Content Include="images\icons\large_shapes.png" />
+    <Content Include="images\icons\large_smartart.png" />
+    <Content Include="images\icons\lock.png" />
+    <Content Include="images\icons\man.png" />
+    <Content Include="images\icons\mini_add.png" />
+    <Content Include="images\icons\mini_edit.png" />
+    <Content Include="images\icons\mini_refresh.png" />
+    <Content Include="images\icons\more.png" />
+    <Content Include="images\icons\no.png" />
+    <Content Include="images\icons\ok.png" />
+    <Content Include="images\icons\pencil.png" />
+    <Content Include="images\icons\print.png" />
+    <Content Include="images\icons\redo.png" />
+    <Content Include="images\icons\reload.png" />
+    <Content Include="images\icons\search.png" />
+    <Content Include="images\icons\sum.png" />
+    <Content Include="images\icons\tip.png" />
+    <Content Include="images\icons\undo.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\menu_arrows.png" />
+    <Content Include="images\messager_icons.png" />
+    <Content Include="images\pagination_icons.png" />
+    <Content Include="images\panel_tools.png" />
+    <Content Include="images\passwordbox_close.png" />
+    <Content Include="images\passwordbox_open.png" />
+    <Content Include="images\searchbox_button.png" />
+    <Content Include="images\slider_handle.png" />
+    <Content Include="images\spinner_arrows.png" />
+    <Content Include="images\tabs_icons.png" />
+    <Content Include="images\tagbox_icons.png" />
+    <Content Include="images\tree_icons.png" />
+    <Content Include="images\validatebox_warning.png" />
+    <Content Include="jqueryUiPlugin\AutoCompleteDropdownlist.aspx" />
+    <Content Include="jqueryUiPlugin\Datetime\Datetime.aspx" />
+    <Content Include="jqueryUiPlugin\Datetime\moment.min.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\.gitignore" />
+    <Content Include="jqueryUiPlugin\jquery-ui\jquery-ui.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\jquery-ui.min.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\accordion.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\all.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\autocomplete.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\base.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\button.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\checkboxradio.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\controlgroup.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\core.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\datepicker.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\dialog.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\draggable.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\menu.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\progressbar.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\resizable.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\selectable.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\selectmenu.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\slider.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\sortable.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\spinner.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\tabs.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\base\tooltip.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_4ca300_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_ededed_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_ffcf29_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\black-tie\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-icons_004276_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\blitzer\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\cupertino\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-icons_a83300_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dark-hive\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_20_333333_2x2.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_40_00498f_2x2.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-bg_gloss-wave_20_111111_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-icons_00498f_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\dot-luv\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-bg_gloss-wave_30_3d3644_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_25_30273a_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_45_5f5964_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_454545_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_734d99_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_8d78a5_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_a8a3ae_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_ebccce_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\eggplant\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_20_e69700_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-bg_inset-hard_100_eeeeee_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-icons_0a82eb_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-icons_0b54d5_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-icons_5fa5e3_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-icons_fcdd4a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\excite-bike\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-icons_454545_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-icons_666666_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\flick\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_dots-small_35_35414f_2x2.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_454545_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_88a206_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_c02669_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_e1e463_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_ffeb33_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\hot-sneaks\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_c47a23_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_cb672b_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_f08000_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_f35f07_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\humanity\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-icons_4eb305_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-icons_72b42d_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\le-frog\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_gloss-wave_25_453326_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_highlight-soft_20_201913_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_highlight-soft_20_619226_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-bg_inset-soft_10_201913_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_9bcc60_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_add978_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_e3ddc9_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_f1fd86_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\mint-choc\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\overcast\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_b83400_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\pepper-grinder\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\redmond\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\smoothness\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\south-street\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\start\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\sunny\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_10_4f4221_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_20_372806_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_25_675423_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_25_d5ac5d_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_8_261803_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_diamond_8_443113_10x8.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_070603_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_e8e2b5_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_e9cd86_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_efec9f_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_f2ec64_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_f9f2bd_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\swanky-purse\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_diagonals-small_50_262626_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_glass_40_0a0a0a_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_glass_55_f1fbe5_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_glass_60_000000_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_gloss-wave_55_000000_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_gloss-wave_85_9fda58_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_000000_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_1f1f1f_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_9fda58_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_b8ec79_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\trontastic\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-darkness\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\ui-lightness\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_gloss-wave_16_121212_500x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_highlight-hard_15_888888_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_highlight-hard_55_555555_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_666666_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_aaaaaa_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_c98000_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\images\ui-icons_f29a00_256x240.png" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\jquery-ui.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\jquery-ui.min.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\themes\vader\theme.css" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\core.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\data.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\disable-selection.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effect.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-blind.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-bounce.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-clip.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-drop.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-explode.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-fade.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-fold.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-highlight.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-puff.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-pulsate.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-scale.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-shake.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-size.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-slide.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\effects\effect-transfer.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\escape-selector.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\focusable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\form-reset-mixin.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\form.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-af.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ar-DZ.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ar.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-az.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-be.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-bg.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-bs.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ca.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-cs.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-cy-GB.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-da.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-de.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-el.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-en-AU.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-en-GB.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-en-NZ.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-eo.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-es.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-et.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-eu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fa.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fo.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fr-CA.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fr-CH.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-fr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-gl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-he.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-hi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-hr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-hu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-hy.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-id.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-is.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-it-CH.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-it.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ja.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ka.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-kk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-km.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ko.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ky.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-lb.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-lt.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-lv.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-mk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ml.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ms.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-nb.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-nl-BE.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-nl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-nn.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-no.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-pl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-pt-BR.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-pt.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-rm.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ro.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ru.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sq.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sr-SR.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-sv.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-ta.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-th.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-tj.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-tr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-uk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-vi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-zh-CN.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-zh-HK.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\i18n\datepicker-zh-TW.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\ie.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\jquery-1-7.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\keycode.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\labels.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\core.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\data.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\disable-selection.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\effect.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\escape-selector.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\focusable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\form-reset-mixin.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\form.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-af.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ar-DZ.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ar.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-az.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-be.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-bg.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-bs.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ca.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-cs.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-cy-GB.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-da.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-de.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-el.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-en-AU.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-en-GB.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-en-NZ.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-eo.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-es.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-et.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-eu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fa.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fo.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fr-CA.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fr-CH.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-fr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-gl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-he.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-hi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-hr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-hu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-hy.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-id.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-is.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-it-CH.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-it.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ja.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ka.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-kk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-km.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ko.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ky.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-lb.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-lt.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-lv.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-mk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ml.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ms.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-nb.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-nl-BE.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-nl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-nn.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-no.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-pl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-pt-BR.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-pt.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-rm.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ro.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ru.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sl.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sq.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sr-SR.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-sv.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-ta.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-th.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-tj.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-tr.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-uk.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-vi.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-zh-CN.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-zh-HK.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\i18n\datepicker-zh-TW.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\ie.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\jquery-1-7.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\keycode.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\labels.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\plugin.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\position.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\safe-active-element.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\safe-blur.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\scroll-parent.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\tabbable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\unique-id.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\version.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\minified\widget.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\plugin.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\position.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\safe-active-element.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\safe-blur.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\scroll-parent.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\tabbable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\unique-id.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\version.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widget.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\accordion.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\autocomplete.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\button.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\checkboxradio.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\controlgroup.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\datepicker.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\dialog.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\draggable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\droppable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\menu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\mouse.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\progressbar.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\resizable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\selectable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\selectmenu.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\slider.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\sortable.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\spinner.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\tabs.js" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\widgets\tooltip.js" />
+    <Content Include="json\ConvertFlatObjectToNestedJson.aspx" />
+    <Content Include="json\JsonConvertTest.aspx" />
+    <Content Include="ListViewDemo\briefInfoPagetoDetailedPageWithSelectButton.aspx" />
+    <Content Include="ListViewDemo\CrudSPPagingSortingBootstrap.aspx" />
+    <Content Include="ListViewDemo\DetailsCustomer.aspx" />
+    <Content Include="ListViewDemo\ListViewJqueryDataTable.aspx" />
+    <Content Include="ListViewDemo\ListViewOnItemCommand.aspx" />
+    <Content Include="Office\excel.aspx" />
+    <Content Include="Office\excelOleDbConnection.aspx" />
+    <Content Include="Office\Word.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\DataTable\datatables.css" />
+    <Content Include="Scripts\DataTable\datatables.js" />
+    <Content Include="Scripts\DataTable\datatables.min.css" />
+    <Content Include="Scripts\DataTable\datatables.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Connected Services\ServiceReference1\myWebService.wsdl" />
+    <None Include="Connected Services\ServiceReference2\ArrayData.wsdl" />
+    <Content Include="Data.ashx" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\.bower.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\bower.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\component.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\composer.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\CONTRIBUTING.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\ChangeLog.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\ContributorsGuide.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Events.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Extras.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\FAQ.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Functions.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\index.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Installing.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Options.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\theme\manifest.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Version 4 Changelog.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\docs\Version 4 Contributors guide.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\LICENSE" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\mkdocs.yml" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\package.json" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\README.md" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\less\bootstrap-datetimepicker-build.less" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\less\_bootstrap-datetimepicker.less" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.CSS.nuspec" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\nuget\Bootstrap.v3.Datetimepicker.nuspec" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\nuget\install.ps1" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\sass\bootstrap-datetimepicker-build.scss" />
+    <Content Include="bootstrap\eonasdan-bootstrap-datetimepicker\src\sass\_bootstrap-datetimepicker.scss" />
+    <None Include="Connected Services\ServiceReference3\WebService.wsdl" />
+    <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\.bower.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\bower.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\README.md" />
+    <Content Include="DataBase\DataSetStart.xsc">
+      <DependentUpon>DataSetStart.xsd</DependentUpon>
+    </Content>
+    <None Include="DataBase\DataSetStart.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStart.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataBase\DataSetStart.xss">
+      <DependentUpon>DataSetStart.xsd</DependentUpon>
+    </Content>
+    <Content Include="javascript\Site1.Master" />
+    <Content Include="javascript\Site2.Master" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.formatDateTime.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Services\ArrayData.asmx" />
+    <Content Include="Services\GetDataFromService.aspx" />
+    <Content Include="Services\myWebService.asmx" />
+    <Content Include="ShowAllContacts.aspx" />
+    <Content Include="ShowSuppliers.aspx" />
+    <Content Include="upload\example.mp4" />
+    <Content Include="UrlToWebService.aspx" />
+    <Content Include="use loop code in a page\loopForATable.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddContacts.aspx.cs">
+      <DependentUpon>AddContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddContacts.aspx.designer.cs">
+      <DependentUpon>AddContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\ajaxWebForm.aspx.cs">
+      <DependentUpon>ajaxWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\ajaxWebForm.aspx.designer.cs">
+      <DependentUpon>ajaxWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\doPostBackJs.aspx.cs">
+      <DependentUpon>doPostBackJs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\doPostBackJs.aspx.designer.cs">
+      <DependentUpon>doPostBackJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\updatePanelWithTimer.aspx.cs">
+      <DependentUpon>updatePanelWithTimer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\updatePanelWithTimer.aspx.designer.cs">
+      <DependentUpon>updatePanelWithTimer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\googleApi.aspx.cs">
+      <DependentUpon>googleApi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\googleApi.aspx.designer.cs">
+      <DependentUpon>googleApi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\bootStrapModalGridView.aspx.cs">
+      <DependentUpon>bootStrapModalGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\bootStrapModalGridView.aspx.designer.cs">
+      <DependentUpon>bootStrapModalGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapValidationNotWorking.aspx.cs">
+      <DependentUpon>BootstrapValidationNotWorking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapValidationNotWorking.aspx.designer.cs">
+      <DependentUpon>BootstrapValidationNotWorking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapValidator.aspx.cs">
+      <DependentUpon>BootstrapValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapValidator.aspx.designer.cs">
+      <DependentUpon>BootstrapValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\DataTimeWidth.aspx.cs">
+      <DependentUpon>DataTimeWidth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\DataTimeWidth.aspx.designer.cs">
+      <DependentUpon>DataTimeWidth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\gridLayout.aspx.cs">
+      <DependentUpon>gridLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\gridLayout.aspx.designer.cs">
+      <DependentUpon>gridLayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\MakeTableFullOfScreen.aspx.cs">
+      <DependentUpon>MakeTableFullOfScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\MakeTableFullOfScreen.aspx.designer.cs">
+      <DependentUpon>MakeTableFullOfScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\ModalClosedPostBack.aspx.cs">
+      <DependentUpon>ModalClosedPostBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\ModalClosedPostBack.aspx.designer.cs">
+      <DependentUpon>ModalClosedPostBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\ModalOccurTwice.aspx.cs">
+      <DependentUpon>ModalOccurTwice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\ModalOccurTwice.aspx.designer.cs">
+      <DependentUpon>ModalOccurTwice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\paginationOnSlide.aspx.cs">
+      <DependentUpon>paginationOnSlide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\paginationOnSlide.aspx.designer.cs">
+      <DependentUpon>paginationOnSlide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\paginationOnSlideTwo.aspx.cs">
+      <DependentUpon>paginationOnSlideTwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\paginationOnSlideTwo.aspx.designer.cs">
+      <DependentUpon>paginationOnSlideTwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\ResponsiveLinkGroup.aspx.cs">
+      <DependentUpon>ResponsiveLinkGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\ResponsiveLinkGroup.aspx.designer.cs">
+      <DependentUpon>ResponsiveLinkGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\template.aspx.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\template.aspx.designer.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Data.ashx.cs">
+      <DependentUpon>Data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CarouselWithAdo.aspx.cs">
+      <DependentUpon>CarouselWithAdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\CarouselWithAdo.aspx.designer.cs">
+      <DependentUpon>CarouselWithAdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DataBaseWithMituThread.aspx.cs">
+      <DependentUpon>DataBaseWithMituThread.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\DataBaseWithMituThread.aspx.designer.cs">
+      <DependentUpon>DataBaseWithMituThread.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DataSetStart.cs">
+      <DependentUpon>DataSetStart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DataSetStart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DateSetXsdWeb.aspx.cs">
+      <DependentUpon>DateSetXsdWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\DateSetXsdWeb.aspx.designer.cs">
+      <DependentUpon>DateSetXsdWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\LabelIWithStored.aspx.cs">
+      <DependentUpon>LabelIWithStored.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\LabelIWithStored.aspx.designer.cs">
+      <DependentUpon>LabelIWithStored.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\MySqlTest.aspx.cs">
+      <DependentUpon>MySqlTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\MySqlTest.aspx.designer.cs">
+      <DependentUpon>MySqlTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\RemoveRepeated.aspx.cs">
+      <DependentUpon>RemoveRepeated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase\RemoveRepeated.aspx.designer.cs">
+      <DependentUpon>RemoveRepeated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\DisableDropDownList.aspx.cs">
+      <DependentUpon>DisableDropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\DisableDropDownList.aspx.designer.cs">
+      <DependentUpon>DisableDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\dropDownReader.aspx.cs">
+      <DependentUpon>dropDownReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\dropDownReader.aspx.designer.cs">
+      <DependentUpon>dropDownReader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\DropdownSelectListBox.aspx.cs">
+      <DependentUpon>DropdownSelectListBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\DropdownSelectListBox.aspx.designer.cs">
+      <DependentUpon>DropdownSelectListBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\DropDownWithMultipleCheckbox.aspx.cs">
+      <DependentUpon>DropDownWithMultipleCheckbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\DropDownWithMultipleCheckbox.aspx.designer.cs">
+      <DependentUpon>DropDownWithMultipleCheckbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\PassValueToServer.aspx.cs">
+      <DependentUpon>PassValueToServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\PassValueToServer.aspx.designer.cs">
+      <DependentUpon>PassValueToServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\RemoveItem.aspx.cs">
+      <DependentUpon>RemoveItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\RemoveItem.aspx.designer.cs">
+      <DependentUpon>RemoveItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\Ajax CalenderMakeDateSelected.aspx.cs">
+      <DependentUpon>Ajax CalenderMakeDateSelected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\Ajax CalenderMakeDateSelected.aspx.designer.cs">
+      <DependentUpon>Ajax CalenderMakeDateSelected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx.cs">
+      <DependentUpon>AjaxToolKitDisableFutureDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx.designer.cs">
+      <DependentUpon>AjaxToolKitDisableFutureDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\DropDownUserControl.ascx.cs">
+      <DependentUpon>DropDownUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\DropDownUserControl.ascx.designer.cs">
+      <DependentUpon>DropDownUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\KeepStateViewState.aspx.cs">
+      <DependentUpon>KeepStateViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\KeepStateViewState.aspx.designer.cs">
+      <DependentUpon>KeepStateViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\RadNumericTextBox.aspx.cs">
+      <DependentUpon>RadNumericTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\RadNumericTextBox.aspx.designer.cs">
+      <DependentUpon>RadNumericTextBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\RepeaterAggregate.aspx.cs">
+      <DependentUpon>RepeaterAggregate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\RepeaterAggregate.aspx.designer.cs">
+      <DependentUpon>RepeaterAggregate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\RepeaterWithCalendar.aspx.cs">
+      <DependentUpon>RepeaterWithCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\RepeaterWithCalendar.aspx.designer.cs">
+      <DependentUpon>RepeaterWithCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\RequireValidatel.aspx.cs">
+      <DependentUpon>RequireValidatel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\RequireValidatel.aspx.designer.cs">
+      <DependentUpon>RequireValidatel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\UseDropDownUserControl.aspx.cs">
+      <DependentUpon>UseDropDownUserControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\UseDropDownUserControl.aspx.designer.cs">
+      <DependentUpon>UseDropDownUserControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\UsingRepeaterToShowDataFromMultipleTables.aspx.cs">
+      <DependentUpon>UsingRepeaterToShowDataFromMultipleTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\UsingRepeaterToShowDataFromMultipleTables.aspx.designer.cs">
+      <DependentUpon>UsingRepeaterToShowDataFromMultipleTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\WizardStyle.aspx.cs">
+      <DependentUpon>WizardStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\WizardStyle.aspx.designer.cs">
+      <DependentUpon>WizardStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\FileMoveTest.aspx.cs">
+      <DependentUpon>FileMoveTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\FileMoveTest.aspx.designer.cs">
+      <DependentUpon>FileMoveTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\decimalFormat.aspx.cs">
+      <DependentUpon>decimalFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\decimalFormat.aspx.designer.cs">
+      <DependentUpon>decimalFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\FormatDecimal.aspx.cs">
+      <DependentUpon>FormatDecimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\FormatDecimal.aspx.designer.cs">
+      <DependentUpon>FormatDecimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\FormatNumberInGridView.aspx.cs">
+      <DependentUpon>FormatNumberInGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\FormatNumberInGridView.aspx.designer.cs">
+      <DependentUpon>FormatNumberInGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\GenerateSmallerPicture.aspx.cs">
+      <DependentUpon>GenerateSmallerPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\GenerateSmallerPicture.aspx.designer.cs">
+      <DependentUpon>GenerateSmallerPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\GridViewRowFormat.aspx.cs">
+      <DependentUpon>GridViewRowFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\GridViewRowFormat.aspx.designer.cs">
+      <DependentUpon>GridViewRowFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\GridViewSelectDataMakeItRed.aspx.cs">
+      <DependentUpon>GridViewSelectDataMakeItRed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\GridViewSelectDataMakeItRed.aspx.designer.cs">
+      <DependentUpon>GridViewSelectDataMakeItRed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Format\ResizePicture.cs" />
+    <Compile Include="Format\TimeZoneConvert.aspx.cs">
+      <DependentUpon>TimeZoneConvert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Format\TimeZoneConvert.aspx.designer.cs">
+      <DependentUpon>TimeZoneConvert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrameWork\FluentNhibernate.aspx.cs">
+      <DependentUpon>FluentNhibernate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrameWork\FluentNhibernate.aspx.designer.cs">
+      <DependentUpon>FluentNhibernate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetDatetime.aspx.cs">
+      <DependentUpon>GetDatetime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetDatetime.aspx.designer.cs">
+      <DependentUpon>GetDatetime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\ChangeColorConditional.aspx.cs">
+      <DependentUpon>ChangeColorConditional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\ChangeColorConditional.aspx.designer.cs">
+      <DependentUpon>ChangeColorConditional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\CheckBoxListDemo.aspx.cs">
+      <DependentUpon>CheckBoxListDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\CheckBoxListDemo.aspx.designer.cs">
+      <DependentUpon>CheckBoxListDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\dataTableWithGridView.aspx.cs">
+      <DependentUpon>dataTableWithGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\dataTableWithGridView.aspx.designer.cs">
+      <DependentUpon>dataTableWithGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\DatePickerAndGridView.aspx.cs">
+      <DependentUpon>DatePickerAndGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\DatePickerAndGridView.aspx.designer.cs">
+      <DependentUpon>DatePickerAndGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\dynamicallyAddRow.aspx.cs">
+      <DependentUpon>dynamicallyAddRow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\dynamicallyAddRow.aspx.designer.cs">
+      <DependentUpon>dynamicallyAddRow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\EditWithHiddenField.aspx.cs">
+      <DependentUpon>EditWithHiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\EditWithHiddenField.aspx.designer.cs">
+      <DependentUpon>EditWithHiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\EditWithModelPopup.aspx.cs">
+      <DependentUpon>EditWithModelPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\EditWithModelPopup.aspx.designer.cs">
+      <DependentUpon>EditWithModelPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\GridviewAndDropDownList.aspx.cs">
+      <DependentUpon>GridviewAndDropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\GridviewAndDropDownList.aspx.designer.cs">
+      <DependentUpon>GridviewAndDropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\GridViewClassification.aspx.cs">
+      <DependentUpon>GridViewClassification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\GridViewClassification.aspx.designer.cs">
+      <DependentUpon>GridViewClassification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\gridviewDropdownListPaging.aspx.cs">
+      <DependentUpon>gridviewDropdownListPaging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\gridviewDropdownListPaging.aspx.designer.cs">
+      <DependentUpon>gridviewDropdownListPaging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\gridViewEntity.aspx.cs">
+      <DependentUpon>gridViewEntity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\gridViewEntity.aspx.designer.cs">
+      <DependentUpon>gridViewEntity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\GridViewHeaderFormat.aspx.cs">
+      <DependentUpon>GridViewHeaderFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\GridViewHeaderFormat.aspx.designer.cs">
+      <DependentUpon>GridViewHeaderFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\SerialNumberRecord.aspx.cs">
+      <DependentUpon>SerialNumberRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\SerialNumberRecord.aspx.designer.cs">
+      <DependentUpon>SerialNumberRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\SetModelDataColumnThroughColumnName.aspx.cs">
+      <DependentUpon>SetModelDataColumnThroughColumnName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\SetModelDataColumnThroughColumnName.aspx.designer.cs">
+      <DependentUpon>SetModelDataColumnThroughColumnName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Html5\VoiceCapture.aspx.cs">
+      <DependentUpon>VoiceCapture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Html5\VoiceCapture.aspx.designer.cs">
+      <DependentUpon>VoiceCapture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Html5\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Html5\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hyperlinkdopostback.aspx.cs">
+      <DependentUpon>hyperlinkdopostback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hyperlinkdopostback.aspx.designer.cs">
+      <DependentUpon>hyperlinkdopostback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hyperlinkuse.aspx.cs">
+      <DependentUpon>hyperlinkuse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hyperlinkuse.aspx.designer.cs">
+      <DependentUpon>hyperlinkuse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Identity\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Identity\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Identity\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Identity\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Identity\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Identity\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\dataTypeXml.aspx.cs">
+      <DependentUpon>dataTypeXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\dataTypeXml.aspx.designer.cs">
+      <DependentUpon>dataTypeXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\JqueryValidator.aspx.cs">
+      <DependentUpon>JqueryValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\JqueryValidator.aspx.designer.cs">
+      <DependentUpon>JqueryValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\JSValidate.aspx.cs">
+      <DependentUpon>JSValidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\JSValidate.aspx.designer.cs">
+      <DependentUpon>JSValidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\MatchItemAndHighlight.aspx.cs">
+      <DependentUpon>MatchItemAndHighlight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\MatchItemAndHighlight.aspx.designer.cs">
+      <DependentUpon>MatchItemAndHighlight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\ValidateNumberAndDecimal.aspx.cs">
+      <DependentUpon>ValidateNumberAndDecimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\ValidateNumberAndDecimal.aspx.designer.cs">
+      <DependentUpon>ValidateNumberAndDecimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\WebBootValidator.aspx.cs">
+      <DependentUpon>WebBootValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\WebBootValidator.aspx.designer.cs">
+      <DependentUpon>WebBootValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\AutoCompleteDropdownlist.aspx.cs">
+      <DependentUpon>AutoCompleteDropdownlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\AutoCompleteDropdownlist.aspx.designer.cs">
+      <DependentUpon>AutoCompleteDropdownlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Calculator.aspx.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Calculator.aspx.designer.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableAdo.aspx.cs">
+      <DependentUpon>DataTableAdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableAdo.aspx.designer.cs">
+      <DependentUpon>DataTableAdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableSortAjax.aspx.cs">
+      <DependentUpon>DataTableSortAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableSortAjax.aspx.designer.cs">
+      <DependentUpon>DataTableSortAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Datetime\Datetime.aspx.cs">
+      <DependentUpon>Datetime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Datetime\Datetime.aspx.designer.cs">
+      <DependentUpon>Datetime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Datetime\MutiselectDatetimeExtensionForJqueryUi.aspx.cs">
+      <DependentUpon>MutiselectDatetimeExtensionForJqueryUi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\Datetime\MutiselectDatetimeExtensionForJqueryUi.aspx.designer.cs">
+      <DependentUpon>MutiselectDatetimeExtensionForJqueryUi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx.cs">
+      <DependentUpon>JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx.designer.cs">
+      <DependentUpon>JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\jqueryDataTableStart.aspx.cs">
+      <DependentUpon>jqueryDataTableStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\jqueryDataTableStart.aspx.designer.cs">
+      <DependentUpon>jqueryDataTableStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="json\ConvertFlatObjectToNestedJson.aspx.cs">
+      <DependentUpon>ConvertFlatObjectToNestedJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="json\ConvertFlatObjectToNestedJson.aspx.designer.cs">
+      <DependentUpon>ConvertFlatObjectToNestedJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="json\JsonConvertTest.aspx.cs">
+      <DependentUpon>JsonConvertTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="json\JsonConvertTest.aspx.designer.cs">
+      <DependentUpon>JsonConvertTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\briefInfoPagetoDetailedPageWithSelectButton.aspx.cs">
+      <DependentUpon>briefInfoPagetoDetailedPageWithSelectButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\briefInfoPagetoDetailedPageWithSelectButton.aspx.designer.cs">
+      <DependentUpon>briefInfoPagetoDetailedPageWithSelectButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\CrudSPPagingSortingBootstrap.aspx.cs">
+      <DependentUpon>CrudSPPagingSortingBootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\CrudSPPagingSortingBootstrap.aspx.designer.cs">
+      <DependentUpon>CrudSPPagingSortingBootstrap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\DetailsCustomer.aspx.cs">
+      <DependentUpon>DetailsCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\DetailsCustomer.aspx.designer.cs">
+      <DependentUpon>DetailsCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\listViewClassification.aspx.cs">
+      <DependentUpon>listViewClassification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\listViewClassification.aspx.designer.cs">
+      <DependentUpon>listViewClassification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewJqueryDataTable.aspx.cs">
+      <DependentUpon>ListViewJqueryDataTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewJqueryDataTable.aspx.designer.cs">
+      <DependentUpon>ListViewJqueryDataTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewOnItemCommand.aspx.cs">
+      <DependentUpon>ListViewOnItemCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewOnItemCommand.aspx.designer.cs">
+      <DependentUpon>ListViewOnItemCommand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\LoopThroughListView.aspx.cs">
+      <DependentUpon>LoopThroughListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\LoopThroughListView.aspx.designer.cs">
+      <DependentUpon>LoopThroughListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DatatableShowDataWhennoData.aspx.cs">
+      <DependentUpon>DatatableShowDataWhennoData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\DatatableShowDataWhennoData.aspx.designer.cs">
+      <DependentUpon>DatatableShowDataWhennoData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fruit.cs" />
+    <Compile Include="Models\MyUserItem.cs" />
+    <Compile Include="Models\NorthWindDbContext.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\SuppliesInitializer.cs" />
+    <Compile Include="Models\SupplyModel.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserItemDb.cs" />
+    <Compile Include="Office\excel.aspx.cs">
+      <DependentUpon>excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Office\excel.aspx.designer.cs">
+      <DependentUpon>excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office\excelOleDbConnection.aspx.cs">
+      <DependentUpon>excelOleDbConnection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Office\excelOleDbConnection.aspx.designer.cs">
+      <DependentUpon>excelOleDbConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office\Word.aspx.cs">
+      <DependentUpon>Word.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Office\Word.aspx.designer.cs">
+      <DependentUpon>Word.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ajaxToolKitTest.aspx.cs">
+      <DependentUpon>ajaxToolKitTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ajaxToolKitTest.aspx.designer.cs">
+      <DependentUpon>ajaxToolKitTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ArrayData.asmx.cs">
+      <DependentUpon>ArrayData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\GetDataFromService.aspx.cs">
+      <DependentUpon>GetDataFromService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\GetDataFromService.aspx.designer.cs">
+      <DependentUpon>GetDataFromService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\myWebService.asmx.cs">
+      <DependentUpon>myWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowAllContacts.aspx.cs">
+      <DependentUpon>ShowAllContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAllContacts.aspx.designer.cs">
+      <DependentUpon>ShowAllContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSuppliers.aspx.cs">
+      <DependentUpon>ShowSuppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowSuppliers.aspx.designer.cs">
+      <DependentUpon>ShowSuppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sqlserver\datatablehasdatawhennodata.aspx.cs">
+      <DependentUpon>datatablehasdatawhennodata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sqlserver\datatablehasdatawhennodata.aspx.designer.cs">
+      <DependentUpon>datatablehasdatawhennodata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sqlserver\insertIntoDatabase.aspx.cs">
+      <DependentUpon>insertIntoDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sqlserver\insertIntoDatabase.aspx.designer.cs">
+      <DependentUpon>insertIntoDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxOnChange.aspx.cs">
+      <DependentUpon>TextBoxOnChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextBoxOnChange.aspx.designer.cs">
+      <DependentUpon>TextBoxOnChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeHandler.ashx.cs">
+      <DependentUpon>TimeHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UrlToWebService.aspx.cs">
+      <DependentUpon>UrlToWebService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrlToWebService.aspx.designer.cs">
+      <DependentUpon>UrlToWebService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="use loop code in a page\loopForATable.aspx.cs">
+      <DependentUpon>loopForATable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="use loop code in a page\loopForATable.aspx.designer.cs">
+      <DependentUpon>loopForATable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlHelper.cs" />
+    <Compile Include="Utils\MySqlUtil.cs" />
+    <Compile Include="Utils\SqlHelper.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="xml\MailProperties.cs" />
+    <Compile Include="xml\XmlSerializerDemo.aspx.cs">
+      <DependentUpon>XmlSerializerDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\XmlSerializerDemo.aspx.designer.cs">
+      <DependentUpon>XmlSerializerDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xml\XmlTextWriting2.aspx.cs">
+      <DependentUpon>XmlTextWriting2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\XmlTextWriting2.aspx.designer.cs">
+      <DependentUpon>XmlTextWriting2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xml\XmlTextWritingStart.aspx.cs">
+      <DependentUpon>XmlTextWritingStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\XmlTextWritingStart.aspx.designer.cs">
+      <DependentUpon>XmlTextWritingStart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jqueryUiPlugin\jquery-ui\.bower.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui\bower.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui\component.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui\composer.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui\package.json" />
+    <Content Include="jqueryUiPlugin\jquery-ui\README.md" />
+    <Content Include="jqueryUiPlugin\jquery-ui\ui\.jshintrc" />
+    <Content Include="Office\merge.docx" />
+    <Content Include="Office\test.docx" />
+    <Content Include="Office\test1.docx" />
+    <Content Include="Office\test2.docx" />
+    <Content Include="bootstrap\README.md" />
+    <Content Include="images\Thumbs.db" />
+    <None Include="packages.config" />
+    <Content Include="TimeHandler.ashx" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Format\imageTarget\" />
+    <Folder Include="Scripts\DataTable\DataTables-1.10.18\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebFormCaseDal\WebFormCaseDal.csproj">
+      <Project>{de6e651a-db04-4c8b-a7ea-0d803b027573}</Project>
+      <Name>WebFormCaseDal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference3\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57504</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44328/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
