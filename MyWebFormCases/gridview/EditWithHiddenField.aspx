@@ -5,7 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css"/>
+
+    <!-- Include FontAwesome CSS if you want to use feedback icons provided by FontAwesome -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- BootstrapValidator CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- BootstrapValidator JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -14,7 +28,7 @@
                 ClientIDMode="Static" BorderWidth="1px"  
                 BorderStyle="None" BorderColor="#DEBA84" HeaderStyle-CssClass="GridHeader" 
                  >
-                <HeaderStyle ForeColor="White" Font-Bold="True" BackColor="#428bca"></HeaderStyle>
+                <HeaderStyle  Font-Bold="True" BackColor="#428bca"></HeaderStyle>
                 <Columns>
                     
                    <asp:TemplateField HeaderText="Code">
@@ -31,6 +45,7 @@
 
                     <asp:TemplateField HeaderText="Action">
                         <ItemTemplate>
+                      
                             <asp:linkbutton id="Linkbutton1" Text="Edit"  ToolTip="Update Record" CommandName="EditRow" runat="server" CssClass="btn btn-primary"/> 
                         </ItemTemplate>
                     </asp:TemplateField>
@@ -52,20 +67,20 @@
 
                             <asp:Label ID="lblCode" runat="server" CssClass="col-sm-4 control-label" Text="Code"></asp:Label>
                             <div class="col-sm-6">
-                                <asp:TextBox ID="txtCode" CssClass="form-control" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfv1" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtCode"
+                                <asp:TextBox ID="txt_Code" CssClass="form-control" runat="server"></asp:TextBox>
+                                <%--<asp:RequiredFieldValidator ID="rfv1" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtCode"
                                     ValidationGroup="edit">
-                                    
+                                   
 
-                                </asp:RequiredFieldValidator>
+                                </asp:RequiredFieldValidator> --%>
                             </div>
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblDescription" runat="server" CssClass="col-sm-4 control-label" Text="Description"></asp:Label>
                             <div class="col-sm-8">
-                                <asp:TextBox ID="txtDescription"  CssClass="form-control" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfv2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtDescription"
-                                    ValidationGroup="edit"></asp:RequiredFieldValidator>
+                                <asp:TextBox ID="txt_Description"  CssClass="form-control" runat="server"></asp:TextBox>
+                                <%--<asp:RequiredFieldValidator ID="rfv2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtDescription"
+                                    ValidationGroup="edit"></asp:RequiredFieldValidator>--%>
                             </div>
                         </div>
                        
@@ -82,14 +97,51 @@
             </div>
         </div>
     </div>
-        <textarea id="ha" >aaaaaa</textarea>
+ 
     
         
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+       
         <script>
+ 
+      $(document).ready(function () {
+
+                
+            
+            $('#form1').bootstrapValidator({
+              container:'tooltip',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                     <%=txt_Code.UniqueID%>: {
+                   
+                        validators: {
+                            notEmpty: {
+                                message: 'The ID is required and cannot be empty'
+                            }
+                        }
+                    },
+                    <%=txt_Description.UniqueID%>: {
+                      
+                        validators: {
+                           
+                            notEmpty: {
+                                message: 'Description cannot be empty',
+                            }
+                        }
+                    }
+
+                }
+            }) 
+
+      
+        
+        });
+
+
+
 
           
             function openModal() {
@@ -98,6 +150,7 @@
                  $("#myModalLabel").html("Update");
 
             }
+
         </script>
     </form>
 </body>

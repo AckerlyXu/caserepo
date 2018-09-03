@@ -11,9 +11,9 @@ namespace MyWebFormCases.ExtraControls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          DropDownList dropDownList=  kkk.FindControl("ddlNMS") as DropDownList;
-          ListItemCollection collection=  dropDownList.Items;
-           
+            //DropDownList dropDownList=  kkk.FindControl("ddlNMS") as DropDownList;
+            //ListItemCollection collection=  dropDownList.Items;
+
         }
     }
 }

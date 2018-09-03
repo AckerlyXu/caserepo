@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListViewJqueryDataTable.aspx.cs" Inherits="MyWebFormCases.ListView.ListViewJqueryDataTable" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListViewJqueryDataTable.aspx.cs" Inherits="MyWebFormCases.ListViewDemo.ListViewJqueryDataTable" %>
 
 <!DOCTYPE html>
 

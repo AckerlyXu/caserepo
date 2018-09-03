@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DropDownUserControl.ascx.cs" Inherits="MyWebFormCases.ExtraControls.DropDownUserControl" %>
+
 <asp:DropDownList ID="ddlNMS" runat="server" CssClass="btn btn-default btn-sm">
 <asp:ListItem Text="1" Value ="1"/>
 <asp:ListItem Text="2" Value ="2"/>
@@ -13,3 +14,4 @@
 <asp:ListItem Text="11" Value ="11"/>
 <asp:ListItem Text="12" Value ="12"/>
 </asp:DropDownList>
+<%=   DateTime.Now.ToString() %>

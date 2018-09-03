@@ -57,42 +57,43 @@ namespace MyWebFormCases.Identity
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          // Response.Write("your last visted page is :"+HttpUtility.UrlDecode(Request["returnUrl"])); 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string username = userName.Text;
-           string password=GetMd5( passWord.Text);
-            //confirm whether the username or the password is wrong
-            string sql = "select * from users where username=@username and password=@password";
-            SqlParameter[] sqlParameters = new SqlParameter[] {
-                new SqlParameter("username",System.Data.SqlDbType.NVarChar,50){Value=username},
-                new SqlParameter("password",System.Data.SqlDbType.NVarChar,200){Value=password}
-            };
+            Response.Write("your last visted page is :" + HttpUtility.UrlDecode(Request["returnUrl"]));
+            // string username = userName.Text;
+            //string password=GetMd5( passWord.Text);
+            // //confirm whether the username or the password is wrong
+            // string sql = "select * from users where username=@username and password=@password";
+            // SqlParameter[] sqlParameters = new SqlParameter[] {
+            //     new SqlParameter("username",System.Data.SqlDbType.NVarChar,50){Value=username},
+            //     new SqlParameter("password",System.Data.SqlDbType.NVarChar,200){Value=password}
+            // };
 
-                                            //the fourth common method
-            using (SqlDataReader reader= GetSqlDataReader(sql, sqlParameters))
-            {
-               
-                if (reader.HasRows)
-                {
-                    // the user has been found , save it into session to keep the user state and redirect the user to index.aspx
-                    Models.User user = new Models.User();
-                    reader.Read();
-                   user.Username= reader.GetString(1);
-                   user.Password= reader.GetString(2);
-                    Session["user"] = user;
-                    Response.Redirect("~/Identity/Index.aspx");
-                }
-                else
-                {
-                    // if you don't find the user ,show error message.
-                    errorMsg.Visible = true;
-                }
-          
-            } 
-           
+            //                                 //the fourth common method
+            // using (SqlDataReader reader= GetSqlDataReader(sql, sqlParameters))
+            // {
+
+            //     if (reader.HasRows)
+            //     {
+            //         // the user has been found , save it into session to keep the user state and redirect the user to index.aspx
+            //         Models.User user = new Models.User();
+            //         reader.Read();
+            //        user.Username= reader.GetString(1);
+            //        user.Password= reader.GetString(2);
+            //         Session["user"] = user;
+            //         Response.Redirect("~/Identity/Index.aspx");
+            //     }
+            //     else
+            //     {
+            //         // if you don't find the user ,show error message.
+            //         errorMsg.Visible = true;
+            //     }
+
+            //} 
+
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebFormCases.Models;
 
-namespace MyWebFormCases.ListView
+namespace MyWebFormCases.ListViewDemo
 {
     public partial class ListViewOnItemCommand : System.Web.UI.Page
     {

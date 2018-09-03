@@ -17,7 +17,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44328</IISExpressSSLPort>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -115,9 +116,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="a.aspx" />
     <Content Include="AddContacts.aspx" />
     <Content Include="ajaxUpdatePanel\ajaxWebForm.aspx" />
     <Content Include="ajaxUpdatePanel\doPostBackJs.aspx" />
+    <Content Include="ajaxUpdatePanel\UpdateDataInUpdatePanel.aspx" />
     <Content Include="ajaxUpdatePanel\updatePanelWithTimer.aspx" />
     <Content Include="api\googleApi.aspx" />
     <Content Include="bootstrap\append.html" />
@@ -227,6 +230,7 @@
     <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\tests.min.html" />
     <Content Include="bootstrap\bootstrap-datetimepicker-master\tests\_coverage.html" />
     <Content Include="bootstrap\bootStrapModalGridView.aspx" />
+    <Content Include="bootstrap\BootstrapMutiselect.aspx" />
     <Content Include="bootstrap\BootstrapValidationNotWorking.aspx" />
     <Content Include="bootstrap\BootstrapValidator.aspx" />
     <Content Include="bootstrap\DataTimeWidth.aspx" />
@@ -260,6 +264,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="csharpDemo\sortArrayDemo.aspx" />
     <Content Include="DataBase\CarouselWithAdo.aspx" />
     <Content Include="DataBase\DateSetXsdWeb.aspx" />
     <Content Include="DataBase\LabelIWithStored.aspx" />
@@ -268,15 +273,21 @@
     <Content Include="DropDownListDemo\DisableDropDownList.aspx" />
     <Content Include="DropDownListDemo\DropdownSelectListBox.aspx" />
     <Content Include="DropDownListDemo\DropDownWithMultipleCheckbox.aspx" />
+    <Content Include="DropDownListDemo\WebForm1.aspx" />
     <Content Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx" />
+    <Content Include="ExtraControls\CalendarTextIntoDatabase.aspx" />
     <Content Include="ExtraControls\DropDownUserControl.ascx" />
     <Content Include="ExtraControls\KeepStateViewState.aspx" />
     <Content Include="ExtraControls\RepeaterAggregate.aspx" />
+    <Content Include="ExtraControls\RepeaterDataBindDemo.aspx" />
     <Content Include="ExtraControls\RepeaterWithCalendar.aspx" />
     <Content Include="ExtraControls\RequireValidatel.aspx" />
+    <Content Include="ExtraControls\ShowHideControl.aspx" />
     <Content Include="ExtraControls\UseDropDownUserControl.aspx" />
     <Content Include="ExtraControls\UsingRepeaterToShowDataFromMultipleTables.aspx" />
     <Content Include="ExtraControls\WizardStyle.aspx" />
+    <Content Include="FileDemo\100.jpg" />
+    <Content Include="FileDemo\CutPictures.aspx" />
     <Content Include="FileDemo\FileMoveTest.aspx" />
     <Content Include="Format\copy\qlik_video.jpg" />
     <Content Include="Format\copy\qlik_video2.jpg" />
@@ -302,26 +313,58 @@
     <Content Include="Format\imageTest\targit_video.jpg" />
     <Content Include="Format\imageTest\validatebox_warning.png" />
     <Content Include="Format\imageTest\yellowfin_video.jpg" />
+    <Content Include="gridView2\EntryDetail.aspx" />
+    <Content Include="gridView2\WithCheckBox.aspx" />
+    <Content Include="gridview\CellAlignNumber.aspx" />
     <Content Include="gridview\CheckBoxListDemo.aspx" />
     <Content Include="gridview\dataTableWithGridView.aspx" />
+    <Content Include="gridview\DynamicAddColumnLoseDataWhenPostBack.aspx" />
     <Content Include="gridview\EditWithHiddenField.aspx" />
     <Content Include="gridview\EditWithModelPopup.aspx" />
+    <Content Include="gridview\ExportToExcelWithImage.aspx" />
+    <Content Include="gridview\FootertemplateFocusTextbox.aspx" />
     <Content Include="gridview\GridviewAndDropDownList.aspx" />
     <Content Include="gridview\gridviewDropdownListPaging.aspx" />
-    <Content Include="gridview\gridViewEntity.aspx" />
     <Content Include="gridview\GridViewHeaderFormat.aspx" />
+    <Content Include="gridview\modelPopupSaveValueToHiddenField.aspx" />
+    <Content Include="gridview\pagingDemo.aspx" />
+    <Content Include="gridview\PagingWithSelectMthod.aspx" />
     <Content Include="gridview\SerialNumberRecord.aspx" />
     <Content Include="gridview\SetModelDataColumnThroughColumnName.aspx" />
+    <Content Include="gridview\TemplateDataBindGetClearedOnpostback.aspx" />
+    <Content Include="gridview\UploadFile.aspx" />
     <Content Include="Html5\WebForm1.aspx" />
     <Content Include="hyperlinkdopostback.aspx" />
     <Content Include="hyperlinkuse.aspx" />
+    <Content Include="images\WingtipToys\boatbig.png" />
+    <Content Include="images\WingtipToys\boatpaper.png" />
+    <Content Include="images\WingtipToys\boatsail.png" />
+    <Content Include="images\WingtipToys\busdouble.png" />
+    <Content Include="images\WingtipToys\busgreen.png" />
+    <Content Include="images\WingtipToys\busred.png" />
+    <Content Include="images\WingtipToys\carconvert.png" />
+    <Content Include="images\WingtipToys\carearly.png" />
+    <Content Include="images\WingtipToys\carfast.png" />
+    <Content Include="images\WingtipToys\carfaster.png" />
+    <Content Include="images\WingtipToys\carracer.png" />
+    <Content Include="images\WingtipToys\planeace.png" />
+    <Content Include="images\WingtipToys\planeglider.png" />
+    <Content Include="images\WingtipToys\planepaper.png" />
+    <Content Include="images\WingtipToys\planeprop.png" />
+    <Content Include="images\WingtipToys\rocket.png" />
+    <Content Include="images\WingtipToys\truckbig.png" />
+    <Content Include="images\WingtipToys\truckearly.png" />
+    <Content Include="images\WingtipToys\truckfire.png" />
     <Content Include="javascript\dataTypeXml.aspx" />
     <Content Include="javascript\HtmlPage1.html" />
     <Content Include="javascript\HtmlPage2.html" />
     <Content Include="javascript\JqueryValidator.aspx" />
     <Content Include="javascript\JSValidate.aspx" />
     <Content Include="javascript\MatchItemAndHighlight.aspx" />
+    <Content Include="javascript\PassSingleOrDoubleQuotesTojs.aspx" />
     <Content Include="javascript\Products.xml" />
+    <Content Include="javascript\RomoteUsername.aspx" />
+    <Content Include="javascript\SelectMoreThanOneTextBox.aspx" />
     <Content Include="javascript\ValidateNumberAndDecimal.aspx" />
     <Content Include="javascript\WebBootValidator.aspx" />
     <Content Include="javascript\WebForm1.aspx" />
@@ -375,6 +418,7 @@
     <Content Include="jqueryUiPlugin\calculator\jcalculator.css" />
     <Content Include="jqueryUiPlugin\calculator\jcalculator.js" />
     <Content Include="jqueryUiPlugin\DataTableAdo.aspx" />
+    <Content Include="jqueryUiPlugin\DataTableAjax.aspx" />
     <Content Include="jqueryUiPlugin\DataTableSortAjax.aspx" />
     <Content Include="jqueryUiPlugin\Datetime\MutiselectDatetimeExtensionForJqueryUi.aspx" />
     <Content Include="jqueryUiPlugin\jquery-ui-multidatespicker\jquery-ui.multidatespicker.css" />
@@ -384,18 +428,52 @@
     <Content Include="jqueryUiPlugin\jquery-ui\ui\css1.html" />
     <Content Include="jqueryUiPlugin\JqueryDataTableNotWorkAfterUpdatePanelUpdate.aspx" />
     <Content Include="jqueryUiPlugin\jqueryDataTableStart.aspx" />
+    <Content Include="jqueryUiPlugin\JqueryWebCam.aspx" />
+    <Content Include="jqueryUiPlugin\JqueryWebCam\jquery.webcam.js" />
+    <Content Include="jqueryUiPlugin\SortingRemoveIcon.aspx" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\basic.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\click-to-run.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\combo.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\constraints.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\continuous.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\crop-large.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\crop.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\events.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\flash-disabled.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\flash.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\flip-flash.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\flip.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\hd.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\ios-large.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\large.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\preview.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\reset.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\sfx.html" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\shutter.mp3" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\README.txt" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\webcam.js" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\webcam.min.js" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\webcam.swf" />
+    <Content Include="jqueryUiPlugin\WebCamUsing.aspx" />
+    <Content Include="js\jscam_canvas_only.swf" />
     <Content Include="ListViewDemo\listViewClassification.aspx" />
+    <Content Include="ListViewDemo\ListViewPagingData.aspx" />
+    <Content Include="ListViewDemo\ListViewSelectMethodDemo.aspx" />
     <Content Include="ListViewDemo\LoopThroughListView.aspx" />
     <Content Include="log.txt" />
     <Content Include="Models\DatatableShowDataWhennoData.aspx" />
     <Content Include="myText.txt" />
     <Content Include="NewFolder1\TextFile1.txt" />
+    <Content Include="NewFolder1\WebForm1.aspx" />
+    <Content Include="Origin.aspx" />
+    <Content Include="pequeno.aspx" />
     <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_asc.png" />
     <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_asc_disabled.png" />
     <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_both.png" />
     <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_desc.png" />
     <Content Include="Scripts\DataTable\DataTables-1.10.18\sort_desc_disabled.png" />
     <Content Include="Services\ajaxToolKitTest.aspx" />
+    <Content Include="Services\CallWebServiceFromCodeBehind.aspx" />
     <Content Include="Services\WebService.asmx" />
     <Content Include="sqlserver\datatablehasdatawhennodata.aspx" />
     <Content Include="sqlserver\insertIntoDatabase.aspx" />
@@ -1207,6 +1285,20 @@
     </Content>
     <Content Include="javascript\Site1.Master" />
     <Content Include="javascript\Site2.Master" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\bower.json" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\build.sh" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\demos\shutter.ogg" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\DOCS.md" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\com\adobe\images\BitString.as" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\com\adobe\images\JPGEncoder.as" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\com\adobe\images\PNGEncoder.as" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\mx\utils\Base64Encoder.as" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\Webcam.as" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\flash\Webcam.fla" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\LICENSE" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\package.json" />
+    <Content Include="jqueryUiPlugin\webcamjs-master\README.md" />
+    <Content Include="images\WingtipToys\Thumbs.db" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1230,6 +1322,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="a.aspx.cs">
+      <DependentUpon>a.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="a.aspx.designer.cs">
+      <DependentUpon>a.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddContacts.aspx.cs">
       <DependentUpon>AddContacts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1251,6 +1350,13 @@
     <Compile Include="ajaxUpdatePanel\doPostBackJs.aspx.designer.cs">
       <DependentUpon>doPostBackJs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ajaxUpdatePanel\UpdateDataInUpdatePanel.aspx.cs">
+      <DependentUpon>UpdateDataInUpdatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\UpdateDataInUpdatePanel.aspx.designer.cs">
+      <DependentUpon>UpdateDataInUpdatePanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ajaxUpdatePanel\updatePanelWithTimer.aspx.cs">
       <DependentUpon>updatePanelWithTimer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1271,6 +1377,13 @@
     </Compile>
     <Compile Include="bootstrap\bootStrapModalGridView.aspx.designer.cs">
       <DependentUpon>bootStrapModalGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapMutiselect.aspx.cs">
+      <DependentUpon>BootstrapMutiselect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap\BootstrapMutiselect.aspx.designer.cs">
+      <DependentUpon>BootstrapMutiselect.aspx</DependentUpon>
     </Compile>
     <Compile Include="bootstrap\BootstrapValidationNotWorking.aspx.cs">
       <DependentUpon>BootstrapValidationNotWorking.aspx</DependentUpon>
@@ -1363,6 +1476,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDemo\sortArrayDemo.aspx.cs">
+      <DependentUpon>sortArrayDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo\sortArrayDemo.aspx.designer.cs">
+      <DependentUpon>sortArrayDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data.ashx.cs">
       <DependentUpon>Data.ashx</DependentUpon>
@@ -1459,6 +1579,13 @@
     <Compile Include="DropDownListDemo\RemoveItem.aspx.designer.cs">
       <DependentUpon>RemoveItem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DropDownListDemo\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExtraControls\Ajax CalenderMakeDateSelected.aspx.cs">
       <DependentUpon>Ajax CalenderMakeDateSelected.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1472,6 +1599,13 @@
     </Compile>
     <Compile Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx.designer.cs">
       <DependentUpon>AjaxToolKitDisableFutureDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\CalendarTextIntoDatabase.aspx.cs">
+      <DependentUpon>CalendarTextIntoDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\CalendarTextIntoDatabase.aspx.designer.cs">
+      <DependentUpon>CalendarTextIntoDatabase.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls\DropDownUserControl.ascx.cs">
       <DependentUpon>DropDownUserControl.ascx</DependentUpon>
@@ -1501,6 +1635,13 @@
     <Compile Include="ExtraControls\RepeaterAggregate.aspx.designer.cs">
       <DependentUpon>RepeaterAggregate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExtraControls\RepeaterDataBindDemo.aspx.cs">
+      <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\RepeaterDataBindDemo.aspx.designer.cs">
+      <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExtraControls\RepeaterWithCalendar.aspx.cs">
       <DependentUpon>RepeaterWithCalendar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1514,6 +1655,13 @@
     </Compile>
     <Compile Include="ExtraControls\RequireValidatel.aspx.designer.cs">
       <DependentUpon>RequireValidatel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls\ShowHideControl.aspx.cs">
+      <DependentUpon>ShowHideControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls\ShowHideControl.aspx.designer.cs">
+      <DependentUpon>ShowHideControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls\UseDropDownUserControl.aspx.cs">
       <DependentUpon>UseDropDownUserControl.aspx</DependentUpon>
@@ -1535,6 +1683,13 @@
     </Compile>
     <Compile Include="ExtraControls\WizardStyle.aspx.designer.cs">
       <DependentUpon>WizardStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\CutPictures.aspx.cs">
+      <DependentUpon>CutPictures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\CutPictures.aspx.designer.cs">
+      <DependentUpon>CutPictures.aspx</DependentUpon>
     </Compile>
     <Compile Include="FileDemo\FileMoveTest.aspx.cs">
       <DependentUpon>FileMoveTest.aspx</DependentUpon>
@@ -1610,6 +1765,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="gridView2\EntryDetail.aspx.cs">
+      <DependentUpon>EntryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridView2\EntryDetail.aspx.designer.cs">
+      <DependentUpon>EntryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridView2\WithCheckBox.aspx.cs">
+      <DependentUpon>WithCheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridView2\WithCheckBox.aspx.designer.cs">
+      <DependentUpon>WithCheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\CellAlignNumber.aspx.cs">
+      <DependentUpon>CellAlignNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\CellAlignNumber.aspx.designer.cs">
+      <DependentUpon>CellAlignNumber.aspx</DependentUpon>
+    </Compile>
     <Compile Include="gridview\ChangeColorConditional.aspx.cs">
       <DependentUpon>ChangeColorConditional.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1638,6 +1814,13 @@
     <Compile Include="gridview\DatePickerAndGridView.aspx.designer.cs">
       <DependentUpon>DatePickerAndGridView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="gridview\DynamicAddColumnLoseDataWhenPostBack.aspx.cs">
+      <DependentUpon>DynamicAddColumnLoseDataWhenPostBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\DynamicAddColumnLoseDataWhenPostBack.aspx.designer.cs">
+      <DependentUpon>DynamicAddColumnLoseDataWhenPostBack.aspx</DependentUpon>
+    </Compile>
     <Compile Include="gridview\dynamicallyAddRow.aspx.cs">
       <DependentUpon>dynamicallyAddRow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1658,6 +1841,20 @@
     </Compile>
     <Compile Include="gridview\EditWithModelPopup.aspx.designer.cs">
       <DependentUpon>EditWithModelPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\ExportToExcelWithImage.aspx.cs">
+      <DependentUpon>ExportToExcelWithImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\ExportToExcelWithImage.aspx.designer.cs">
+      <DependentUpon>ExportToExcelWithImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\FootertemplateFocusTextbox.aspx.cs">
+      <DependentUpon>FootertemplateFocusTextbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\FootertemplateFocusTextbox.aspx.designer.cs">
+      <DependentUpon>FootertemplateFocusTextbox.aspx</DependentUpon>
     </Compile>
     <Compile Include="gridview\GridviewAndDropDownList.aspx.cs">
       <DependentUpon>GridviewAndDropDownList.aspx</DependentUpon>
@@ -1680,19 +1877,33 @@
     <Compile Include="gridview\gridviewDropdownListPaging.aspx.designer.cs">
       <DependentUpon>gridviewDropdownListPaging.aspx</DependentUpon>
     </Compile>
-    <Compile Include="gridview\gridViewEntity.aspx.cs">
-      <DependentUpon>gridViewEntity.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="gridview\gridViewEntity.aspx.designer.cs">
-      <DependentUpon>gridViewEntity.aspx</DependentUpon>
-    </Compile>
     <Compile Include="gridview\GridViewHeaderFormat.aspx.cs">
       <DependentUpon>GridViewHeaderFormat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="gridview\GridViewHeaderFormat.aspx.designer.cs">
       <DependentUpon>GridViewHeaderFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\modelPopupSaveValueToHiddenField.aspx.cs">
+      <DependentUpon>modelPopupSaveValueToHiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\modelPopupSaveValueToHiddenField.aspx.designer.cs">
+      <DependentUpon>modelPopupSaveValueToHiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\pagingDemo.aspx.cs">
+      <DependentUpon>pagingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\pagingDemo.aspx.designer.cs">
+      <DependentUpon>pagingDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\PagingWithSelectMthod.aspx.cs">
+      <DependentUpon>PagingWithSelectMthod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\PagingWithSelectMthod.aspx.designer.cs">
+      <DependentUpon>PagingWithSelectMthod.aspx</DependentUpon>
     </Compile>
     <Compile Include="gridview\SerialNumberRecord.aspx.cs">
       <DependentUpon>SerialNumberRecord.aspx</DependentUpon>
@@ -1707,6 +1918,20 @@
     </Compile>
     <Compile Include="gridview\SetModelDataColumnThroughColumnName.aspx.designer.cs">
       <DependentUpon>SetModelDataColumnThroughColumnName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\TemplateDataBindGetClearedOnpostback.aspx.cs">
+      <DependentUpon>TemplateDataBindGetClearedOnpostback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\TemplateDataBindGetClearedOnpostback.aspx.designer.cs">
+      <DependentUpon>TemplateDataBindGetClearedOnpostback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview\UploadFile.aspx.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview\UploadFile.aspx.designer.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Html5\VoiceCapture.aspx.cs">
       <DependentUpon>VoiceCapture.aspx</DependentUpon>
@@ -1785,6 +2010,27 @@
     <Compile Include="javascript\MatchItemAndHighlight.aspx.designer.cs">
       <DependentUpon>MatchItemAndHighlight.aspx</DependentUpon>
     </Compile>
+    <Compile Include="javascript\PassSingleOrDoubleQuotesTojs.aspx.cs">
+      <DependentUpon>PassSingleOrDoubleQuotesTojs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\PassSingleOrDoubleQuotesTojs.aspx.designer.cs">
+      <DependentUpon>PassSingleOrDoubleQuotesTojs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\RomoteUsername.aspx.cs">
+      <DependentUpon>RomoteUsername.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\RomoteUsername.aspx.designer.cs">
+      <DependentUpon>RomoteUsername.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\SelectMoreThanOneTextBox.aspx.cs">
+      <DependentUpon>SelectMoreThanOneTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javascript\SelectMoreThanOneTextBox.aspx.designer.cs">
+      <DependentUpon>SelectMoreThanOneTextBox.aspx</DependentUpon>
+    </Compile>
     <Compile Include="javascript\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1848,6 +2094,13 @@
     <Compile Include="jqueryUiPlugin\DataTableAdo.aspx.designer.cs">
       <DependentUpon>DataTableAdo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableAjax.aspx.cs">
+      <DependentUpon>DataTableAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\DataTableAjax.aspx.designer.cs">
+      <DependentUpon>DataTableAjax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="jqueryUiPlugin\DataTableSortAjax.aspx.cs">
       <DependentUpon>DataTableSortAjax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1882,6 +2135,27 @@
     </Compile>
     <Compile Include="jqueryUiPlugin\jqueryDataTableStart.aspx.designer.cs">
       <DependentUpon>jqueryDataTableStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\JqueryWebCam.aspx.cs">
+      <DependentUpon>JqueryWebCam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\JqueryWebCam.aspx.designer.cs">
+      <DependentUpon>JqueryWebCam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\SortingRemoveIcon.aspx.cs">
+      <DependentUpon>SortingRemoveIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\SortingRemoveIcon.aspx.designer.cs">
+      <DependentUpon>SortingRemoveIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\WebCamUsing.aspx.cs">
+      <DependentUpon>WebCamUsing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\WebCamUsing.aspx.designer.cs">
+      <DependentUpon>WebCamUsing.aspx</DependentUpon>
     </Compile>
     <Compile Include="json\ConvertFlatObjectToNestedJson.aspx.cs">
       <DependentUpon>ConvertFlatObjectToNestedJson.aspx</DependentUpon>
@@ -1939,6 +2213,20 @@
     <Compile Include="ListViewDemo\ListViewOnItemCommand.aspx.designer.cs">
       <DependentUpon>ListViewOnItemCommand.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListViewDemo\ListViewPagingData.aspx.cs">
+      <DependentUpon>ListViewPagingData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewPagingData.aspx.designer.cs">
+      <DependentUpon>ListViewPagingData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewSelectMethodDemo.aspx.cs">
+      <DependentUpon>ListViewSelectMethodDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDemo\ListViewSelectMethodDemo.aspx.designer.cs">
+      <DependentUpon>ListViewSelectMethodDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ListViewDemo\LoopThroughListView.aspx.cs">
       <DependentUpon>LoopThroughListView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1955,6 +2243,7 @@
     <Compile Include="Models\DatatableShowDataWhennoData.aspx.designer.cs">
       <DependentUpon>DatatableShowDataWhennoData.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\EntityExe.cs" />
     <Compile Include="Models\Fruit.cs" />
     <Compile Include="Models\MyUserItem.cs" />
     <Compile Include="Models\NorthWindDbContext.cs" />
@@ -1964,6 +2253,14 @@
     <Compile Include="Models\SupplyModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserItemDb.cs" />
+    <Compile Include="Models\vx_EligibilitySearch.cs" />
+    <Compile Include="NewFolder1\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Office\excel.aspx.cs">
       <DependentUpon>excel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1985,6 +2282,20 @@
     <Compile Include="Office\Word.aspx.designer.cs">
       <DependentUpon>Word.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Origin.aspx.cs">
+      <DependentUpon>Origin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Origin.aspx.designer.cs">
+      <DependentUpon>Origin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pequeno.aspx.cs">
+      <DependentUpon>pequeno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pequeno.aspx.designer.cs">
+      <DependentUpon>pequeno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ajaxToolKitTest.aspx.cs">
       <DependentUpon>ajaxToolKitTest.aspx</DependentUpon>
@@ -1996,6 +2307,13 @@
     <Compile Include="Services\ArrayData.asmx.cs">
       <DependentUpon>ArrayData.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\CallWebServiceFromCodeBehind.aspx.cs">
+      <DependentUpon>CallWebServiceFromCodeBehind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\CallWebServiceFromCodeBehind.aspx.designer.cs">
+      <DependentUpon>CallWebServiceFromCodeBehind.aspx</DependentUpon>
     </Compile>
     <Compile Include="Services\GetDataFromService.aspx.cs">
       <DependentUpon>GetDataFromService.aspx</DependentUpon>
@@ -2011,6 +2329,9 @@
     <Compile Include="Services\WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\WriteImage.ashx.cs">
+      <DependentUpon>WriteImage.ashx</DependentUpon>
     </Compile>
     <Compile Include="ShowAllContacts.aspx.cs">
       <DependentUpon>ShowAllContacts.aspx</DependentUpon>
@@ -2122,6 +2443,7 @@
     <Content Include="TimeHandler.ashx" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Services\WriteImage.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2201,7 +2523,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57504</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44328/</IISUrl>
+          <IISUrl>http://localhost:57510/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

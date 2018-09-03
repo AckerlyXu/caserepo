@@ -33,47 +33,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Bola" />
-            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+   
 
-
+          <%--  <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/NewFolder1/WebForm1.aspx">go back</asp:LinkButton>--%>
            
-            <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" PopupControlID="Panel1" TargetControlID="Label1" CancelControlID="Button2" BackgroundCssClass="modalBackground" DropShadow="True"></ajaxToolkit:ModalPopupExtender>
-          
-
+            
+            <asp:Button ID="Button1" runat="server" Text="go back" OnClick="Button1_Click" />
             
 
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <asp:Panel ID="Panel1" runat="server" CssClass="pnlBackGround" Height="300px" Width="500px" Style="display: none;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Flag</th>
-                                            <th>Country</th>
-                                            <th>Amount</th>
-                                            <th>Description</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Continente</td>
-                                            <td>0 €</td>
-                                            <td>Envio Correio Registado/Transp.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <asp:Button ID="Button2" CssClass="btn btn-warning" runat="server" Text="Close" />
-            </asp:Panel>
         </div>
     </form>
 </body>

@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         
-        <asp:Repeater ID="Repeater1" runat="server"   >
+        <asp:Repeater ID="Repeater1" runat="server"  >
             <HeaderTemplate>
 
                  <table class="table table-bordered bg-secondary">
@@ -27,16 +27,17 @@
     
             <tr>
                 <td class="text-center">
-          <%# Eval("BatchNo") %></td>
-                
+                         <%# Eval("BatchNo") %>
+         </td>
+          
 
-                    <td class="text-center">      <%# Eval("Total_Qty") %></td>
-                  <td class="text-center">      <%# Eval("Dep1Qty") %></td>
-                 <td class="text-center">      <%# Eval("Dep1Value") %></td>
-                  <td class="text-center">      <%# Eval("Dep2Qty") %></td>
-                 <td class="text-center">      <%# Eval("Dep2Value") %></td>
-                  <td class="text-center">      <%# Eval("TotalQty") %></td>
-                 <td class="text-center">      <%# Eval("TotalValue") %></td>
+                    <td class="text-center">  <%# Convert.ToDouble( Eval("Total_Qty")) ==0?"":Eval("Total_Qty") %> </td>
+                  <td class="text-center">   <%# Convert.ToDouble( Eval("Dep1Qty")) ==0?"":Eval("Dep1Qty") %>  </td>
+                 <td class="text-center">   <%# Convert.ToDouble( Eval("Dep1Value")) ==0?"":Eval("Dep1Value") %></td>
+                  <td class="text-center">  <%#   Convert.ToDouble( Eval("Dep2Qty")) ==0?"":Eval("Dep2Qty") %>  </td>
+                 <td class="text-center">     <%#  Convert.ToDouble( Eval("Dep2Value")) ==0?"":Eval("Dep2Value")  %></td>
+                  <td class="text-center">    <%# Convert.ToDouble( Eval("TotalQty")) ==0?"":Eval("TotalQty") %></td>
+                 <td class="text-center">   <%#  Convert.ToDouble( Eval("TotalValue")) ==0?"":Eval("TotalValue") %></td>
             </tr>
        </ItemTemplate>
               

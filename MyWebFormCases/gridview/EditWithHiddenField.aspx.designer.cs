@@ -49,22 +49,13 @@ namespace MyWebFormCases.gridview {
         protected global::System.Web.UI.WebControls.Label lblCode;
         
         /// <summary>
-        /// txtCode control.
+        /// txt_Code control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCode;
-        
-        /// <summary>
-        /// rfv1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv1;
+        protected global::System.Web.UI.WebControls.TextBox txt_Code;
         
         /// <summary>
         /// lblDescription control.
@@ -76,22 +67,13 @@ namespace MyWebFormCases.gridview {
         protected global::System.Web.UI.WebControls.Label lblDescription;
         
         /// <summary>
-        /// txtDescription control.
+        /// txt_Description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescription;
-        
-        /// <summary>
-        /// rfv2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv2;
+        protected global::System.Web.UI.WebControls.TextBox txt_Description;
         
         /// <summary>
         /// btnInsert control.

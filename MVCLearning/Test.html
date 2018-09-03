@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+
+
+
+    <script>
+       
+            $.ajax({
+                type: 'POST',
+                url: '/Data/index',
+                dataType: 'json',
+                data: {
+                   id: 3,
+                   
+                },
+                success: function (data) {
+
+                    console.log(data);
+
+                },
+                error: function (ex) {
+                    alert('Error al buscar TraResDesMed.' + ex.toString());
+                }
+            });
+
+        function ListadoTraResDesMedPorIdesta(id) {
+            //declare a variable to receive the data returned by ajax
+            var myData = null;
+            $.ajax({
+                type: 'POST',
+               async:false,
+                url: '/Data/index',
+                dataType: 'json',
+                data: {
+                  id:id
+                
+                },
+                success: function (data) {
+
+
+                    myData = data;
+
+                },
+                error: function (ex) {
+                    alert('Error al buscar TraResDesMed.' + ex.toString());
+                }
+            });
+            return myData
+        }
+        var list = ListadoTraResDesMedPorIdesta(3);
+        console.log(list);
+
+    </script>
+</body>
+</html>

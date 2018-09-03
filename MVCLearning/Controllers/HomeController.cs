@@ -50,8 +50,17 @@ namespace MVCLearning.Controllers
 
         public ActionResult Contact()
         {
+           if(this.Request.Browser.IsMobileDevice)
+            {
+                ViewBag.Device = "mobile";
+            }
+            else
+            {
+                ViewBag.Device = "computer/or lap";
+            }
+      
             ViewBag.Message = "Your contact page.";
-
+           
             return View();
         }
 

@@ -20,6 +20,8 @@ namespace MyWebFormCases.Services
         [WebMethod]
         public  Employ[] GetData()
         {
+
+            System.Threading.Thread.Sleep(3000);
             HttpContext.Current.Response.ContentType = "text/html";
             Employ[]  arr = new Employ[]
             {
@@ -33,7 +35,16 @@ namespace MyWebFormCases.Services
 
         
     }
+    public class Model
+    {
+        public string iD { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public int feesPaid { get; set; }
+        public string gender { get; set; }
 
+
+    }
     public class Employ
     {
         public int EmpId { get; set; }

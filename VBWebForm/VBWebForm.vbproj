@@ -163,6 +163,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="ajaxToolKitCase\ModelPopupNotWork.aspx" />
+    <Content Include="CallWebMethodUsingJs.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -192,8 +193,59 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="File\print.pdf" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="listviewdemo\ListViewPagingData.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebService1.asmx" />
+    <Content Include="Handler1.ashx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="images\icons\back.png" />
+    <Content Include="images\icons\blank.gif" />
+    <Content Include="images\icons\cancel.png" />
+    <Content Include="images\icons\clear.png" />
+    <Content Include="images\icons\cut.png" />
+    <Content Include="images\icons\edit_add.png" />
+    <Content Include="images\icons\edit_remove.png" />
+    <Content Include="images\icons\filesave.png" />
+    <Content Include="images\icons\filter.png" />
+    <Content Include="images\icons\help.png" />
+    <Content Include="images\icons\large_chart.png" />
+    <Content Include="images\icons\large_clipart.png" />
+    <Content Include="images\icons\large_picture.png" />
+    <Content Include="images\icons\large_shapes.png" />
+    <Content Include="images\icons\large_smartart.png" />
+    <Content Include="images\icons\lock.png" />
+    <Content Include="images\icons\man.png" />
+    <Content Include="images\icons\mini_add.png" />
+    <Content Include="images\icons\mini_edit.png" />
+    <Content Include="images\icons\mini_refresh.png" />
+    <Content Include="images\icons\more.png" />
+    <Content Include="images\icons\no.png" />
+    <Content Include="images\icons\ok.png" />
+    <Content Include="images\icons\pencil.png" />
+    <Content Include="images\icons\print.png" />
+    <Content Include="images\icons\redo.png" />
+    <Content Include="images\icons\reload.png" />
+    <Content Include="images\icons\search.png" />
+    <Content Include="images\icons\sum.png" />
+    <Content Include="images\icons\tip.png" />
+    <Content Include="images\icons\undo.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\menu_arrows.png" />
+    <Content Include="images\messager_icons.png" />
+    <Content Include="images\pagination_icons.png" />
+    <Content Include="images\panel_tools.png" />
+    <Content Include="images\passwordbox_close.png" />
+    <Content Include="images\passwordbox_open.png" />
+    <Content Include="images\searchbox_button.png" />
+    <Content Include="images\slider_handle.png" />
+    <Content Include="images\spinner_arrows.png" />
+    <Content Include="images\tabs_icons.png" />
+    <Content Include="images\tagbox_icons.png" />
+    <Content Include="images\tree_icons.png" />
+    <Content Include="images\validatebox_warning.png" />
     <Content Include="LoopThroghVBArr.aspx" />
+    <Content Include="RepeaterDataBindDemo.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -245,6 +297,13 @@
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="CallWebMethodUsingJs.aspx.designer.vb">
+      <DependentUpon>CallWebMethodUsingJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CallWebMethodUsingJs.aspx.vb">
+      <DependentUpon>CallWebMethodUsingJs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
@@ -290,6 +349,16 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handler1.ashx.vb">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="listviewdemo\ListViewPagingData.aspx.designer.vb">
+      <DependentUpon>ListViewPagingData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listviewdemo\ListViewPagingData.aspx.vb">
+      <DependentUpon>ListViewPagingData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="LoopThroghVBArr.aspx.designer.vb">
       <DependentUpon>LoopThroghVBArr.aspx</DependentUpon>
     </Compile>
@@ -315,6 +384,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RepeaterDataBindDemo.aspx.designer.vb">
+      <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeaterDataBindDemo.aspx.vb">
+      <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
@@ -350,6 +426,17 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebService1.asmx.vb">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

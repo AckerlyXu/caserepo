@@ -44,8 +44,8 @@ namespace MyWebFormCases.gridview
                 HiddenField hdf = (row.FindControl("hdfEntryNo") as HiddenField);
                 hdf_EntryNo.Value = hdf.Value;
   
-                txtCode.Text = (row.Cells[1].FindControl("lblCode") as Label).Text;
-                txtDescription.Text = (row.Cells[1].FindControl("lblDescription") as Label).Text;
+                txt_Code.Text = (row.Cells[1].FindControl("lblCode") as Label).Text;
+                txt_Description.Text = (row.Cells[1].FindControl("lblDescription") as Label).Text;
                 ClientScript.RegisterStartupScript(this.GetType(), "Pop", "openModal();", true);
             }
         }
@@ -61,8 +61,8 @@ namespace MyWebFormCases.gridview
 
                     SqlParameter[] sqlParameters = new SqlParameter[]
                     {
-                        new SqlParameter("code",SqlDbType.NVarChar,50){Value=txtCode.Text},
-                        new SqlParameter("description",SqlDbType.NVarChar,50){Value=txtDescription.Text},
+                        new SqlParameter("code",SqlDbType.NVarChar,50){Value=txt_Code.Text},
+                        new SqlParameter("description",SqlDbType.NVarChar,50){Value=txt_Description.Text},
                         new SqlParameter("entryNo",SqlDbType.Int){Value=Convert.ToInt32(hdf_EntryNo.Value)}
                     };
                     cmd.Parameters.AddRange(sqlParameters);

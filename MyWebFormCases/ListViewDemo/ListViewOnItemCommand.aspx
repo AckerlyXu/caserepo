@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListViewOnItemCommand.aspx.cs" Inherits="MyWebFormCases.ListView.ListViewOnItemCommand" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListViewOnItemCommand.aspx.cs" Inherits="MyWebFormCases.ListViewDemo.ListViewOnItemCommand" %>
 
 <!DOCTYPE html>
 

@@ -25,20 +25,22 @@
        <script type="text/javascript" charset="utf-8">
         $(document).ready(function () {
             $('#form1').bootstrapValidator({
+                container:'tooltip',
                 feedbackIcons: {
                     valid: 'glyphicon glyphicon-ok',
                     invalid: 'glyphicon glyphicon-remove',
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                    txt_Code: {
+                   <%=txt_Code.UniqueID%>: {
                         validators: {
                             notEmpty: {
                                 message: 'The ID is required and cannot be empty'
                             }
                         }
-                    },
-                    txt_Description: {
+                },
+             
+                       <%=txt_Description.UniqueID%> : {
                         validators: {
                             notEmpty: {
                                 message: 'cannot be empty'

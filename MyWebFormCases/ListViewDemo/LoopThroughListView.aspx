@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoopThroughListView.aspx.cs" Inherits="MyWebFormCases.ListView.LoopThroughListView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoopThroughListView.aspx.cs" Inherits="MyWebFormCases.ListViewDemo.LoopThroughListView" %>
 
 <!DOCTYPE html>
 

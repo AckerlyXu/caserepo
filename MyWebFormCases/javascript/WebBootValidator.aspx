@@ -18,16 +18,48 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function () {
-            $('#frmModal').bootstrapValidator({
+
+                $('[id*=frmModal]').bootstrapValidator({
+                container: '#messages',
                 feedbackIcons: {
                     valid: 'glyphicon glyphicon-ok',
                     invalid: 'glyphicon glyphicon-remove',
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                    <%=txt_Code.UniqueID%>: {
+                    <%=txt_Code.UniqueID%> : {
+                            container: "#code",
+                        validators: {
+                            notEmpty: {
+                                message: 'Code is required and cannot be empty!'
+                            }
+                        }
+                    },
+                    <%=txt_Description.UniqueID%> : {
+                        container: "#description",
+                        validators: {
+                            notEmpty: {
+                                message: 'Description is required and cannot Be empty!'
+                            }
+                        }
+                    }
+                }
+            });
+            
+<%--            $('#frmModal').bootstrapValidator({
+               container: "#messages",
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                     <%=txt_Code.UniqueID%>: {
+                     container: "#code",
                         validators: {
                             notEmpty: {
                                 message: 'The ID is required and cannot be empty'
@@ -35,19 +67,28 @@
                         }
                     },
                     <%=txt_Description.UniqueID%>: {
+                         container: "#description",
                         validators: {
+                           
                             notEmpty: {
-                                message: 'cannot be empty',
+                                message: 'Description cannot be empty',
                             }
                         }
                     }
 
                 }
-            });
+            }) 
+
+      
+        --%>
         });
+
+        
+            
+        
     </script>
 
-
+    <div class="generic-modal-trigger active-row">div</div>
 
     <button type="button" id="btnAdd" class="btn btn-primary" data-toggle="modal" data-target="#myAddModal">Add New</button><br /><br />
 
@@ -61,15 +102,22 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-horizontal" role="form">
+                        
                         <div class="form-group">
+                           <div id="code"  style="margin-left:15%"  ></div>
                             <asp:Label ID="lbl_Code" runat="server" CssClass="col-sm-4 control-label" Text="Code"></asp:Label>
                             <div class="col-sm-4">
+ 
                                 <asp:TextBox ID="txt_Code" CssClass="form-control" runat="server"></asp:TextBox>
                             </div>
                         </div>
+                        
+                    
                         <div class="form-group">
+                           <div id="description" style="margin-left:15%" ></div>
                             <asp:Label ID="lbl_Description" runat="server" CssClass="col-sm-4 control-label" Text="Inflator"></asp:Label>
                             <div class="col-sm-5">
+                                
                                 <asp:TextBox ID="txt_Description"  CssClass="form-control" runat="server"></asp:TextBox>
                             </div>
                         </div>

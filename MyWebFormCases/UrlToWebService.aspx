@@ -9,11 +9,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/WebForm1.aspx">LinkButton</asp:LinkButton>
+
+      <%--  <div>
             <asp:Label ID="Label1" runat="server" Text=''></asp:Label>
        <%=ResolveClientUrl("/Services/myWebService.asmx/getData") %>
         </div>
-      
+      --%>
       
       
     </form>

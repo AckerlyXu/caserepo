@@ -89,5 +89,5 @@ D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\VBWebForm.vbproj.CopyCom
 D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\VBWebForm.dll
 D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\WebForms_Basic.xml
 D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\VBWebForm.pdb
-D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\VBWebForm.vbprojAssemblyReference.cache
 D:\develop\vsworkspace\WebFormCases\VBWebForm\bin\AjaxControlToolkit.dll
+D:\develop\vsworkspace\WebFormCases\VBWebForm\obj\Debug\VBWebForm.vbprojAssemblyReference.cache

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyWebFormCases.ListView {
+namespace MyWebFormCases.ListViewDemo {
     
     
     public partial class ListViewOnItemCommand {

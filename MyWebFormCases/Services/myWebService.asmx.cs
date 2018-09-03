@@ -34,5 +34,15 @@ namespace MyWebFormCases.Services
             return null;
 
         }
+        [WebMethod]
+        public string[] getUsername(string username)
+        {
+            string[] allUsers = new string[] { "Helen", "John", "Jerry", "Nancy" };
+            if (allUsers.Contains(username))
+            {
+                return new string[] { "No" };
+            }
+            return new string[] { "Yes" };
+        }
     }
 }

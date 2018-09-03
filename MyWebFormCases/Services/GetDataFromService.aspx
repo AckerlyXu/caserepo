@@ -18,7 +18,10 @@
 </body>
 
     <script>
-        $.ajax({
+
+        for (var i = 0; i < 5; i++) { var date = new Date();
+                console.log("timestart:"+date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+              $.ajax({
             
                     url: ' /Services/ArrayData.asmx/GetData',
                     type: "post",
@@ -26,14 +29,19 @@
                     contentType: "application/json; charset=utf-8",
                   
             success: function (data) {
-                         var str = "";
-                               for (var i = 0; i <data.d.length; i++) {
-                    str += "<tr><td>" + data.d[i].EmpId + "</td><td>" + data.d[i].FName + "</td></tr>";
-                }
-                $("#myTable").html(str);
-               var test= data.f.length;
+              //  console.log(data);
+                var date = new Date();
+                console.log("timeend:"+date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+               //          var str = "";
+               //                for (var i = 0; i <data.d.length; i++) {
+               //     str += "<tr><td>" + data.d[i].EmpId + "</td><td>" + data.d[i].FName + "</td></tr>";
+               // }
+               // $("#myTable").html(str);
+               //var test= data.f.length;
                     }
                 });
        
+        }
+      
     </script>
 </html>

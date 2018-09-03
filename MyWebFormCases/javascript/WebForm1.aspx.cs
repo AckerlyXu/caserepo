@@ -11,7 +11,7 @@ namespace MyWebFormCases.javascript
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LinkButton1.PostBackUrl = ResolveUrl("WebForm2.aspx");
         }
     }
 }

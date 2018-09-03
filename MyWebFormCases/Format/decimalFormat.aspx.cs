@@ -11,7 +11,7 @@ namespace WebFormCases.Format
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LinkButton1.PostBackUrl = ResolveUrl("WebForm1.aspx");
             double d = 7.7;
             Label1.Text = MyConverter(d).ToString();
         }
