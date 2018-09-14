@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,11 +24,18 @@
 
             </asp:GridView>
         </div>
+
+        <span id="span1">span1</span>
+           <span id="span2">span2</span>
     </form>
 
 
-    <script>    
-
+    <script>  
+        $("[id='span1']").css('background-color', 'red');
+        console.log($("span[id=span1]  span[id=span2]"));
+        if ("" == false) {
+            alert("hello")
+        }
 function test(a,b){
     alert(a+" "+b);
         }

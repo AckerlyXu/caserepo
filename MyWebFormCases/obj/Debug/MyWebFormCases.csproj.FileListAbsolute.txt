@@ -24,11 +24,8 @@ D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Diagnostics
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Diagnostics.Process.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Diagnostics.StackTrace.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.Compression.dll
-D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.FileSystem.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.FileSystem.Primitives.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.Pipes.dll
-D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Reflection.Metadata.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Security.AccessControl.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Security.Claims.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -80,3 +77,10 @@ D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\MySql.Data.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\Google.Protobuf.xml
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\MySql.Data.xml
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Collections.Immutable.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.FileSystem.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Reflection.Metadata.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\HtmlAgilityPack.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\HtmlAgilityPack.pdb
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\HtmlAgilityPack.xml

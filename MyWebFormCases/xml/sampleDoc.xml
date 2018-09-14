@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<ASNNUM>SXMSEO180814001D</ASNNUM>
+<ORDERS>
+  <ORDER>
+    <CUSNAME>743828553</CUSNAME>
+    <ORDERNUM>979793524</ORDERNUM>
+    <CITY />
+    <TIES>
+      <TIE>
+        <TIENUMBER>1</TIENUMBER>
+        <TIEQTY>1</TIEQTY>
+        <ITEMS>
+          <ITEM>
+            <ITEMNUMBER>KF3P2</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>8.27</PRICE>
+          </ITEM>
+          <ITEM>
+            <ITEMNUMBER>60RD2</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>8.27</PRICE>
+          </ITEM>
+        </ITEMS>
+      </TIE>
+    </TIES>
+  </ORDER>
+  <ORDER>
+    <CUSNAME>743828552</CUSNAME>
+    <ORDERNUM>979794834</ORDERNUM>
+    <CITY />
+    <TIES>
+      <TIE>
+        <TIENUMBER>1</TIENUMBER>
+        <TIEQTY>1</TIEQTY>
+        <ITEMS>
+          <ITEM>
+            <ITEMNUMBER>K850M</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>1.54</PRICE>
+          </ITEM>
+          <ITEM>
+            <ITEMNUMBER>T732H</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>1.54</PRICE>
+          </ITEM>
+        </ITEMS>
+      </TIE>
+    </TIES>
+  </ORDER>
+</ORDERS>
+
+</root>

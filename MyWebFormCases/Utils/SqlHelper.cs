@@ -101,7 +101,7 @@ namespace cn.itcast.bookshop.DAL
 				{
 					con.Open();
 			
-					com.Parameters.AddRange(sqlParameters);
+				
 					
 					return com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
 				}

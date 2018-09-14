@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace ConsoleApp1
 {
@@ -10,55 +11,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            TextInput input= new NumericInput();
+            XmlDocument modelPMC = new XmlDocument();
+            modelPMC.LoadXml(@"<root>
+                                <ParentN><Price>12</Price><Qty>50</Qty></ParentN>
+                                <ParentN><Price>18</Price><Qty>40</Qty></ParentN>
+                                <ParentN><Price>20</Price><Qty>70</Qty></ParentN>
+</root>");
 
+            XmlNodeList xmlNodeList = modelPMC.SelectNodes("//ParentN");
 
-            input.Add('1');
-            input.Add('a');
-            input.Add('0');
-            Console.WriteLine(TextInput.GetValue());
+            foreach (XmlNode parentN in xmlNodeList)
+            {
+                Console.Write("price:" + parentN["Price"].InnerText + "   ");
+                Console.WriteLine("qty:" + parentN["Qty"].InnerText );
+            }
             Console.ReadKey();
-           
         }
 
-
-
-    }
-    public class TextInput
-    {
-
-        protected static string str = null;
-        public virtual void Add(char c)
-        {
-            str += c;
-        }
-
-        public static string GetValue()
-        {
-            return str;
-        }
-    }
-
-    public class NumericInput : TextInput
-    {
-
-        public override void Add(char c)
-        {
-
-            if (!(c >= 48 && c <= 57))
-            {
-               
-            }
-            else
-            {
-                str += c;
-            }
-           
-            
-            }
+      
 
     }
-
+   
     
 
 }

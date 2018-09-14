@@ -9,14 +9,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/WebForm1.aspx">LinkButton</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/RedirectTest.aspx">LinkButton</asp:LinkButton>
 
       <%--  <div>
             <asp:Label ID="Label1" runat="server" Text=''></asp:Label>
        <%=ResolveClientUrl("/Services/myWebService.asmx/getData") %>
         </div>
       --%>
-      
+        <asp:DataPager ID="DataPager1" runat="server"  >
+            <Fields>
+                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                <asp:NumericPagerField />
+                <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+            </Fields>
+
+
+        </asp:DataPager>
       
     </form>
 </body>

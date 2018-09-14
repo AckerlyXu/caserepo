@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+
+<script>
+    // the method indexedDB.open doesn't directly return a database object but return 
+     // a IDBOpenDBRequest,because this is a asynchronous API which is just like ajax
+    // we  get the returned data in ajax's onsuccess callback.
+    // This is similar.
+    // IDBOpenDBRequest defines several callbacks such as onsuccess, onerror, onupgradeneeded
+    // to get the result or show error of the asynchronous operation.
+    // in onsuccess , you could get the db instance through e.target.result
+    // in onerror, you could get the error message through e.target.errorCode.
+    // the onupgradeneeded callback will be called when the version we specify is different
+    // from the version of database which has existed.
+
+    var request = window.indexedDB.open("test", 1);
+      
+    console.log(request);
+    request.onsuccess = function (e) {
+        console.log(e.target.result);
+        console.log(e);
+    }
+    request.onerror = function (e) {
+        console.log("IndexDb error" + e.target.errorCode)
+    }
+    request.onupgradeneeded = function (e) {
+        console.log(e);
+    }
+
+</script>
+</html>

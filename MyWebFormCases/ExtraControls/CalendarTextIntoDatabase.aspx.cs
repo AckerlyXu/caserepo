@@ -24,9 +24,10 @@ namespace MyWebFormCases.ExtraControls
         protected void Button2_Click(object sender, EventArgs e)
         {
             string sdt =  tbFromDate.Text;
+            string sdt1 = string.Format("{0:MM/dd/yyyy}", sdt);
             DateTime time = DateTime.ParseExact(sdt, "MM/dd/yyyy hh:mm:ss",
-                  System.Globalization.CultureInfo.InvariantCulture,
-                                          System.Globalization.DateTimeStyles.None);
+                  System.Globalization.CultureInfo.InvariantCulture);
+                        sdt1=  string.Format("{0:MM/dd/yyyy}", time);                ;
             string sql = "insert into mytime values(@t1,@t2)";
             using (SqlConnection conn = new SqlConnection(constr))
             {

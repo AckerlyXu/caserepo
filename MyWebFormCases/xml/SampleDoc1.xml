@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<ASNNUM>SXMSEO180814001D</ASNNUM>
+<ORDERS>
+  <ORDER>
+    <CUSID>744400014</CUSID>
+    <ORDERNUM>979794834</ORDERNUM>
+    <TIES>
+      <TIE>
+        <TIENUMBER>1</TIENUMBER>
+        <TIEQTY>1</TIEQTY>
+        <ITEMS>
+          <ITEM>
+            <ITEMNUMBER>T732H</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>1.54</PRICE>
+          </ITEM>
+          <ITEM>
+            <ITEMNUMBER>K850M</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>1.54</PRICE>
+          </ITEM>
+        </ITEMS>
+      </TIE>
+    </TIES>
+  </ORDER>
+  <ORDER>
+    <CUSID>743138972</CUSID>
+    <CUSADDRESS>KLS Tokyo Terminal3-2-31 Yashio, Shinagawa, TokyoJapan</CUSADDRESS>
+    <ORDERNUM>979793524</ORDERNUM>
+    <TIES>
+      <TIE>
+        <TIENUMBER>1</TIENUMBER>
+        <TIEQTY>1</TIEQTY>
+        <ITEMS>
+          <ITEM>
+            <ITEMNUMBER>60RD2</ITEMNUMBER>
+            <ITEMQTY>1</ITEMQTY>
+            <PRICE>8.27</PRICE>
+          </ITEM>
+          <ITEM>
+            <ITEMNUMBER>KF3P2</ITEMNUMBER>
+            <ITEMQTY>25</ITEMQTY>
+            <PRICE>8.27</PRICE>
+          </ITEM>
+        </ITEMS>
+      </TIE>
+    </TIES>
+  </ORDER>
+</ORDERS>
+</root>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,8 +14,15 @@ namespace MyWebFormCases
         {
             if (!IsPostBack)
             {
-                Response.Write("your last visited address:" + Request.UrlReferrer);
-                Session["url"] = Request.UrlReferrer.ToString();
+                //Response.Write("your last visited address:" + Request.UrlReferrer);
+                //Session["url"] = Request.UrlReferrer.ToString();
+             
+                       string excelConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + "" + ";Extended Properties=\"Excel 8.0;HDR=No;IMEX=1\";";
+          
+
+                OleDbConnection cnnExcel = new OleDbConnection(excelConnectionString);
+                OleDbCommand command = new OleDbCommand("select * from [Sheet1$]", cnnExcel);
+                cnnExcel.Open();
             }
           
         }

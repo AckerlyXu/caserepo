@@ -175,6 +175,7 @@
     <Content Include="DropDownList\ListBoxToTextBox.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="File\abc.txt" />
+    <Content Include="File\DownLoadFile.aspx" />
     <Content Include="File\FileDownloadDemo.aspx" />
     <Content Include="File\messager_icons.png" />
     <Content Include="File\qlik_video.jpg" />
@@ -193,8 +194,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="File\print.pdf" />
+    <Content Include="gridviewDemo\FilterGridview.aspx" />
     <Content Include="images\Thumbs.db" />
     <Content Include="listviewdemo\ListViewPagingData.aspx" />
+    <Content Include="RepeaterDemo\SplitOneRowIntoThree.aspx" />
+    <Content Include="SqlServer\ConnectionAndRelease.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebService1.asmx" />
     <Content Include="Handler1.ashx" />
@@ -332,6 +336,13 @@
       <DependentUpon>ListBoxToTextBox.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="File\DownLoadFile.aspx.designer.vb">
+      <DependentUpon>DownLoadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="File\DownLoadFile.aspx.vb">
+      <DependentUpon>DownLoadFile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="File\FileDownloadDemo.aspx.designer.vb">
       <DependentUpon>FileDownloadDemo.aspx</DependentUpon>
     </Compile>
@@ -348,6 +359,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\FilterGridview.aspx.designer.vb">
+      <DependentUpon>FilterGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\FilterGridview.aspx.vb">
+      <DependentUpon>FilterGridview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Handler1.ashx.vb">
       <DependentUpon>Handler1.ashx</DependentUpon>
@@ -392,12 +410,26 @@
       <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="RepeaterDemo\SplitOneRowIntoThree.aspx.designer.vb">
+      <DependentUpon>SplitOneRowIntoThree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeaterDemo\SplitOneRowIntoThree.aspx.vb">
+      <DependentUpon>SplitOneRowIntoThree.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlServer\ConnectionAndRelease.aspx.designer.vb">
+      <DependentUpon>ConnectionAndRelease.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServer\ConnectionAndRelease.aspx.vb">
+      <DependentUpon>ConnectionAndRelease.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="SqlServer\CountWithReader.aspx.designer.vb">
       <DependentUpon>CountWithReader.aspx</DependentUpon>
