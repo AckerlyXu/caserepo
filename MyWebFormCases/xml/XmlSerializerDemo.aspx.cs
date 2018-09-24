@@ -14,6 +14,7 @@ namespace MyWebFormCases.xml
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             string path = Server.MapPath("/xml/mutiMailProperties.xml");
 
             //XmlSerializer xmlSerial = new XmlSerializer(typeof(MailProperties));

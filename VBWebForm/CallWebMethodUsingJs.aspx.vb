@@ -6,7 +6,8 @@ Public Class CallWebMethodUsingJs
 
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        Dim a As String = Request("HTTP_REFERER")
+        Dim b As Object = Request.UrlReferrer
     End Sub
 
     <WebMethod()>

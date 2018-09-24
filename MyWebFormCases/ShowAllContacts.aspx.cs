@@ -14,9 +14,10 @@ namespace WebFormCases
     public partial class ShowAllContacts : System.Web.UI.Page
     {
         SupplyModel SupplyModel = new SupplyModel();
+      
         protected void Page_Load(object sender, EventArgs e)
         {
-
+        
         }
 
       public IQueryable<Contact>  GetContacts([QueryString]int SID)

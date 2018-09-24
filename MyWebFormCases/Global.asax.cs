@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -18,10 +19,13 @@ namespace WebFormCases
         protected void Application_BeginRequest(object sender,EventArgs e)
         {
 
-            
 
-
-
+        }
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            Exception ex = Server.GetLastError();
+           
+         string url=  Request.RawUrl;
         }
     }
 }

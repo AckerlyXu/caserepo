@@ -10,6 +10,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+       
          <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True"></asp:ScriptManager>
         <script>
 //, function (a, b) { console.log(a, b) }, function (a, b) { console.log(a, b) }

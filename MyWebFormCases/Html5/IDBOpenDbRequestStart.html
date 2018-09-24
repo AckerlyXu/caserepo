@@ -3,12 +3,34 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
 </head>
 <body>
+    <div class="card" style="width: 18rem;">
 
+    </div>
+      
+    
+    <table  >
+       
+        <tbody>
+            <tr><td style="width:90px">aaaaaaaa</td><td style="width:90px">  Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</td></tr>
+        </tbody>
+      
+    </table>
+  
+         
+        
+    
 </body>
 
 <script>
+    $("td").each(
+        function () {
+            $(this).html("<div style='width:60px'><div>" + $(this).html() + "</div></div>");
+        }
+
+    )
     // the method indexedDB.open doesn't directly return a database object but return 
      // a IDBOpenDBRequest,because this is a asynchronous API which is just like ajax
     // we  get the returned data in ajax's onsuccess callback.

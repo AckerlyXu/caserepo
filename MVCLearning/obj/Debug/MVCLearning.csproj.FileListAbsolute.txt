@@ -99,3 +99,4 @@ D:\develop\vsworkspace\WebFormCases\MVCLearning\bin\Microsoft.CodeDom.Providers.
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csproj.CopyComplete
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.dll
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.pdb
+D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csproj.ResolveComReference.cache

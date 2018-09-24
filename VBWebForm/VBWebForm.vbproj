@@ -164,6 +164,7 @@
     <Content Include="About.aspx" />
     <Content Include="ajaxToolKitCase\ModelPopupNotWork.aspx" />
     <Content Include="CallWebMethodUsingJs.aspx" />
+    <Content Include="CheckboxAdd.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -176,11 +177,13 @@
     <Content Include="favicon.ico" />
     <Content Include="File\abc.txt" />
     <Content Include="File\DownLoadFile.aspx" />
+    <Content Include="File\DownloadMp4.aspx" />
     <Content Include="File\FileDownloadDemo.aspx" />
     <Content Include="File\messager_icons.png" />
     <Content Include="File\qlik_video.jpg" />
     <Content Include="File\test.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="format\datetimeformatProblem.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -195,11 +198,13 @@
     </Content>
     <Content Include="File\print.pdf" />
     <Content Include="gridviewDemo\FilterGridview.aspx" />
+    <Content Include="images\example.mp4" />
     <Content Include="images\Thumbs.db" />
     <Content Include="listviewdemo\ListViewPagingData.aspx" />
     <Content Include="RepeaterDemo\SplitOneRowIntoThree.aspx" />
     <Content Include="SqlServer\ConnectionAndRelease.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
     <Content Include="WebService1.asmx" />
     <Content Include="Handler1.ashx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -308,6 +313,13 @@
       <DependentUpon>CallWebMethodUsingJs.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="CheckboxAdd.aspx.designer.vb">
+      <DependentUpon>CheckboxAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckboxAdd.aspx.vb">
+      <DependentUpon>CheckboxAdd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
@@ -343,6 +355,13 @@
       <DependentUpon>DownLoadFile.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="File\DownloadMp4.aspx.designer.vb">
+      <DependentUpon>DownloadMp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="File\DownloadMp4.aspx.vb">
+      <DependentUpon>DownloadMp4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="File\FileDownloadDemo.aspx.designer.vb">
       <DependentUpon>FileDownloadDemo.aspx</DependentUpon>
     </Compile>
@@ -355,6 +374,13 @@
     </Compile>
     <Compile Include="File\test.aspx.vb">
       <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="format\datetimeformatProblem.aspx.designer.vb">
+      <DependentUpon>datetimeformatProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="format\datetimeformatProblem.aspx.vb">
+      <DependentUpon>datetimeformatProblem.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
@@ -445,6 +471,7 @@
       <DependentUpon>UpdatePanelUpDate.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="utils\SqlHelper.vb" />
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -464,6 +491,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WebService1.asmx.vb">

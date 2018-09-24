@@ -16,3 +16,4 @@ D:\develop\vsworkspace\WebFormCases\WebFormCaseDal\obj\Debug\WebFormCaseDal.cspr
 D:\develop\vsworkspace\WebFormCases\WebFormCaseDal\obj\Debug\WebFormCaseDal.csproj.CopyComplete
 D:\develop\vsworkspace\WebFormCases\WebFormCaseDal\obj\Debug\WebFormCaseDal.dll
 D:\develop\vsworkspace\WebFormCases\WebFormCaseDal\obj\Debug\WebFormCaseDal.pdb
+D:\develop\vsworkspace\WebFormCases\WebFormCaseDal\obj\Debug\WebFormCaseDal.csprojAssemblyReference.cache

@@ -10,9 +10,11 @@ namespace MyWebFormCases
 {
     public partial class a : System.Web.UI.Page
     {
+        public event EventHandler But;
         protected void Page_Load(object sender, EventArgs e)
         {
             lblValidate.Text = "";
+           
         }
 
         protected void Button2_Click(object sender, EventArgs e)

@@ -9,9 +9,16 @@ namespace MyWebFormCases
 {
     public partial class WebUserControl1 : System.Web.UI.UserControl
     {
+        public event EventHandler ButtonClick;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        protected void gotoAnother_Click(object sender, EventArgs e)
+        {
+            ButtonClick?.Invoke(this, e);
         }
     }
 }

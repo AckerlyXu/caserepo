@@ -13,7 +13,7 @@ namespace MyWebFormCases.Models
 
         public string Name { get; set; }
 
-        public int? Supplier_SID { get; set; }
+        public int Supplier_SID { get; set; }
 
         public virtual Supplier Supplier { get; set; }
     }

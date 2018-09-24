@@ -22,6 +22,15 @@ namespace MyWebFormCases {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// WebUserControl1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::MyWebFormCases.WebUserControl1 WebUserControl1;
+        
+        /// <summary>
         /// lblState control.
         /// </summary>
         /// <remarks>

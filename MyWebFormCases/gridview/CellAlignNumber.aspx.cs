@@ -12,8 +12,9 @@ namespace MyWebFormCases.gridview
 {
     public partial class CellAlignNumber : System.Web.UI.Page
     {
-
+      
         private static string constr = ConfigurationManager.ConnectionStrings["EntityExe"].ConnectionString;
+     
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
