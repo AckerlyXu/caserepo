@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:scriptmanager runat="server"></asp:scriptmanager>
+            <asp:scriptmanager ID="manager" runat="server"></asp:scriptmanager>
 
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
@@ -23,8 +23,25 @@
 
              <asp:Label runat="server" Text="" ID="label2"></asp:Label>
         </div>
+        <script>
+            //https://blog.csdn.net/goodshot/article/details/45950847
+               if (!(typeof (Sys) == "undefined" || typeof (Sys.WebForms) == 
+"undefined" || typeof(Sys.WebForms.PageRequestManager) == "undefined")) {
+ 
+         var _myPageRequestManager = Sys.WebForms.PageRequestManager.getInstance(); 
+                   this._MyendRequestHandlerDelegate = Function.createDelegate(this, this._MyhandleEndRequest);
+                
+         _myPageRequestManager.add_endRequest(this._MyendRequestHandlerDelegate); 
+     } 
+     load_sub(); 
+
+        </script>
     </form>
     <script>
+
+      
+
+
             
             //setInterval(function () {
 

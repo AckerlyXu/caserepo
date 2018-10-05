@@ -6,6 +6,15 @@
 <head runat="server">
     <title></title>
     <style>
+        td{
+            box-sizing:border-box;
+        word-wrap:break-word;
+    word-break:break-all;
+    width:100px;   /*write your own width*/    
+
+        }
+
+
     /*td{
             box-sizing:border-box;
        
@@ -19,6 +28,11 @@
 <body>
     <form id="form1" runat="server">
      
+
+         <div style="overflow-y: scroll; overflow-x: scroll; height: 200px; width: 210px;" id="container"></div>
+
+
+
        <table style="background-color: #0066CC" id="table">
         <tr>
             <td style="font-weight: bold;">
@@ -33,11 +47,9 @@
         </tr>
         
     </table>
-       <%--  <div style="overflow-x:scroll;  width: 150px;">--%>
-       <%--  </div>--%>
-   <%-- <div style="overflow-y: scroll; overflow-x: scroll; height: 200px; width: 210px;">--%>
+    
         <asp:GridView ID="ItemGridView" runat="server" AutoGenerateColumns="false" 
-            ShowHeader="true" >
+            ShowHeader="false" >
             <Columns>
                 <asp:BoundField DataField="ITEMID">
                    <ItemStyle HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true"  />
@@ -56,35 +68,45 @@
         <script type="text/javascript">
 
             $(function () {
-                $("td").each(
-                    function () {
-                        $(this).html("<div style='width:100px'>" + $(this).html() + "</div>");
-                    }
 
-                )
+                 $("#ItemGridView").innerWidth($("#table").outerWidth());
+                $("#table").innerWidth($("#table").outerWidth());
 
-                $("#ItemGridView tr:first td").each(
-
-                    function (index, value) {
-                        //get the max width between the header column and gridview column
-                        var maxWidth = Math.max($("#table td").eq(index).outerWidth(), $(value).outerWidth());
+               
+               $("#container").append($("#table")).append($("#ItemGridView"));
+           
+         
 
 
-                        // set the gridview's column width to the maxWidth
-                   //   $(value).innerWidth(100);
+                //$("td").each(
+                //    function () {
+                //        $(this).html("<div style='width:100px'>" + $(this).html() + "</div>");
+                //    }
+
+                //)
+
+                //$("#ItemGridView tr:first td").each(
+
+                //    function (index, value) {
+                //        //get the max width between the header column and gridview column
+                //        var maxWidth = Math.max($("#table td").eq(index).outerWidth(), $(value).outerWidth());
+
+
+                //        // set the gridview's column width to the maxWidth
+                //   //   $(value).innerWidth(100);
                    
-                      // set the header column width to the maxWidth
-                      //  $("#table td").eq(index).width(100);
-                    }
+                //      // set the header column width to the maxWidth
+                //      //  $("#table td").eq(index).width(100);
+                //    }
 
-                )
-                // set the gridview's  row width to the row width of the header 
-                //$("#ItemGridView").innerWidth($("#table").outerWidth());
-                //$("#table").innerWidth($("#table").outerWidth());
+                //)
+                //// set the gridview's  row width to the row width of the header 
+                ////$("#ItemGridView").innerWidth($("#table").outerWidth());
+                ////$("#table").innerWidth($("#table").outerWidth());
 
-                //var div = $(' <div style="overflow-y: scroll; overflow-x: scroll; height: 200px; width: 210px;"><div>');
-                //div.append($("#table")).append($("#ItemGridView"));
-                //$("#form1").html(div);
+                ////var div = $(' <div style="overflow-y: scroll; overflow-x: scroll; height: 200px; width: 210px;"><div>');
+                ////div.append($("#table")).append($("#ItemGridView"));
+                ////$("#form1").html(div);
          
             })
        

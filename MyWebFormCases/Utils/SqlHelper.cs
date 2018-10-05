@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace cn.itcast.bookshop.DAL
+namespace MyWebFormCases.Utils
 
 {
 	public static class SqlHelper

@@ -24,7 +24,7 @@
     function testDynamicCtrl(txtVal) {
         $("#"+txtVal).val(dynamicImageId)
         $.ajax({
-            url: '/Study/anotherPartial/',
+            url: '/Home/About/',
             data: { i: i },
             success: function (data) {
                 $("#divAnotherPartial").append(data);
@@ -38,7 +38,7 @@
         $('#btnAddRow').on('click', function () {
        
             $.ajax({
-                url: '/Study/partialAddRow/',
+                url: '/Home/About/',
                 data: { i: i },
                 success: function (data) {
                     $("#divPartialAddRow").append(data);

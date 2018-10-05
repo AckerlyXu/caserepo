@@ -11,34 +11,7 @@
     <link href="eonasdan-bootstrap-datetimepicker/docs/theme/css/prettify-1.0.css" rel="stylesheet" />
     <link href="eonasdan-bootstrap-datetimepicker/docs/theme/css/base.css" rel="stylesheet" />
     <style>
-        /*.bootstrap-datetimepicker-widget tr td:nth-child(2){
-          
-    background-color:aqua;
-            width:10px !important
-
-        }
-        .bootstrap-datetimepicker-widget {
-            width:150px !important;
-            /*height:200px !important;*/
-              /*overflow:scroll*/
-        /*}*/
-        /*.bootstrap-datetimepicker-widget tr td:nth-child(1){
-          box-sizing:border-box !important;
-        background-color:antiquewhite;
-            width:10px !important;
-            padding:0px  !important;
-            margin:0px !important;
-        }
-        .bootstrap-datetimepicker-widget  td{
-             padding:0px  !important;
-             margin:0px !important;
-             height:10px !important;
-             width:10px !important;
-        }*/
-        /*.bootstrap-datetimepicker-widget ul{
-            padding:0 !important;
-            margin:0 !important;
-        }*/
+      
     </style>
 </head>
 
@@ -69,15 +42,15 @@
     </div>
 </div>
        
-        <script src="eonasdan-bootstrap-datetimepicker/moment.js"></script>
+  <script src="eonasdan-bootstrap-datetimepicker/moment.js"></script>
         <script src="bootstrap-datetimepicker-master/sample%20in%20bootstrap%20v3/bootstrap/js/bootstrap.min.js"></script>
         <script src="eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
         <script>
-            $(".input-group-addon").click(function () {
-                console.log($(".bootstrap-datetimepicker-widget"));
-                 $(".bootstrap-datetimepicker-widget").css({ backgroundColr: "red", width: "100" });
+            //$(".input-group-addon").click(function () {
+            //    console.log($(".bootstrap-datetimepicker-widget"));
+            //     $(".bootstrap-datetimepicker-widget").css({ backgroundColr: "red", width: "100" });
 
-            })
+            //})
 
            
 

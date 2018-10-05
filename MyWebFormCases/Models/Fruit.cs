@@ -14,7 +14,7 @@ namespace MyWebFormCases.Models
         [StringLength(50)]
         public string BelongsTo { get; set; }
 
-        public int? Qunatity { get; set; }
+        public int Qunatity { get; set; }
 
         [Key]
         public int itemid { get; set; }

@@ -1,7 +1,12 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<button class="stackedContent default" onclick="callBack(this)" >
+    I'm button
+</button>
 
-<p>Use this area to provide additional information.</p>
+
+
+<script>
+    function callBack(btn) {
+        $(btn).hide();
+    }
+   
+</script>

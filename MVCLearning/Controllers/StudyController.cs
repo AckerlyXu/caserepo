@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -11,6 +12,12 @@ namespace MVCLearning.Controllers
         private int a;
         public ActionResult partialAddRow(int? i)
         {
+            NameValueCollection col = Request.Params;
+            foreach (var item in col.AllKeys)
+            {
+                string value = col[item];
+            }
+           
             a++;
             ViewBag.i = i;
             return PartialView();
@@ -19,6 +26,16 @@ namespace MVCLearning.Controllers
         public ActionResult Table()
         {
             return View();
+        }
+
+       
+        public ActionResult Parent()
+        {
+            return View();
+        }
+        public ActionResult Child()
+        {
+            return PartialView();
         }
     }
 

@@ -170,7 +170,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery.tagit.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="crossPages\from.aspx" />
+    <Content Include="crossPages\Page1.aspx" />
+    <Content Include="crossPages\ToMyPage.aspx" />
+    <Content Include="csharpdemo\dealWithString.aspx" />
+    <Content Include="csharpdemo\getWorkDays.aspx" />
     <Content Include="dataControl\AspTableShowData.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropDownList\ListBoxToTextBox.aspx" />
@@ -197,16 +203,24 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="File\print.pdf" />
+    <Content Include="gridviewDemo\AffectOneWay2.aspx" />
     <Content Include="gridviewDemo\FilterGridview.aspx" />
+    <Content Include="gridviewDemo\onlyEffectOneRow.aspx" />
     <Content Include="images\example.mp4" />
     <Content Include="images\Thumbs.db" />
     <Content Include="listviewdemo\ListViewPagingData.aspx" />
+    <Content Include="listviewdemo\listViewWithRepeater.aspx" />
     <Content Include="RepeaterDemo\SplitOneRowIntoThree.aspx" />
+    <Content Include="Scripts\tag-it.min.js" />
     <Content Include="SqlServer\ConnectionAndRelease.aspx" />
+    <Content Include="SqlServer\TagnameSystem.aspx" />
+    <Content Include="updatePanel\updatepanelWithTimer.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebService1.asmx" />
     <Content Include="Handler1.ashx" />
+    <Content Include="crossPages\Site1.Master" />
+    <Content Include="Content\tagit.ui-zendesk.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\icons\back.png" />
     <Content Include="images\icons\blank.gif" />
@@ -327,6 +341,48 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="crossPages\from.aspx.designer.vb">
+      <DependentUpon>from.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crossPages\from.aspx.vb">
+      <DependentUpon>from.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="crossPages\Page1.aspx.designer.vb">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crossPages\Page1.aspx.vb">
+      <DependentUpon>Page1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="crossPages\Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="crossPages\Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="crossPages\ToMyPage.aspx.designer.vb">
+      <DependentUpon>ToMyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crossPages\ToMyPage.aspx.vb">
+      <DependentUpon>ToMyPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\dealWithString.aspx.designer.vb">
+      <DependentUpon>dealWithString.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\dealWithString.aspx.vb">
+      <DependentUpon>dealWithString.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\getWorkDays.aspx.designer.vb">
+      <DependentUpon>getWorkDays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\getWorkDays.aspx.vb">
+      <DependentUpon>getWorkDays.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="dataControl\AspTableShowData.aspx.designer.vb">
       <DependentUpon>AspTableShowData.aspx</DependentUpon>
     </Compile>
@@ -386,11 +442,25 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="gridviewDemo\AffectOneWay2.aspx.designer.vb">
+      <DependentUpon>AffectOneWay2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\AffectOneWay2.aspx.vb">
+      <DependentUpon>AffectOneWay2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="gridviewDemo\FilterGridview.aspx.designer.vb">
       <DependentUpon>FilterGridview.aspx</DependentUpon>
     </Compile>
     <Compile Include="gridviewDemo\FilterGridview.aspx.vb">
       <DependentUpon>FilterGridview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="gridviewDemo\onlyEffectOneRow.aspx.designer.vb">
+      <DependentUpon>onlyEffectOneRow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\onlyEffectOneRow.aspx.vb">
+      <DependentUpon>onlyEffectOneRow.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Handler1.ashx.vb">
@@ -401,6 +471,13 @@
     </Compile>
     <Compile Include="listviewdemo\ListViewPagingData.aspx.vb">
       <DependentUpon>ListViewPagingData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="listviewdemo\listViewWithRepeater.aspx.designer.vb">
+      <DependentUpon>listViewWithRepeater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listviewdemo\listViewWithRepeater.aspx.vb">
+      <DependentUpon>listViewWithRepeater.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="LoopThroghVBArr.aspx.designer.vb">
@@ -464,11 +541,25 @@
       <DependentUpon>CountWithReader.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="SqlServer\TagnameSystem.aspx.designer.vb">
+      <DependentUpon>TagnameSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServer\TagnameSystem.aspx.vb">
+      <DependentUpon>TagnameSystem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="updatePanel\UpdatePanelUpDate.aspx.designer.vb">
       <DependentUpon>UpdatePanelUpDate.aspx</DependentUpon>
     </Compile>
     <Compile Include="updatePanel\UpdatePanelUpDate.aspx.vb">
       <DependentUpon>UpdatePanelUpDate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="updatePanel\updatepanelWithTimer.aspx.designer.vb">
+      <DependentUpon>updatepanelWithTimer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatePanel\updatepanelWithTimer.aspx.vb">
+      <DependentUpon>updatepanelWithTimer.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="utils\SqlHelper.vb" />

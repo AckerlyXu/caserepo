@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             XmlDocument modelPMC = new XmlDocument();
             modelPMC.LoadXml(@"<root>
@@ -28,7 +29,33 @@ namespace ConsoleApp1
             Console.ReadKey();
         }
 
-      
+      static void Main(string[] args)
+        {
+           
+           //DateTime.TryParseExact
+            DateTime outputDateTime;
+          
+            if (DateTime.TryParseExact("09/04/1999", "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out outputDateTime)) {
+                Console.WriteLine("using DateTime.TryParseExact:"+"Month:" + outputDateTime.Month + " day:" + outputDateTime.Day);
+            }
+            else
+            {
+                Console.WriteLine("your string of data is not in a right format");
+            }
+
+
+            // convert.ToDateTime
+            DateTime time = Convert.ToDateTime("09/04/1999");
+            Console.WriteLine("using convert.ToDateTime:" + "Month:" + time.Month + " day:" + time.Day);
+
+
+            //DateTime.ParseExact
+            DateTime parseExact = DateTime.ParseExact("09/04/1999", "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            Console.WriteLine("DateTime.ParseExact:" + "Month:" + parseExact.Month + " day:" + parseExact.Day);
+
+
+            Console.ReadKey();
+        }
 
     }
    

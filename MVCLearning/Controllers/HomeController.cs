@@ -16,10 +16,8 @@ namespace MVCLearning.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-            ApplicationUser applicationUser = new ApplicationUser();
-        
-            return View();
+     
+            return  PartialView("/Views/Home/About.cshtml");
         }
 
         public ActionResult GetSelection()
@@ -50,6 +48,8 @@ namespace MVCLearning.Controllers
 
         public ActionResult Contact()
         {
+       
+           
            if(this.Request.Browser.IsMobileDevice)
             {
                 ViewBag.Device = "mobile";
