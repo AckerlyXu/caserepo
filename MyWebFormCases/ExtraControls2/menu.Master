@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.master.cs" Inherits="MyWebFormCases.ExtraControls2.menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <style>
+
+            .selected{
+                background-color:yellow
+            }
+      
+        </style>
+        <script src="../Scripts/jquery-3.3.1.js"></script>
+
+        <script>
+            $(function () {
+
+            
+                $("a.selected.level2").parent().parent().prev().addClass("selected");
+
+            })
+        </script>
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                  <asp:Menu ID="menuBar" Visible="false"
+               RenderingMode="Default"
+                      OnMenuItemClick="menuBar_MenuItemClick"
+               IncludeStyleBlock="False"
+               runat="server"
+                      
+               BackColor="#141C4A"
+               DynamicHorizontalOffset="20"
+               Font-Names="Arial"
+               Font-Size="Medium"
+               ForeColor="#E6EDF2"
+                    MaximumDynamicDisplayLevels="2"
+                      ItemWrap="true"
+               Orientation="Horizontal"
+               StaticSubMenuIndent="10px">
+               <DynamicHoverStyle BackColor="#141C4A" ForeColor= "White"  />
+               <DynamicMenuItemStyle HorizontalPadding="3px" VerticalPadding="6px"  />
+               <DynamicMenuStyle BackColor="#141C4A" />
+               <DynamicSelectedStyle BackColor="#1174b8" ForeColor="White" Font-Bold="True" />
+               
+               <StaticHoverStyle BackColor="#141C4A" ForeColor="#F5C802" />
+               <StaticMenuItemStyle HorizontalPadding="3px" VerticalPadding="6px" />
+               <StaticMenuStyle BackColor="#141C4A" />
+               <StaticSelectedStyle BackColor="#1174b8" Font-Bold="True" ForeColor="White" />
+
+               <levelsubmenustyles>
+                    <asp:submenustyle backcolor="#112100" forecolor="White" />
+                    <asp:submenustyle backcolor="#220011" forecolor="White" />          
+               </levelsubmenustyles>
+                      <Items>
+
+<asp:MenuItem Text="Home" Value="Home" Selected="true"    >
+      <asp:MenuItem Text="Page1" Value="Page1" ></asp:MenuItem>
+      <asp:MenuItem Text="Page2" Value="Page2" ></asp:MenuItem>
+    </asp:MenuItem>
+    <asp:MenuItem Text="Contact" Value="Contact" >
+       <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
+      <asp:MenuItem Text="Page2" Value="Page2" NavigateUrl="~/ExtraControls2/Page2.aspx"></asp:MenuItem>
+    </asp:MenuItem>
+    <asp:MenuItem Text="Pages" Value="Pages">
+      <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
+      <asp:MenuItem Text="Page2" Value="Page2" NavigateUrl="~/ExtraControls2/Page2.aspx"></asp:MenuItem>
+    </asp:MenuItem>
+
+                      </Items>
+
+
+                      </asp:Menu>
+               <%-- <asp:Menu ID="menuBar" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" >
+                     <Items>
+    <asp:MenuItem Text="Home" Value="Home" Selected="true"   >
+   
+    </asp:MenuItem>
+    <asp:MenuItem Text="Contact" Value="Contact" >
+      
+    </asp:MenuItem>
+    <asp:MenuItem Text="Pages" Value="Pages">
+      <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
+      <asp:MenuItem Text="Page2" Value="Page2" NavigateUrl="~/ExtraControls2/Page2.aspx"></asp:MenuItem>
+    </asp:MenuItem>
+  </Items>
+
+                </asp:Menu>--%>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
