@@ -25,7 +25,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="RecordId" DataSourceID="SqlDataSource1" AutoGenerateEditButton="True" OnRowUpdating="GridView1_RowUpdating">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="RecordId" DataSourceID="SqlDataSource1" AutoGenerateEditButton="True" OnRowUpdating="GridView1_RowUpdating" OnRowDataBound="GridView1_RowDataBound"  >
                 <Columns>
                     <asp:BoundField DataField="RecordId" HeaderText="RecordId" ReadOnly="True" SortExpression="RecordId" InsertVisible="False" />
                     <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />

@@ -1,4 +1,5 @@
-﻿Imports System.Web.Optimization
+﻿Imports System.Threading
+Imports System.Web.Optimization
 
 Public Class Global_asax
     Inherits HttpApplication
@@ -7,5 +8,9 @@ Public Class Global_asax
         ' Fires when the application is started
         RouteConfig.RegisterRoutes(RouteTable.Routes)
         BundleConfig.RegisterBundles(BundleTable.Bundles)
+        'Throw New Exception()
+
     End Sub
+
+
 End Class

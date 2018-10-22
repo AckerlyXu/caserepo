@@ -11,8 +11,9 @@ namespace MyWebFormCases.crossPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          ContentPlaceHolder holder=  this.PreviousPage.Form.FindControl("ContentPlaceHolder1") as ContentPlaceHolder;
-         TextBox box=   holder.FindControl("TextBox1") as TextBox;
+            // ContentPlaceHolder holder=  this.PreviousPage.Form.FindControl("ContentPlaceHolder1") as ContentPlaceHolder;
+            //TextBox box=   holder.FindControl("TextBox1") as TextBox;
+            Response.Write(Request["text"]);
         }
     }
 }

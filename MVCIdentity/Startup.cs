@@ -8,6 +8,7 @@ namespace MVCIdentity
     {
         public void Configuration(IAppBuilder app)
         {
+          
             ConfigureAuth(app);
         }
     }

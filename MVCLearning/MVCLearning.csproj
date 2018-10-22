@@ -170,6 +170,11 @@
     </Compile>
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\EntityDb1.cs" />
+    <Compile Include="Models\EntityDb2.cs" />
+    <Compile Include="Models\JoinView.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +184,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\icons\back.png" />
     <Content Include="Content\icons\blank.gif" />
+    <Content Include="Content\icons\busred.png" />
     <Content Include="Content\icons\cancel.png" />
     <Content Include="Content\icons\clear.png" />
     <Content Include="Content\icons\cut.png" />
@@ -249,6 +255,7 @@
     <Content Include="Views\Study\Table.cshtml" />
     <Content Include="Views\Study\Parent.cshtml" />
     <Content Include="Views\Study\Child.cshtml" />
+    <Content Include="Views\Study\Join.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

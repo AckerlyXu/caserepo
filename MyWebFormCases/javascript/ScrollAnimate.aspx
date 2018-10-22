@@ -11,22 +11,46 @@
     <form id="form1" runat="server">
        <div style="overflow-y: scroll; overflow-x: hidden; height: 400px; width: 1900px;" id="DV">
 
-        <asp:GridView ID="ItemGridView" runat="server" AutoGenerateColumns="false" > 
+        <asp:GridView ID="ItemGridView" runat="server" AutoGenerateColumns="false"  ShowFooter="true"> 
 
             <HeaderStyle BackColor="Blue" Font-Bold="true" />
 <Columns >
-<asp:BoundField DataField="ITEMID" HeaderText="ITEMID">
-                    <ItemStyle Width="100px" />
+
+    <asp:TemplateField HeaderText="ITEMID" >
+        <ItemStyle Width="100px" />
                    <ItemStyle HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true"  />
-                </asp:BoundField>
-                <asp:BoundField DataField="DSC" HeaderText="DSC" >
-                     <ItemStyle Width="100px" />
-                    <ItemStyle HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true" />
-                </asp:BoundField>
-                <asp:BoundField DataField="ACTIVE" HeaderText="ACTIVE" >
-                     <ItemStyle Width="100px" />
-                    <ItemStyle  HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true" />
-                </asp:BoundField>
+        <ItemTemplate>
+            <%# Eval("itemid") %>
+        </ItemTemplate>
+        <FooterTemplate>
+
+           footer of itemid
+        </FooterTemplate>
+    </asp:TemplateField>
+    <asp:TemplateField HeaderText="dsc" >
+        <ItemStyle Width="100px" />
+                   <ItemStyle HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true"  />
+        <ItemTemplate>
+            <%# Eval("dsc") %>
+        </ItemTemplate>
+        <FooterTemplate>
+
+           footer of dsc
+        </FooterTemplate>
+    </asp:TemplateField>
+    <asp:TemplateField HeaderText="active" >
+        <ItemStyle Width="100px" />
+                   <ItemStyle HorizontalAlign="Left" ForeColor="#00C0C0" Wrap="true"  />
+        <ItemTemplate>
+            <%# Eval("active") %>
+        </ItemTemplate>
+        <FooterTemplate>
+
+           footer of active
+        </FooterTemplate>
+    </asp:TemplateField>
+ 
+              
             </Columns>
             <SelectedRowStyle BackColor="#FBAF29" />
         </asp:GridView>

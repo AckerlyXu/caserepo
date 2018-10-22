@@ -9,30 +9,35 @@
         <style>
 
             .selected{
-                background-color:yellow
+                background-color:cornflowerblue
             }
       
         </style>
         <script src="../Scripts/jquery-3.3.1.js"></script>
 
-        <script>
-            $(function () {
-
-            
-                $("a.selected.level2").parent().parent().prev().addClass("selected");
-
-            })
-        </script>
+        
 
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:Button ID="Button1" runat="server" Text="Button"  OnClick="Button1_Click"/>
+                    <asp:Panel ID="Panel1" runat="server">
+
+                    </asp:Panel>
+                </ContentTemplate>
+
+            </asp:UpdatePanel>
+            
+           <%-- <asp:HiddenField ID="placeHolder" runat="server"  />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                  <asp:Menu ID="menuBar" Visible="false"
-               RenderingMode="Default"
-                      OnMenuItemClick="menuBar_MenuItemClick"
+                  <asp:Menu ID="menuBar" 
+               RenderingMode="Table"
+                    
                IncludeStyleBlock="False"
                runat="server"
                       
@@ -62,12 +67,10 @@
                       <Items>
 
 <asp:MenuItem Text="Home" Value="Home" Selected="true"    >
-      <asp:MenuItem Text="Page1" Value="Page1" ></asp:MenuItem>
-      <asp:MenuItem Text="Page2" Value="Page2" ></asp:MenuItem>
+   
     </asp:MenuItem>
-    <asp:MenuItem Text="Contact" Value="Contact" >
-       <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
-      <asp:MenuItem Text="Page2" Value="Page2" NavigateUrl="~/ExtraControls2/Page2.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/ExtraControls2/WebForm1.aspx"  >
+     
     </asp:MenuItem>
     <asp:MenuItem Text="Pages" Value="Pages">
       <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
@@ -78,25 +81,39 @@
 
 
                       </asp:Menu>
-               <%-- <asp:Menu ID="menuBar" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" >
-                     <Items>
-    <asp:MenuItem Text="Home" Value="Home" Selected="true"   >
-   
-    </asp:MenuItem>
-    <asp:MenuItem Text="Contact" Value="Contact" >
-      
-    </asp:MenuItem>
-    <asp:MenuItem Text="Pages" Value="Pages">
-      <asp:MenuItem Text="Page1" Value="Page1" NavigateUrl="~/ExtraControls2/Page1.aspx"></asp:MenuItem>
-      <asp:MenuItem Text="Page2" Value="Page2" NavigateUrl="~/ExtraControls2/Page2.aspx"></asp:MenuItem>
-    </asp:MenuItem>
-  </Items>
-
-                </asp:Menu>--%>
+               
             </asp:ContentPlaceHolder>
+                --%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+     
     </form>
+     <script>
+     
+//            if (!(typeof (Sys) == "undefined" || typeof (Sys.WebForms) == 
+//"undefined" || typeof(Sys.WebForms.PageRequestManager) == "undefined")) {
+ 
+//                var _myPageRequestManager = Sys.WebForms.PageRequestManager.getInstance();
+            
+//                   this._MyendRequestHandlerDelegate = Function.createDelegate(this, this._MyhandleEndRequest);
+                
+//         _myPageRequestManager.add_endRequest(this._MyendRequestHandlerDelegate); 
+//     } 
+         Sys.WebForms.PageRequestManager.getInstance().add_endRequest(  
+      function(sender,e){  
+        //  $("#flag").css("background-color", "red");
+      }  
+  );  
+               $("#flag").css("background-color", "red");
+            $(function () {
+
+             
+                $("a:contains(placeHolder)")   //select the placeHolder  that is parent
+                    .html("<b>" + $("#placeHolder").val() + "</b>")  // replace placeHolder with its real text
+                    .parent().parent().parent().parent().addClass("selected"); // add css class to parent menu
+
+            })
+        </script>
 </body>
 </html>

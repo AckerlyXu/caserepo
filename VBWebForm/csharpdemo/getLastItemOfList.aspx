@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GridviewAndDropDownList.aspx.cs" Inherits="MyWebFormCases.gridview.GridviewAndDropDownList" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="getLastItemOfList.aspx.vb" Inherits="VBWebForm.getLastItemOfList" %>
 
 <!DOCTYPE html>
 

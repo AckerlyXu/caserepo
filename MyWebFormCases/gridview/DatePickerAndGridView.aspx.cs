@@ -30,5 +30,13 @@ namespace MyWebFormCases.gridview
             //add it to the collection which stores data to be updated
             e.NewValues["AdministerDate"] = time;
         }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            e.Row.RowState = DataControlRowState.Edit;
+            Response.Write(e.Row.RowType); 
+        }
+
+       
     }
 }

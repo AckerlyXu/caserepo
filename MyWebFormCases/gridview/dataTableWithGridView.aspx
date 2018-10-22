@@ -11,15 +11,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    
+
     
 <asp:GridView ID="tbl" runat="server" AutoGenerateColumns="False"
                   BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px"
-                  CellPadding="3" DataKeyNames="SID"  onrowcancelingedit="gvwBfbStructure_RowCancelingEdit"
+                  CellPadding="3" DataKeyNames="SID"  onrowcancelingedit="gvwBfbStructure_RowCancelingEdit" 
                   onrowdeleting="gvwBfbStructure_RowDeleting" onrowediting="gvwBfbStructure_RowEditing"
                   onrowupdating="gvwBfbStructure_RowUpdating"
-                CellSpacing="2" >
-    
+               CellSpacing="2" >
+
+  
         <Columns>
             <asp:TemplateField HeaderText="City">  
                             <EditItemTemplate>  

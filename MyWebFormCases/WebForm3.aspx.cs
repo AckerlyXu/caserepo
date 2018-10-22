@@ -12,8 +12,8 @@ namespace MyWebFormCases
       public string Text = "'Apple',Banana'";
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(HttpUtility.UrlDecode("http://localhost:8080/path/testpath/IfimoJuvMT8j9K0%2bFmNiliPEBce%2bzgfVjLVU4jw09L48EepJOtRVisq5FJfipuGTaTmbTTIAlPomEZsWDRgWN6EosF4I9grM9gQS6Smw9xT%2fgz2XjKB%2faYCxP7Gk1fZc.aspx"));
-
+            //  Response.Write(HttpUtility.UrlDecode("http://localhost:8080/path/testpath/IfimoJuvMT8j9K0%2bFmNiliPEBce%2bzgfVjLVU4jw09L48EepJOtRVisq5FJfipuGTaTmbTTIAlPomEZsWDRgWN6EosF4I9grM9gQS6Smw9xT%2fgz2XjKB%2faYCxP7Gk1fZc.aspx"));
+            Response.Write(Request["input1"]);
         }
     }
 }

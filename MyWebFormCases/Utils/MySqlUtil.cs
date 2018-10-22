@@ -13,6 +13,7 @@ namespace MyWebFormCases.Utils
         private static string constr = ConfigurationManager.ConnectionStrings["mySqlConnectionString"].ConnectionString;
         public static int ExecuteNonQuery(string sql,params MySqlParameter[] sqlParameters)
         {
+
             
             using (MySqlConnection con=new MySqlConnection(constr))
             {

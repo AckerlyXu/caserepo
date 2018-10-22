@@ -198,3 +198,6 @@ D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\Neodynamic.SDK.ThermalLab
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\Neodynamic.SDK.ThermalLabel.WindowsPrinting.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\roslyn\System.Collections.Immutable.dll
 D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\EmailValidator.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\MySql.Data.Entity.EF6.dll
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\MySql.Data.Entity.EF6.xml
+D:\develop\vsworkspace\WebFormCases\MyWebFormCases\bin\EASendMail45.dll

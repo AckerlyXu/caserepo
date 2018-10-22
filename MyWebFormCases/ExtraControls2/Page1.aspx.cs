@@ -9,10 +9,20 @@ namespace MyWebFormCases.ExtraControls2
 {
     public partial class Page1 : System.Web.UI.Page
     {
+       
+
         protected void Page_Load(object sender, EventArgs e)
         {
            
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Label label = new Label();
+            label.Text = "leae";
+            label.ID = "flag1";
+            this.Form.Controls.Add(label);
         }
     }
 }

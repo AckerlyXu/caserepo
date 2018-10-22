@@ -29,6 +29,7 @@ SqlConnection(constr))
                 {
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
+                    
                     cmd.CommandText = "insert into test (name) values(@stickTwistBefore)";
                     cmd.Parameters.Add("@stickTwistBefore",
                     SqlDbType.NVarChar).Value = TextBox1.Text;

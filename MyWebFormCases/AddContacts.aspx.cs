@@ -14,9 +14,11 @@ namespace WebFormCases
 {
     public partial class AddContacts : System.Web.UI.Page
     {
+    
         SupplyModel model = new SupplyModel();
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             HtmlGenericControl htmlGenericControl = new HtmlGenericControl();
             
             if (!IsPostBack)
@@ -26,7 +28,7 @@ namespace WebFormCases
             }
           //  \w + ([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*
         }
-
+      
        protected void Button1_Click(object sender, EventArgs e)
         {
             Contact contact = new Contact();

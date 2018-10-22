@@ -50,12 +50,19 @@
     <Reference Include="AjaxControlToolkit">
       <HintPath>..\..\AjaxExtensionLeaning\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <HintPath>..\packages\Oracle.Data.Access.11.2.1.0_x64.1.0.0\lib\net20\Oracle.DataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net461\lib\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -87,6 +94,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TextPDF">
+      <HintPath>..\..\..\..\downloads\TextPDF\TextPdfSample\bin\TextPDF.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -175,11 +185,19 @@
     <Content Include="crossPages\from.aspx" />
     <Content Include="crossPages\Page1.aspx" />
     <Content Include="crossPages\ToMyPage.aspx" />
+    <Content Include="csharpdemo\check.txt" />
+    <Content Include="csharpdemo\check2.txt" />
     <Content Include="csharpdemo\dealWithString.aspx" />
+    <Content Include="csharpdemo\decriptNotWorking.aspx" />
+    <Content Include="csharpdemo\encryptExe.aspx" />
+    <Content Include="csharpdemo\getLastItemOfList.aspx" />
     <Content Include="csharpdemo\getWorkDays.aspx" />
+    <Content Include="csharpdemo\RegexExe.aspx" />
+    <Content Include="csharpdemo\ShowValueInList.aspx" />
     <Content Include="dataControl\AspTableShowData.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropDownList\ListBoxToTextBox.aspx" />
+    <Content Include="ExtraControlls\DetailsViewEmptyData.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="File\abc.txt" />
     <Content Include="File\DownLoadFile.aspx" />
@@ -204,10 +222,14 @@
     </Content>
     <Content Include="File\print.pdf" />
     <Content Include="gridviewDemo\AffectOneWay2.aspx" />
+    <Content Include="gridviewDemo\ConnectToOracleExe.aspx" />
     <Content Include="gridviewDemo\FilterGridview.aspx" />
+    <Content Include="gridviewDemo\InsertAvoidMitupleSubmit.aspx" />
     <Content Include="gridviewDemo\onlyEffectOneRow.aspx" />
+    <Content Include="gridviewDemo\PreventMultipleInsert.aspx" />
     <Content Include="images\example.mp4" />
     <Content Include="images\Thumbs.db" />
+    <Content Include="javascript\XSSPrevent.aspx" />
     <Content Include="listviewdemo\ListViewPagingData.aspx" />
     <Content Include="listviewdemo\listViewWithRepeater.aspx" />
     <Content Include="RepeaterDemo\SplitOneRowIntoThree.aspx" />
@@ -376,11 +398,46 @@
       <DependentUpon>dealWithString.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="csharpdemo\decriptNotWorking.aspx.designer.vb">
+      <DependentUpon>decriptNotWorking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\decriptNotWorking.aspx.vb">
+      <DependentUpon>decriptNotWorking.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\encryptExe.aspx.designer.vb">
+      <DependentUpon>encryptExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\encryptExe.aspx.vb">
+      <DependentUpon>encryptExe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\getLastItemOfList.aspx.designer.vb">
+      <DependentUpon>getLastItemOfList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\getLastItemOfList.aspx.vb">
+      <DependentUpon>getLastItemOfList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="csharpdemo\getWorkDays.aspx.designer.vb">
       <DependentUpon>getWorkDays.aspx</DependentUpon>
     </Compile>
     <Compile Include="csharpdemo\getWorkDays.aspx.vb">
       <DependentUpon>getWorkDays.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\RegexExe.aspx.designer.vb">
+      <DependentUpon>RegexExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\RegexExe.aspx.vb">
+      <DependentUpon>RegexExe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="csharpdemo\ShowValueInList.aspx.designer.vb">
+      <DependentUpon>ShowValueInList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\ShowValueInList.aspx.vb">
+      <DependentUpon>ShowValueInList.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="dataControl\AspTableShowData.aspx.designer.vb">
@@ -402,6 +459,13 @@
     </Compile>
     <Compile Include="DropDownList\ListBoxToTextBox.aspx.vb">
       <DependentUpon>ListBoxToTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControlls\DetailsViewEmptyData.aspx.designer.vb">
+      <DependentUpon>DetailsViewEmptyData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControlls\DetailsViewEmptyData.aspx.vb">
+      <DependentUpon>DetailsViewEmptyData.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="File\DownLoadFile.aspx.designer.vb">
@@ -449,11 +513,25 @@
       <DependentUpon>AffectOneWay2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="gridviewDemo\ConnectToOracleExe.aspx.designer.vb">
+      <DependentUpon>ConnectToOracleExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\ConnectToOracleExe.aspx.vb">
+      <DependentUpon>ConnectToOracleExe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="gridviewDemo\FilterGridview.aspx.designer.vb">
       <DependentUpon>FilterGridview.aspx</DependentUpon>
     </Compile>
     <Compile Include="gridviewDemo\FilterGridview.aspx.vb">
       <DependentUpon>FilterGridview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="gridviewDemo\InsertAvoidMitupleSubmit.aspx.designer.vb">
+      <DependentUpon>InsertAvoidMitupleSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\InsertAvoidMitupleSubmit.aspx.vb">
+      <DependentUpon>InsertAvoidMitupleSubmit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="gridviewDemo\onlyEffectOneRow.aspx.designer.vb">
@@ -463,8 +541,22 @@
       <DependentUpon>onlyEffectOneRow.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="gridviewDemo\PreventMultipleInsert.aspx.designer.vb">
+      <DependentUpon>PreventMultipleInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\PreventMultipleInsert.aspx.vb">
+      <DependentUpon>PreventMultipleInsert.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Handler1.ashx.vb">
       <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\XSSPrevent.aspx.designer.vb">
+      <DependentUpon>XSSPrevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascript\XSSPrevent.aspx.vb">
+      <DependentUpon>XSSPrevent.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="listviewdemo\ListViewPagingData.aspx.designer.vb">
       <DependentUpon>ListViewPagingData.aspx</DependentUpon>
@@ -629,6 +721,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebFormBll\WebFormBll.csproj">
+      <Project>{91cb0ac8-d2a4-4fee-a1e4-72a1a82ae5ec}</Project>
+      <Name>WebFormBll</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

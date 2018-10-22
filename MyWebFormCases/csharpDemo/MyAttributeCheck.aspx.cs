@@ -16,6 +16,9 @@ namespace MyWebFormCases.csharpDemo
 
         public static void TestAttribute(Object obj)
         {
+
+            List<int> list = new List<int>();
+            list.Last(e => e == 1);
             var t = obj.GetType();
             var properties = t.GetProperties();
             foreach (var item in properties)

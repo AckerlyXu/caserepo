@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MVCLearning.Models.JoinView>
+@{
+    ViewBag.Title = "Join";
+}
+
+<h2>Join</h2>
+
+
+<table class="table table-striped">
+    <tr>
+        <td>ProductID </td>
+        <td>ProductName</td>
+        <td>CategoryID</td>
+        <td>CategoryName</td>
+    </tr>
+      
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.product.ProductID</td>
+            <td>@item.product.ProductName</td>
+            <td>@item.category.CategoryID</td>
+            <td>@item.category.CategoryName</td>
+        </tr>
+    }
+</table>
+  

@@ -21,22 +21,42 @@ Public Class TagnameSystem
         Dim tags_input_parts As String() = input_tags.Split(","c)
         Dim database_tags As String() = listFilter_for_parts.Split(","c)
 
+        For Each database_tag As String In database_tags
+            ' to remove the tags that exist in database but don't exist in the posted tags
+            If Not tags_input_parts.Contains(database_tag) Then
+                Using con As SqlConnection = New SqlConnection(constr)
+
+                    Using com As SqlCommand = New SqlCommand("delete from tags where tag_name=@tagName ", con)
+                        com.Parameters.AddWithValue("tagName", database_tag)
+                        con.Open()
+                        com.ExecuteNonQuery()
+                    End Using
+                End Using
+            End If
+
+        Next
         For Each input As String In tags_input_parts
 
-            For Each database As String In database_tags
+            ' to insert the tags that  exist in the posted tags but don't exist in the database
 
-                If input = database Then
-                    GoTo OUTERCONTINUE
-                End If
-            Next
+            If Not database_tags.Contains(input) Then
+
+                Using con As SqlConnection = New SqlConnection(constr)
+
+                    Using com As SqlCommand = New SqlCommand("insert into tags(tag_name) values (@tag_name)", con)
+                        com.Parameters.AddWithValue("tag_name", input)
+                        con.Open()
+                        com.ExecuteNonQuery()
+                    End Using
+                End Using
+            End If
 
 
-            Dim sqlParameter As SqlParameter = New SqlParameter("tag_name", SqlDbType.NVarChar, 50)
-            sqlParameter.Value = input
-            ExecuteNonQuery("insert into tags(tag_name) values (@tag_name)", sqlParameter)
-
-OUTERCONTINUE:
         Next
+
+
+        listFilter = BindName()
+
 
         Response.Write("Success")
     End Sub

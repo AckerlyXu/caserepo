@@ -34,7 +34,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </form>

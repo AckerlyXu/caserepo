@@ -13,6 +13,7 @@ namespace MyWebFormCases.Services
 
         public void ProcessRequest(HttpContext context)
         {
+           
             context.Response.ContentType = "text/plain";
             context.Response.Write("<div style='background:red;'>the first page</div>");
         }

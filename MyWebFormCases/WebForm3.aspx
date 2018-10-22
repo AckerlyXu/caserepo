@@ -19,7 +19,7 @@
         </asp:ScriptManager>
 
        
-        <div style="height:20px;width:20px" class="div">
+      <%--  <div style="height:20px;width:20px" class="div">
         </div>
          <uc1:WebUserControl1 runat="server" ID="WebUserControl1" />
         <%=HttpUtility.JavaScriptStringEncode( Text) %>
@@ -30,7 +30,7 @@
             
 
             </script>
-        <hr />
+        <hr />--%>
     </form>
 </body>
 
