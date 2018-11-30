@@ -12,7 +12,7 @@ namespace MyWebFormCases.Utils
 {
 	public static class SqlHelper
 	{
-		private static string constr = ConfigurationManager.ConnectionStrings["supplyModel"].ConnectionString;
+		private static string constr = ConfigurationManager.ConnectionStrings["EntityDb"].ConnectionString;
 
 		public static int ExcuteNunQuery(string sql,params SqlParameter[] sqlParameters) {
 			using (SqlConnection con=new SqlConnection(constr))

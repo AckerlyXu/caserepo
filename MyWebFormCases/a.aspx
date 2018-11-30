@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="a.aspx.cs" Inherits="MyWebFormCases.a" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+
 <%@ Register  tagprefix="uc1" Src="~/WebUserControl1.ascx" TagName="b"  %>
 <!DOCTYPE html>
 
@@ -14,10 +16,10 @@
     <form id="form1" runat="server">
             <asp:ScriptManager runat="server"></asp:ScriptManager>
         <%--<uc1:b runat="server"></uc1:b>--%>
-
+   
         <asp:Label runat="server" Text="Label" ID="lblValidate"></asp:Label >
-        <ajaxToolkit:BarChart ID="BarChart1" runat="server"
-            ></ajaxToolkit:BarChart>
+      
+  
         <label for="txtNationalID">رقم الوثيقة<span class="req">*</span></label>
 <asp:TextBox ID="txtNationalID" class="md-input" oninvalid="this.setCustomValidity('تاكد من ادخال رقم الوثيقة')"  runat="server" tabindex="2" MaxLength="10"></asp:TextBox>
 
@@ -105,7 +107,6 @@
 
 
 
-        </script>
     </form>
 </body>
 </html>

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MVCLearning.Models.Student>
+
+@{
+    ViewBag.Title = "EditStudent";
+}
+
+<h2>EditStudent</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model=>model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.age)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem=>item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.age)
+        </td>
+       
+    </tr>
+}
+      
+</table>
+<input  type="button" value="post" id="post" />
+
+@section scripts{
+    
+    <script>
+        $("#post").click(function(){
+            var obj = {};
+            $("table tr:gt(0) ").each(function (index, element) {
+              
+                obj["students[" + index + "].id"] = $(element).find("td:eq(0)").html().trim(); //this will be for emaxmple students[0].id  , students[1].id ,students[2].id etc
+                obj["students[" + index + "].name"] = $(element).find("td:eq(1)").html().trim();//in this way you could pass a collection to the controller
+                obj["students[" + index + "].age"] = $(element).find("td:eq(2)").html().trim();
+               
+            })
+            console.log(obj);
+            $.ajax(
+                {
+                    type: "POST",
+                    url: "/Study/editStu",
+                    dataType: 'json',
+                    
+                    data: obj,
+                    success: function (message) {
+
+                        console.log(message);
+
+                    }
+
+                }
+            )
+        })
+    </script>
+    
+    
+    }

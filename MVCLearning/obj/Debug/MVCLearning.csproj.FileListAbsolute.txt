@@ -1,4 +1,3 @@
-D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csprojAssemblyReference.cache
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csproj.CoreCompileInputs.cache
 D:\develop\vsworkspace\WebFormCases\MVCLearning\bin\ApplicationInsights.config
 D:\develop\vsworkspace\WebFormCases\MVCLearning\bin\MVCLearning.dll.config
@@ -100,3 +99,4 @@ D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csproj.Cop
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.dll
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.pdb
 D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csproj.ResolveComReference.cache
+D:\develop\vsworkspace\WebFormCases\MVCLearning\obj\Debug\MVCLearning.csprojAssemblyReference.cache

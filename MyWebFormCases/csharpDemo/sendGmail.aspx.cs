@@ -43,7 +43,7 @@ namespace MyWebFormCases.csharpDemo
             // Gmail user authentication
             // For example: your email is "gmailid@gmail.com", then the user should be the same
             oServer.User = "ackerlyx@gmail.com";
-            oServer.Password = "yourpassword";
+            oServer.Password = "sishen1994";
 
             try
             {

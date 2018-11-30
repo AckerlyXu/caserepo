@@ -65,6 +65,25 @@ namespace MVCLearning.Controllers
             
             return View(result);
         }
+
+
+        public ActionResult EditStudent()
+        {
+            List<Student> list = new List<Student>
+            {
+                new Student { Id = 1, Name = "myname1", age = 18 },
+                new Student { Id = 2, Name = "myname2", age = 19 },
+                new Student { Id = 3, Name = "myname3", age = 20 },
+                new Student { Id = 4, Name = "myname4", age = 21 }
+        };
+            
+            return View(list);
+        }
+
+        public ActionResult EditStu(List<Student> students)
+        {
+            return Json(students);
+        }
     }
 
     public class Model

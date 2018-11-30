@@ -2,6 +2,7 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,6 +44,7 @@
 <form id="Form1" method="post" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
+    <ajaxToolkit:DropDownExtender ID="DropDownExtender1" runat="server"></ajaxToolkit:DropDownExtender>
      IDTSum:  <span id="idt"></span>   &nbsp;&nbsp;&nbsp;&nbsp;  LoanAmtSum: <span id="loan"></span> &nbsp;&nbsp;&nbsp;&nbsp;
         ProductCode: <span id="code"></span>
 
@@ -50,7 +52,7 @@
             <ContentTemplate>
          
                                                                                               
-                                                                    
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>                                                        
                 <asp:Panel ID="Pnl_InNos" runat="server" Height="256px" Width="122px" BorderColor="#6666FF"
             BorderStyle="Solid" BorderWidth="1px">
             <table>

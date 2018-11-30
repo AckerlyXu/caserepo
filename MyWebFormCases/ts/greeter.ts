@@ -1,0 +1,101 @@
+﻿function greeter(person: Person) {
+    return "Hello, " + person.firstname + " " + person.lastname;
+}
+
+let user = {firstname:"Jane",lastname:"user"};
+document.body.innerHTML = greeter(user);
+
+
+interface Person {
+    firstname: string;
+    lastname: string;
+}
+
+
+class Student {
+    fullName: string;
+    constructor(public firstname, public middleInitial, public lastname) {
+        this.fullName = firstname + " " + middleInitial + " " + lastname;
+    }
+}
+
+let stu: Student = new Student("a", "b", "c");
+
+let abc: string = "abc";
+let age: number = 37;
+let sentence = `Hello my name is ${abc}, I'm 
+${age + 1} years old`;
+
+
+let list: number[] = [1, 2, 3, 4];
+let genericList: Array<number> = [5, 6, 7, 8];
+
+let x: [string, number];
+x = ['hello', 10];
+console.log(x[0].toUpperCase())
+
+x[3] = 'world'  //当访问一个越界的元素，它的类型默认是联合类型（sting|number）所以不能写成 x[3]=true;
+
+enum Color { Red, Green, Blue }    //enum Color { Red=2, Green, Blue } 默认从0开始，可以指定
+let c: Color = Color.Blue;          //也可以 enum Color { Red=2, Green=6, Blue=8 }
+console.log(Color[2])   //下标表示数值而不是索引
+
+
+// any 和Object类型的区别，any可以调用任意方法，但是object却不行
+
+// any可以用来表示元素类型不确定的数组  let list:any[]=[1,true,"free"]
+
+
+function warnUser(): void {
+    console.log("there is no value returned")
+}
+
+let unusable: void = undefined; //void类型只能赋值void或者null
+
+// Not much else we can assign to these variables!
+//null和undefined是所有类型的子类型这就是说可以这样 let num:number=null 
+//然而，当你指定了--strictNullChecks标记，null和undefined只能赋值给void和它们各自。
+let u: undefined = undefined;
+let n: null = null;
+
+
+//never类型可以表示永远不能到达或完成的函数的返回值
+//never是任何类型的子类型，任何类型都不是never的父类
+function error(message: string): never {
+    throw new Error(message);
+}
+
+//object表示非原始类型，也就是除number，string，boolean，symbol，null或undefined之外的类型。
+declare function create(o: object | null): void;
+create(undefined)
+
+//类型断言
+let somevalue: any = "this is a string";
+let strlen: number = (<string>somevalue).length;
+//或者
+let strrlen: number = (somevalue as string).length;
+//两种形式是等价的。 至于使用哪个大多数情况下是凭个人喜好；然而，当你在TypeScript里使用JSX时，只有 as语法断言是被允许的。
+
+
+//mm = 3;  //使用let声明的变量不能在声明之前读写
+//let mm;
+//在块级作用域之外访问不到用let声明的变量
+//if (true) {
+//    let nn = 4;
+//}
+//console.log(nn);
+
+
+function sumMatrix(matrix: number[][]) {
+    let sum = 0;
+    for (let i = 0; i < matrix.length; i++) {
+        var currentRow = matrix[i];
+        for (let i = 0; i < currentRow.length; i++) {
+            sum += currentRow[i];
+        }
+    }
+
+    return sum;
+}
+
+

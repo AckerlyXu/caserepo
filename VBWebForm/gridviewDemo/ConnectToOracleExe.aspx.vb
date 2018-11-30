@@ -55,4 +55,20 @@ Public Class ConnectToOracleExe
         End Using
 
     End Sub
+
+    Protected Sub GridView1_RowDeleting(sender As Object, e As GridViewDeleteEventArgs)
+        Using con As OracleConnection = New OracleConnection(constr)
+
+            Using com As OracleCommand = New OracleCommand("delete from student where id=:id", con)
+                Dim id = New OracleParameter(":id", OracleDbType.Int32)
+                id.Value = e.Keys("id")
+
+                com.Parameters.Add(id)
+                con.Open()
+                com.ExecuteNonQuery()
+                binddata()
+
+            End Using
+        End Using
+    End Sub
 End Class

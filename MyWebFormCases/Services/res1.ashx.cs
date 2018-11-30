@@ -15,6 +15,8 @@ namespace MyWebFormCases.Services
         {
            
             context.Response.ContentType = "text/plain";
+            context.Response.Write(context.Server.MapPath(context.Request.FilePath));
+ 
             context.Response.Write("<div style='background:red;'>the first page</div>");
         }
 

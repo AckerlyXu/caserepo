@@ -7,7 +7,13 @@
         Response.Write("<span style='color:blue'>add  pic asc: </span>" + getString(str, "pic asc") + "<br/>")
         Response.Write("<span style='color:blue'>add Task_Name asc:</span>" + getString(str, "Task_Name asc") + "<br/>")
         Response.Write("<span style='color:blue'>add Task_Name desc:</span>" + getString(str, "Task_Name desc"))
+        Dim LoginId As String = "a"
 
+        ' Dim strs() As String =
+
+        'Dim a = strs
+
+        'Roles.AddUsersToRole(New String() {LoginId}, "role")
     End Sub
 
     Private Function getString(ByVal origin As String, ByVal add As String) As String

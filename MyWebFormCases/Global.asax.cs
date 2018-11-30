@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Data.Entity;
 using System.Diagnostics;
 using System.Linq;
@@ -24,8 +25,12 @@ namespace WebFormCases
       
 
         }
-        
-        protected void Application_PostMapRequestHandler(object sender,EventArgs e)
+       protected void Application_EndRequest(object sender, EventArgs e)
+        {
+          // HttpContext.Current.Response.Headers.Remove("Server");
+        }
+
+            protected void Application_PostMapRequestHandler(object sender,EventArgs e)
         {
 
            

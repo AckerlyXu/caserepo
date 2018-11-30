@@ -16,6 +16,7 @@ namespace MyWebFormCases
            context.Response.ContentType = "text/xml";
             System.Web.Script.Serialization.JavaScriptSerializer javaScriptSerializer = new System.Web.Script.Serialization.JavaScriptSerializer();
             context.Response.Write("{\"name\":\"123\"}"+context.Request["id"]);
+          
         }
 
         public bool IsReusable

@@ -20,13 +20,15 @@ namespace MyWebFormCases.ListViewDemo
         {
             if (!IsPostBack)
             {
+              
                int currentPage= Convert.ToInt32(Request["currentPage"]??"1");
                 CurrentPage = currentPage;
 
-                //keep the state of currentPage and sort
+                //keep the state of currentPage ,sort and search
                 ViewState["currentPage"] = currentPage;
                 ViewState["sort"] = Request["sort"];
-                BindData(currentPage, ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString());
+                ViewState["search"] = Request["search"];
+                BindData(currentPage, ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString(),ViewState["search"]==null?"":ViewState["search"].ToString());
             }
            
 
@@ -35,19 +37,20 @@ namespace MyWebFormCases.ListViewDemo
 
 
         // the method to bind data ,use currentPage and sort as parameter to page and sort
-        public void BindData(int CurrentPage,string sort)
+        public void BindData(int CurrentPage,string sort,string search)
         {
 
             //call sotored procedure
-            string sql = "select_page_customer";
+            string sql = "select_page_customer_where";
             using (SqlDataAdapter adapter = new SqlDataAdapter(sql, url))
             {
                 SqlParameter sqlParameter = new SqlParameter("totalPage", SqlDbType.Int) { Direction = ParameterDirection.Output };
                 SqlParameter[] sqlParameters = new SqlParameter[] {
                     new SqlParameter("currentPage",SqlDbType.Int){Value=CurrentPage},
                     sqlParameter,
-                    new SqlParameter("pageSize",SqlDbType.Int){Value=10},
-                    new SqlParameter("sort",SqlDbType.NVarChar,50){Value=sort}
+                    new SqlParameter("pageSize",SqlDbType.Int){Value=5},
+                    new SqlParameter("sort",SqlDbType.NVarChar,50){Value=sort},
+                    new SqlParameter("custId",SqlDbType.NVarChar,50){Value=search}
                 };
                 
                 
@@ -55,6 +58,7 @@ namespace MyWebFormCases.ListViewDemo
                 adapter.SelectCommand.Parameters.AddRange(sqlParameters);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
+                
                 ListView1.DataSource = table;
                 ListView1.DataBind();
                 TotalPage =(int)Math.Ceiling(Convert.ToInt32( sqlParameter.Value)*1.0/10);
@@ -87,7 +91,7 @@ namespace MyWebFormCases.ListViewDemo
                     con.Open();
                      com.ExecuteNonQuery();
                     ListView1.EditIndex = -1;
-                    BindData(1, ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString());
+                    BindData(1, ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString(), ViewState["search"] == null ? "" : ViewState["search"].ToString());
                     CurrentPage = 1;
                 }
             }
@@ -96,7 +100,7 @@ namespace MyWebFormCases.ListViewDemo
         protected void ListView1_ItemEditing(object sender, ListViewEditEventArgs e)
         {
             ListView1.EditIndex = e.NewEditIndex;
-            BindData(Convert.ToInt32(ViewState["currentPage"]), ViewState["sort"]==null?"CustomerId":ViewState["sort"].ToString());
+            BindData(Convert.ToInt32(ViewState["currentPage"]), ViewState["sort"]==null?"CustomerId":ViewState["sort"].ToString(), ViewState["search"] == null ? "" : ViewState["search"].ToString());
         }
 
         protected void ListView1_ItemCanceling(object sender, ListViewCancelEventArgs e)
@@ -104,14 +108,14 @@ namespace MyWebFormCases.ListViewDemo
            if(e.CancelMode == ListViewCancelMode.CancelingEdit)
             {
                 ListView1.EditIndex = -1;
-                BindData(Convert.ToInt32(ViewState["currentPage"]), ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString());
+                BindData(Convert.ToInt32(ViewState["currentPage"]), ViewState["sort"] == null ? "CustomerId": ViewState["sort"].ToString(), ViewState["search"] == null ? "" : ViewState["search"].ToString());
             }
            
         }
 
         protected void ListView1_Sorting(object sender, ListViewSortEventArgs e)
         {
-            BindData(1, e.SortExpression);
+            BindData(1, e.SortExpression, ViewState["search"] == null ? "" : ViewState["search"].ToString());
             ViewState["sort"] = e.SortExpression;
             ViewState["currentPage"] = 1;
         }
@@ -141,7 +145,7 @@ namespace MyWebFormCases.ListViewDemo
                     con.Open();
                     com.ExecuteNonQuery();
                 
-                    BindData(1, ViewState["sort"] == null ? "CustomerId" : ViewState["sort"].ToString());
+                    BindData(1, ViewState["sort"] == null ? "CustomerId" : ViewState["sort"].ToString(), ViewState["search"] == null ? "" : ViewState["search"].ToString());
                 }
             }
 
@@ -168,11 +172,17 @@ namespace MyWebFormCases.ListViewDemo
                     con.Open();
                     com.ExecuteNonQuery();
                     
-                    BindData(1, ViewState["sort"] == null ? "CustomerId" : ViewState["sort"].ToString());
+                    BindData(1, ViewState["sort"] == null ? "CustomerId" : ViewState["sort"].ToString(), ViewState["search"] == null ? "" : ViewState["search"].ToString());
                     CurrentPage = 1;
                 }
             }
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            BindData(1, ViewState["sort"] == null ? "CustomerId" : ViewState["sort"].ToString(), TextBox1.Text);
+            ViewState["search"] = TextBox1.Text;
         }
     }
 }

@@ -15,16 +15,32 @@ namespace MyWebFormCases.xml
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            //XsltSettings settings = new XsltSettings(true, true);
+            //XPathDocument xPath = new XPathDocument(Server.MapPath("/xml/sampleDoc1.xml"));
+
+            //XslCompiledTransform xslCompiledTransform = new XslCompiledTransform();
+
+            //xslCompiledTransform.Load(Server.MapPath("/xml/xslt/Comparison.xslt"),settings,new XmlUrlResolver());
+            //XmlTextWriter writer = new XmlTextWriter(Server.MapPath("result1.xml"),null);
+
+            //xslCompiledTransform.Transform(xPath, null, writer);
+
+            parse(Server.MapPath("/xml/xmlfile/message.xml"), Server.MapPath("/xml/xslt/message.xslt"), Server.MapPath("/xml/result.xml"));
+
+        }
+
+        public  void parse(string originXml,string xslt,string result)
+        {
             XsltSettings settings = new XsltSettings(true, true);
-            XPathDocument xPath = new XPathDocument(Server.MapPath("/xml/sampleDoc1.xml"));
-
+     
+            XPathDocument xPath = new XPathDocument(originXml);
+        
             XslCompiledTransform xslCompiledTransform = new XslCompiledTransform();
-           
-            xslCompiledTransform.Load(Server.MapPath("/xml/xslt/Comparison.xslt"),settings,new XmlUrlResolver());
-            XmlTextWriter writer = new XmlTextWriter(Server.MapPath("result1.xml"),null);
-            
-            xslCompiledTransform.Transform(xPath, null, writer);
+          
+            xslCompiledTransform.Load(xslt, settings, new XmlUrlResolver());
+            XmlTextWriter writer = new XmlTextWriter(result,null);
 
+            xslCompiledTransform.Transform(xPath,null, writer);
         }
     }
 }

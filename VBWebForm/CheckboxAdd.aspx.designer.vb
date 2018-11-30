@@ -32,6 +32,15 @@ Partial Public Class CheckboxAdd
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
     
     '''<summary>
+    '''DropDownExtender1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DropDownExtender1 As Global.AjaxControlToolkit.DropDownExtender
+    
+    '''<summary>
     '''UPCL control.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,33 @@ Partial Public Class CheckboxAdd
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents UPCL As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
+    '''TextBox1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''TextBox2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''TextBox3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Pnl_InNos control.

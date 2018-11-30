@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<mails>
+<mails   xmlns="http://tempuri.org/MySchema.xsd">
   <mailProperties subject="mySubject">
     <from>fromtext</from>
     <to>totext</to>

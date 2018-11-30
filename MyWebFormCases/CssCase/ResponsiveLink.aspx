@@ -23,14 +23,14 @@
         <div class="row">
       
             <div align="left" class="col span_1_of_2" >
-
-                <asp:ImageButton ID="ImageButton1" runat="server" PostBackUrl="javascript:;" ImageUrl="~/images/messager_icons.png" Width="100%" />
+                <asp:LinkButton ID="LinkButton1" runat="server">LinkButton1</asp:LinkButton>
+               <%-- <asp:ImageButton ID="ImageButton1" runat="server" PostBackUrl="javascript:;" ImageUrl="~/images/messager_icons.png" Width="100%" />--%>
                 
             </div>
             <div align="right"  class="col span_1_of_2">
 
-               
-                <asp:ImageButton ID="ImageButton2" runat="server" PostBackUrl="javascript:;" ImageUrl="~/images/spinner_arrows.png" Width="100%" />
+                <asp:LinkButton ID="LinkButton2" runat="server">LinkButton2</asp:LinkButton>
+<%--                <asp:ImageButton ID="ImageButton2" runat="server" PostBackUrl="javascript:;" ImageUrl="~/images/spinner_arrows.png" Width="100%" />--%>
 
             </div>
         </div>

@@ -18,7 +18,7 @@ namespace WebFormCases
         SupplyModel model = new SupplyModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+          
             HtmlGenericControl htmlGenericControl = new HtmlGenericControl();
             
             if (!IsPostBack)

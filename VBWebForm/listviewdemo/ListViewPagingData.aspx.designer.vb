@@ -32,6 +32,15 @@ Partial Public Class ListViewPagingData
     Protected WithEvents ListView1 As Global.System.Web.UI.WebControls.ListView
     
     '''<summary>
+    '''currentPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents currentPage As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
     '''Button1 control.
     '''</summary>
     '''<remarks>

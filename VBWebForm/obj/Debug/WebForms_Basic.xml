@@ -73,9 +73,99 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:VBWebForm.ModelPopupNotWork._mpeCustomerAccountShortFormWithOutPromotion">
+<member name="F:VBWebForm.login._form1">
 <summary>
-mpeCustomerAccountShortFormWithOutPromotion control.
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._username">
+<summary>
+username control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._password">
+<summary>
+password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Predata">
+<summary>
+Predata control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Postdata">
+<summary>
+Postdata control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.login._Button2">
+<summary>
+Button2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -118,9 +208,45 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.CheckboxAdd._DropDownExtender1">
+<summary>
+DropDownExtender1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.CheckboxAdd._UPCL">
 <summary>
 UPCL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.CheckboxAdd._TextBox1">
+<summary>
+TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.CheckboxAdd._TextBox2">
+<summary>
+TextBox2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.CheckboxAdd._TextBox3">
+<summary>
+TextBox3 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -325,6 +451,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.descryptTwo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.encryptExe._form1">
 <summary>
 form1 control.
@@ -337,6 +472,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.encryptExe._Button1">
 <summary>
 Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.EncryptProblem._form1">
+<summary>
+form1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -406,6 +550,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.DropDownPostback._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.DropDownPostback._orgdrp">
+<summary>
+orgdrp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.ListBoxToTextBox._form1">
 <summary>
 form1 control.
@@ -427,6 +589,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.ListBoxToTextBox._TextBox1">
 <summary>
 TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.crystalStart._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.crystalStart._CrystalReportViewer1">
+<summary>
+CrystalReportViewer1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -469,6 +649,78 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.MenuNoPostback._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.MenuNoPostback._Menu1">
+<summary>
+Menu1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.MenuNoPostback._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RegularExpressionExe._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RegularExpressionExe._DropDownList1">
+<summary>
+DropDownList1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RegularExpressionExe._TextBox1">
+<summary>
+TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RegularExpressionExe._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RegularExpressionExe._RegularExpressionValidator1">
+<summary>
+RegularExpressionValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.DownLoadFile._form1">
 <summary>
 form1 control.
@@ -497,6 +749,33 @@ To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:VBWebForm.DownLoadFile._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.DownLoadImage._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.DownLoadImage._TextBox1">
+<summary>
+TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.DownLoadImage._Button1">
 <summary>
 Button1 control.
 </summary>
@@ -550,6 +829,51 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.ResizeImage._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.showImages._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.showImages._PanelImages">
+<summary>
+PanelImages control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.showImages._PicturesInFolder">
+<summary>
+PicturesInFolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.showImages._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.test._form1">
 <summary>
 form1 control.
@@ -586,6 +910,33 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.AddOneEditLogic._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.AddOneEditLogic._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.AddOneEditLogic._Edit">
+<summary>
+Edit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.AffectOneWay2._form1">
 <summary>
 form1 control.
@@ -616,15 +967,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.ConnectToOracleExe._GridView1">
 <summary>
 GridView1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:VBWebForm.ConnectToOracleExe._SqlDataSource2">
-<summary>
-SqlDataSource2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -670,6 +1012,33 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.ConnectToOracleExe._Button1">
 <summary>
 Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.filterColumns._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.filterColumns._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.filterColumns._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -820,6 +1189,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.ShowHeader._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ShowHeader._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ShowHeader._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ShowHeader._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.XSSPrevent._form1">
 <summary>
 form1 control.
@@ -838,6 +1243,51 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:VBWebForm.examStart._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ListViewGetCheckbox._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ListViewGetCheckbox._SqlDataStaffHRDFormIzin">
+<summary>
+SqlDataStaffHRDFormIzin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ListViewGetCheckbox._ListViewHRDFormIzin">
+<summary>
+ListViewHRDFormIzin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ListViewGetCheckbox._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:VBWebForm.ListViewPagingData._form1">
 <summary>
 form1 control.
@@ -850,6 +1300,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.ListViewPagingData._ListView1">
 <summary>
 ListView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.ListViewPagingData._currentPage">
+<summary>
+currentPage control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -940,6 +1399,33 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:VBWebForm.RepeaterDataBindDemo._SqlDataSource1">
 <summary>
 SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RepeaterWithCheckbox._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RepeaterWithCheckbox._RptTabelaServicos">
+<summary>
+RptTabelaServicos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:VBWebForm.RepeaterWithCheckbox._Button1">
+<summary>
+Button1 control.
 </summary>
 <remarks>
 Auto-generated field.

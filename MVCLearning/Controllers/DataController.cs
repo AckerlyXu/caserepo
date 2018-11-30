@@ -15,7 +15,7 @@ namespace MVCLearning.Controllers
         // GET: Data
         public JsonResult Index(int id)
         {
-                ModelMetadata
+           
             return Json(getTraResDesMed(id),JsonRequestBehavior.AllowGet);
         }
 

@@ -57,6 +57,8 @@ namespace MVCIdentity.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+          SportUserManager s=  HttpContext.GetOwinContext().GetUserManager<SportUserManager>();
+          
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }

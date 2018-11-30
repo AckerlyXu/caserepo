@@ -56,5 +56,5 @@ Partial Public Class ModelPopupNotWork
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents mpeCustomerAccountShortFormWithOutPromotion As Global.AjaxControlToolkit.ModalPopupExtender
+  ''  Protected WithEvents mpeCustomerAccountShortFormWithOutPromotion As Global.AjaxControlToolkit.ModalPopupExtender
 End Class

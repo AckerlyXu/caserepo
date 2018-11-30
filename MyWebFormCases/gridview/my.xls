@@ -1,0 +1,44 @@
+﻿<div>
+	<table cellspacing="0" rules="all" border="1" id="GridView1" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">CategoryId</th><th scope="col">CagegoryNameName</th><th scope="col">Description</th>
+		</tr><tr>
+			<td>公主岭</td><td>网上售房</td><td>051123462</td>
+		</tr><tr>
+			<td>青铜鞋</td><td>网上售房</td><td>123213213</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GridView1" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">CategoryId</th><th scope="col">CagegoryNameName</th><th scope="col">Description</th>
+		</tr><tr>
+			<td>公主岭</td><td>网上售房</td><td>051123462</td>
+		</tr><tr>
+			<td>青铜鞋</td><td>网上售房</td><td>123213213</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GridView1" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">CategoryId</th><th scope="col">CagegoryNameName</th><th scope="col">Description</th>
+		</tr><tr>
+			<td>公主岭</td><td>网上售房</td><td>051123462</td>
+		</tr><tr>
+			<td>青铜鞋</td><td>网上售房</td><td>123213213</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GridView1" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">CategoryId</th><th scope="col">CagegoryNameName</th><th scope="col">Description</th>
+		</tr><tr>
+			<td>公主岭</td><td>网上售房</td><td>051123462</td>
+		</tr><tr>
+			<td>青铜鞋</td><td>网上售房</td><td>123213213</td>
+		</tr>
+	</table>
+</div>

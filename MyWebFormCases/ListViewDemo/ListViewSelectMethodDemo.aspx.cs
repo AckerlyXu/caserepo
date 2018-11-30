@@ -18,42 +18,42 @@ namespace MyWebFormCases.ListViewDemo
         }
         // my dbcontext
         EntityExe somedb = new EntityExe();
-        public IQueryable<vx_EligibilitySearch> lstMembers_GetData()
-        {
-            //litNumSearchResults.Text = "";
+    //    public IQueryable<vx_EligibilitySearch> lstMembers_GetData()
+    //    {
+    //        //litNumSearchResults.Text = "";
 
   
-            IQueryable<vx_EligibilitySearch> members = null;
+    //        IQueryable<vx_EligibilitySearch> members = null;
 
 
-            //if (!ShouldSearch)
-            //    return members;
+    //        //if (!ShouldSearch)
+    //        //    return members;
 
-            //panelSearchForm.Visible = false;
-            //lnkButtonBackToSearch.Visible = true;
+    //        //panelSearchForm.Visible = false;
+    //        //lnkButtonBackToSearch.Visible = true;
 
-            members = GetDataFromQuery();
+    //        members = GetDataFromQuery();
 
         
-            return members;
+    //        return members;
 
-        }
+    //    }
 
-        public IQueryable<vx_EligibilitySearch> GetDataFromQuery()
-        {
-            // IQueryable<Member> members = null;
-            IQueryable<vx_EligibilitySearch> members = null;
+    //    public IQueryable<vx_EligibilitySearch> GetDataFromQuery()
+    //    {
+    //        // IQueryable<Member> members = null;
+    //        IQueryable<vx_EligibilitySearch> members = null;
             
-            members = somedb.vx_EligibilitySearch.AsNoTracking().AsQueryable(); //.OrderBy(a => a.Claim_Number)
+    //        members = somedb.vx_EligibilitySearch.AsNoTracking().AsQueryable(); //.OrderBy(a => a.Claim_Number)
 
 
-            //if (!string.IsNullOrEmpty(Search_MemberID))
-            // members = members.Where(m => m.Subscriber_ID == Search_MemberID).AsQueryable();
+    //        //if (!string.IsNullOrEmpty(Search_MemberID))
+    //        // members = members.Where(m => m.Subscriber_ID == Search_MemberID).AsQueryable();
         
-            members = members.Where(m => m.Alternate_Id=="alter1").AsQueryable();
-            return members;
+    //        members = members.Where(m => m.Alternate_Id=="alter1").AsQueryable();
+    //        return members;
 
-        }
+    //    }
     }
 
             

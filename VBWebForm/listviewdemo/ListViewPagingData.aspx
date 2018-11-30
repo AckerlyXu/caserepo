@@ -5,12 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
+         <script src="../Scripts/jquery-3.3.1.js"></script>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" ItemPlaceholderID="itemPlaceHolder" DataKeyNames="id">
+        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" ItemPlaceholderID="itemPlaceHolder" DataKeyNames="id"  OnPagePropertiesChanging="ListView1_PagePropertiesChanging"
+            OnDataBound="ListView1_DataBound"
+            >
 
             <LayoutTemplate >
                 <table class="table table-striped  table-bordered ">
@@ -28,12 +30,14 @@
                                 <asp:Panel ID="itemPlaceHolder" runat="server"></asp:Panel>
                      <tr >
                         <td  colspan="3" style="">
-                            <asp:DataPager ID="DataPager1" runat="server" PageSize="3">
+                            <asp:DataPager ID="DataPager1" runat="server" PageSize="4" >
                                 <Fields>
                                     <asp:NumericPagerField ButtonCount="5" 
                             NumericButtonCssClass="numeric_button" 
                             CurrentPageLabelCssClass="current_page"
-                            NextPreviousButtonCssClass="next_button" />
+                                        
+
+                             />
                                    <%-- <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />--%>
                                 </Fields>
                             </asp:DataPager>
@@ -71,9 +75,21 @@
             </ItemTemplate>
             
         </asp:ListView>
+   
 
-
+        <asp:HiddenField ID="currentPage" runat="server" />
          <asp:Button ID="Button1" runat="server" Text="save" CssClass="btn btn-primary" OnClick="Button1_Click" />
+        <script>
+            //$(function () {
+
+
+               
+
+            //$("table [id*=DataPager1]  span").prevAll().hide()
+
+            //})
+
+        </script>
 
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EntityExeConnectionString %>" SelectCommand="SELECT [id], [Question], [Option1], [Option2], [Option3] FROM [Questions]"></asp:SqlDataSource>
     </form>

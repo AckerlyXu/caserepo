@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
    <%-- <script src="../Scripts/jquery-3.3.1.js"></script>--%>
 <%--    <script src="../Scripts/DataTable/datatables.js"></script>--%>
- <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
    
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -34,8 +34,6 @@
 <body>
     <form id="form1" runat="server">
 
-<div style="padding: 10px; border: 5px solid black; margin-top: 50px" class="container-fluid"> 
-<div> 
 
    <%-- <input type="button" name="copy" value="btn1" id="copy" />
 <b class="label label-danger" style="padding: 8.5px">Click to Show or Hide Column:</b> 
@@ -51,30 +49,38 @@
 </div> 
 </div> 
 <br /> --%>
-<table id="studentTable" > 
+<table id="studentTable"  > 
 <thead> 
 <tr> 
 <th>ID</th> 
-<th>First Name</th> 
-<th>Last Name</th> 
-<th>Fees Paid</th> 
+<th>FirstName</th> 
+<th>LastName</th> 
+
 <th>Gender</th> 
-<th>Email</th> 
-<th>Telephone Number</th> 
-<th>Date of Birth</th> 
+ 
 </tr> 
 </thead> 
     <tbody>
 
         <tr>
-            <td>ID</td> 
-<td>First Name</td> 
-<td>Last Name</td> 
-<td>Fees Paid</td> 
-<td>Gender</td> 
-<td>Email</td> 
-<td>Telephone Number</td> 
-<td>Date of Birth</td> 
+            <td>123</td> 
+<td>tom</td> 
+<td>acker</td> 
+
+<td>male</td> 
+
+
+
+        </tr>
+         <tr >
+            <td>456</td> 
+<td>lili</td> 
+<td>mile</td> 
+
+<td>female</td> 
+
+
+
         </tr>
     </tbody>
 
@@ -87,71 +93,30 @@
 
            $(document).ready(function() {
 var table=$('#studentTable').DataTable({
-dom: 'lBfrtip',
+    dom: 'lBfrtip',
+    searching: false,
+    paging: false,
+
 destroy: true,
 buttons: [
-'copy', 'csv', 'excel', 'pdf', 'print'
+    'copy', 'csv', 'pdf', 'print',
+    {
+        extend: 'excelHtml5', text: 'save as excel',
+        customize: function (xlsx) {
+            var sheet = xlsx.xl.worksheets['sheet1.xml'];//get the first sheet
+      
+            $('row:eq(2) c', sheet).attr('s',18 );// change its third row's style  18 is jquerydatatable's build-in style number
+        }
+    }
 ]
 } );
 table.buttons().container()
 .appendTo( $('#example') );
 } );
 
-//$(document).ready(function () { 
-//$.ajax({ 
-//type: "POST", 
-//dataType: "json", 
-//url: "studentService.asmx/GetStudents", 
-//success: function (data) {
-
-//var table = $('#studentTable').DataTable({
-//    dom: 'lBfrtip',
-//    destroy: true,
-//    buttons: [
-//'copy', 'csv', 'excel', 'pdf', 'print'
-//],
-//data: data, 
-//columns: [ 
-//{ 'data': 'iD' }, 
-//{ 'data': 'firstName' }, 
-//{ 'data': 'lastName' }, 
-//{ 
-//'data': 'feesPaid', 'render': function (feesPaid) { 
-//return '$ ' + feesPaid; 
-//} 
-//}, 
-//{ 'data': 'gender' }, 
-//{ 'data': 'emailId' }, 
-//{ 'data': 'telephoneNumber' }, 
-//{ 
-//'data': 'dateOfBirth', 'render': function (date) { 
-//var date = new Date(parseInt(date.substr(6))); 
-//var month = date.getMonth() + 1; 
-//return date.getDate() + "/" + month + "/" + date.getFullYear(); 
-//} 
-//}],
-
-//}); 
-
-//$('#studentTable tfoot th').each(function () { 
-//var placeHolderTitle = $('#studentTable thead th').eq($(this).index()).text(); 
-//$(this).html('<input type="text" class="form-control input input-sm" placeholder = "Search ' + placeHolderTitle + '" />'); 
-//}); 
-//datatableVariable.columns().every(function () { 
-//var column = this; 
-//$(this.footer()).find('input').on('keyup change', function () { 
-//column.search(this.value).draw(); 
-//}); 
-//}); 
-//$('.showHide').on('click', function () { 
-//var tableColumn = datatableVariable.column($(this).attr('data-columnindex')); 
-//tableColumn.visible(!tableColumn.visible()); 
-//}); 
-//}
-//}); 
 
 
-//}); 
+
 </script>
 </form>
 </body>

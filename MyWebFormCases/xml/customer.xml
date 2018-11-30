@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GRP>
+  <ADD>
+    <city>city1</city>
+    <contact>
+      <number attr="aaa">
+        <abc name="a">
+          abc
+        </abc>      
+  </number>
+    </contact>
+  </ADD>
+
+
+  <ADD>
+    <city>city2</city>
+    <contact>
+      <number attr="bbb">
+        <abc name="b">
+          def
+        </abc>  </number>
+    </contact>
+  </ADD>
+
+</GRP>

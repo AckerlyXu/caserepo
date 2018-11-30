@@ -70,12 +70,12 @@ Public Class encryptExe
 
         Dim filePath As String = Server.MapPath("/csharpdemo/check3.txt") 'write the path of your txt file
 
-        ' Create a New PdfWriter
-        Dim PdfWriter As TextPDF.PdfWriter =
-       New TextPDF.PdfWriter(842.0F, 1190.0F, 10.0F, 10.0F)
+        ' ' Create a New PdfWriter
+        ' Dim PdfWriter As TextPDF.PdfWriter =
+        'New TextPDF.PdfWriter(842.0F, 1190.0F, 10.0F, 10.0F)
 
 
-        PdfWriter.Write(filePath)
+        'PdfWriter.Write(filePath)
 
     End Sub
 End Class

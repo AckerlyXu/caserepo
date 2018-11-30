@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "UploadAttendeeFile";
+}
+
+<h2>UploadAttendeeFile</h2>
+<form   >
+    <input type="file" name="myfile" id="myfile" style="width: 24px; height:24px"
+           accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+
+
+</form>
+
+
+@section scripts{
+    
+<script>
+ 
+    $('#myfile').on("change", function () {
+
+        var formdata = new FormData($('form').get(0));
+        CallService(formdata);
+
+
+        
+        function CallService(file) {
+    $.ajax({
+        url: '@Url.Action("UploadAttendeeFile")',
+        type: 'POST',
+        data: file,
+        cache: false,
+        enctype: "multipart/form-data",
+        processData: false,
+        contentType: false,
+        success: function (color) {
+            $('#myfile').val("")
+        },
+        error: function () {
+            alert('Error occured');
+        }
+    });
+}
+    })
+
+</script>
+    
+    
+    }

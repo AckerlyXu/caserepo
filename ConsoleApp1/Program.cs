@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Management;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,78 +17,58 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string pwd1 = "MAKV2SPBNI99212";
-            // Create a byte array to hold the random value. 
-            byte[] salt1 = new byte[8];
-            using (RNGCryptoServiceProvider rngCsp = new
-RNGCryptoServiceProvider())
+
+            //ArrayList hardDriveDetails = new ArrayList();
+            //ManagementObjectSearcher moSearch = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDriv ");
+            //foreach (ManagementObject wmi_HD in  moSearch.Get())
+            //{
+            //    HardDrive hd = new HardDrive();  // User Defined Class
+            //    hd.Model = wmi_HD["Model"].ToString();  //Model Number
+            //    hd.Type = wmi_HD["InterfaceType"].ToString();  //Interface Type
+            //    hd.SerialNo = wmi_HD["SerialNumber"].ToString();
+            //    hardDriveDetails.Add(hd);
+            //   Console.WriteLine(  "Model : " + hd.Model);
+            //Console.WriteLine(" Type : " + hd.Type);
+            //Console.WriteLine(" Serial Number : " + hd.SerialNo);
+
+            //}
+
+         
+            var hDid = string.Empty;
+            var mc = new ManagementClass("Win32_LogicalDisk");
+            var moc = mc.GetInstances();
+            foreach (var o in moc)
             {
-                // Fill the array with a random value.
-                rngCsp.GetBytes(salt1);
+                var mo = (ManagementObject)o;
+               
+                hDid += (string)mo.Properties["VolumeSerialNumber"].Value+"|";
+               
+               // break;
             }
-
-            //data1 can be a string or contents of a file.
-            string data1 = "Some test data";
-            //The default iteration count is 1000 so the two methods use the 
-           
-            int myIterations = 1000;
-            try
-            {
-                Rfc2898DeriveBytes k1 = new Rfc2898DeriveBytes(pwd1, salt1);
-                Rfc2898DeriveBytes k2 = new Rfc2898DeriveBytes(pwd1, salt1);
-                // Encrypt the data.
-                Aes encAlg = Aes.Create();
-                encAlg.Key = k1.GetBytes(16);
-                MemoryStream encryptionStream = new MemoryStream();
-                CryptoStream encrypt = new CryptoStream(encryptionStream,
-encAlg.CreateEncryptor(), CryptoStreamMode.Write);
-                byte[] utfD1 = new System.Text.UTF8Encoding(false).GetBytes(
-data1);
-
-                encrypt.Write(utfD1, 0, utfD1.Length);
-                encrypt.FlushFinalBlock();
-                encrypt.Close();
-                byte[] edata1 = encryptionStream.ToArray();
-                k1.Reset();
-
-                // Try to decrypt, thus showing it can be round-tripped.
-                Aes decAlg = Aes.Create();
-                decAlg.Key = k2.GetBytes(16);
-                decAlg.IV = encAlg.IV;
-                MemoryStream decryptionStreamBacking = new MemoryStream();
-                CryptoStream decrypt = new CryptoStream(
-decryptionStreamBacking, decAlg.CreateDecryptor(), CryptoStreamMode.Write);
-                decrypt.Write(edata1, 0, edata1.Length);
-                decrypt.Flush();
-                decrypt.Close();
-                k2.Reset();
-                string data2 = new UTF8Encoding(false).GetString(
-decryptionStreamBacking.ToArray());
-
-                if (!data1.Equals(data2))
-                {
-                    Console.WriteLine(data2);
-                    Console.WriteLine("Error: The two values are not equal.");
-                }
-                else
-                {
-                    Console.WriteLine(data2);
-                    Console.WriteLine("The two values are equal.");
-                    Console.WriteLine("k1 iterations: {0}", k1.IterationCount);
-                    Console.WriteLine("k2 iterations: {0}", k2.IterationCount);
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: ", e);
-            }
-
-           
+            Console.WriteLine(hDid);
             Console.ReadKey();
 
-
-
-
+        }
+        class HardDrive
+        {
+            private string model = null;
+            private string type = null;
+            private string serialNo = null;
+            public string Model
+            {
+                get { return model; }
+                set { model = value; }
+            }
+            public string Type
+            {
+                get { return type; }
+                set { type = value; }
+            }
+            public string SerialNo
+            {
+                get { return serialNo; }
+                set { serialNo = value; }
+            }
         }
         static void Main1(string[] args)
         {

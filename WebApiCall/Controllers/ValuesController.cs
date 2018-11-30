@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 
 namespace WebApiCall.Controllers
@@ -17,17 +18,19 @@ namespace WebApiCall.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public object Get(int id)
         {
           string path=  System.Web.Hosting.HostingEnvironment.MapPath("~/TextFile1.txt");
-            
-            return File.ReadAllText(path); 
+           string result= File.ReadAllText(HttpContext.Current.Request.MapPath("/Controllers/json.json"));
+          return   Newtonsoft.Json.JsonConvert.DeserializeObject(result);
+           // return File.ReadAllText(path); 
         }
 
         // POST api/values
         public void Post([FromBody]string value)
         {
         }
+       
 
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)

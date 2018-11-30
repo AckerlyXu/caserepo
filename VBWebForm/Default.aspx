@@ -2,5 +2,5 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    
+    <%= User.Identity.Name + "<br/>" + Session("Postdata") + "<br/>" + Session("Predata")   %>
 </asp:Content>

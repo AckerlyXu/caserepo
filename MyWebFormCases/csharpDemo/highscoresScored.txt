@@ -1,0 +1,5 @@
+Gary:80
+Bob:40
+Barry:34
+Luis:34
+Tom:23

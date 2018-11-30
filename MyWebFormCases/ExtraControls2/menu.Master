@@ -4,7 +4,9 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title><%: this.Page.Title  %> </title>
     <asp:ContentPlaceHolder ID="head" runat="server">
         <style>
 
@@ -15,13 +17,44 @@
         </style>
         <script src="../Scripts/jquery-3.3.1.js"></script>
 
+        <script>
+     
+//            if (!(typeof (Sys) == "undefined" || typeof (Sys.WebForms) == 
+//"undefined" || typeof(Sys.WebForms.PageRequestManager) == "undefined")) {
+ 
+//                var _myPageRequestManager = Sys.WebForms.PageRequestManager.getInstance();
+            
+//                   this._MyendRequestHandlerDelegate = Function.createDelegate(this, this._MyhandleEndRequest);
+                
+//         _myPageRequestManager.add_endRequest(this._MyendRequestHandlerDelegate); 
+//     } 
+            //console.log(Sys);
+
+
+  //          window.onload = function () {
+  //             console.log(Sys);
+  //                  Sys.WebForms.PageRequestManager.getInstance().add_endRequest(  
+  //    function(sender,e){  
+  //        $("#flag").css("background-color", "red");
+  //    }  
+  //);  
+
+  //          }
         
+           
+        </script>
 
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+             
+
+            <h1>master</h1>
+         
+
+
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
@@ -87,27 +120,11 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-     
-    </form>
-     <script>
-     
-//            if (!(typeof (Sys) == "undefined" || typeof (Sys.WebForms) == 
-//"undefined" || typeof(Sys.WebForms.PageRequestManager) == "undefined")) {
- 
-//                var _myPageRequestManager = Sys.WebForms.PageRequestManager.getInstance();
-            
-//                   this._MyendRequestHandlerDelegate = Function.createDelegate(this, this._MyhandleEndRequest);
-                
-//         _myPageRequestManager.add_endRequest(this._MyendRequestHandlerDelegate); 
-//     } 
-         Sys.WebForms.PageRequestManager.getInstance().add_endRequest(  
-      function(sender,e){  
-        //  $("#flag").css("background-color", "red");
-      }  
-  );  
-               $("#flag").css("background-color", "red");
-            $(function () {
 
+        <script>
+             $(function () {
+                 
+               $("#flag").css("background-color", "red");
              
                 $("a:contains(placeHolder)")   //select the placeHolder  that is parent
                     .html("<b>" + $("#placeHolder").val() + "</b>")  // replace placeHolder with its real text
@@ -115,5 +132,10 @@
 
             })
         </script>
+     
+    </form>
+       <script>
+         
+            </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <title></title>
     <%--<script src="../Scripts/jquery-3.3.1.js"></script>--%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -27,6 +28,7 @@
         <br />
         Using jQuery Library http://archive.plugins.jquery.com/project/maphilight
     </div>
+        <script src="http://archive.plugins.jquery.com/project/maphilight"></script>
         <br /><br />
     <div>
         <%--<img src="images/linksOnImage.jpg" usemap="#urls" class="map">

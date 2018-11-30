@@ -6,6 +6,6 @@
     End Sub
 
     Protected Sub lnkBtnCustomerAccountShortFormWithOutPromotion_Click(sender As Object, e As EventArgs)
-        Me.mpeCustomerAccountShortFormWithOutPromotion.Show()
+        'Me.mpeCustomerAccountShortFormWithOutPromotion.Show()
     End Sub
 End Class

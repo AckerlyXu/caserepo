@@ -25,7 +25,7 @@ namespace MyWebFormCases.sqlserver
             newrow[2] = 4;
          
             table.Rows.Add(newrow);
-            string sql = "select * from suppliers where ";
+            string sql = "select * from suppliers where Sid in ( ";
             //definde a list of employee columns
             List<String> employees = new List<string> { "Employee1", "Employee2", "Employee3" };
 
@@ -37,12 +37,12 @@ namespace MyWebFormCases.sqlserver
                 {
                     if (!string.IsNullOrEmpty(Convert.ToString(table.Rows[0][employee])))
                     {
-                        sql += " SID = @" + employee +" or";
+                        sql += "  @" + employee +",";
                         command.Parameters.AddWithValue(employee, table.Rows[0][employee]);
 
                     }
                 }
-                sql = sql.Substring(0, sql.LastIndexOf("or"));  // remove the last "or"
+            sql = sql.TrimEnd(',') + ")"; // remove the last "," and add )
             
             command.CommandText = sql;
          

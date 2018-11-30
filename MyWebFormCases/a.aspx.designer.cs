@@ -31,15 +31,6 @@ namespace MyWebFormCases {
         protected global::System.Web.UI.WebControls.Label lblValidate;
         
         /// <summary>
-        /// BarChart1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.BarChart BarChart1;
-        
-        /// <summary>
         /// txtNationalID control.
         /// </summary>
         /// <remarks>

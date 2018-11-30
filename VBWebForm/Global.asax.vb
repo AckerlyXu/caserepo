@@ -11,6 +11,12 @@ Public Class Global_asax
         'Throw New Exception()
 
     End Sub
+    Sub Application_BeginRequest(sender As Object, e As EventArgs)
+        ' Fires when the application is started
+        Dim req As HttpRequest = Request
+        'Throw New Exception()
+
+    End Sub
 
 
 End Class

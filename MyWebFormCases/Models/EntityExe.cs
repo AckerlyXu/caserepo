@@ -12,7 +12,7 @@ namespace MyWebFormCases.Models
         {
         }
 
-        public virtual DbSet<vx_EligibilitySearch> vx_EligibilitySearch { get; set; }
+        //public virtual DbSet<vx_EligibilitySearch> vx_EligibilitySearch { get; set; }
        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

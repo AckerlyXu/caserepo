@@ -17,7 +17,7 @@ namespace MyWebFormCases.gridView2
                 GridView1.DataSource = arr;
                 GridView1.DataBind();
             }
-           
+      
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)

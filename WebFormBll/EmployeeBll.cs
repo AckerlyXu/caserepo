@@ -12,7 +12,9 @@ namespace WebFormBll
         //public IEnumerable<Employee> MyProperty { get; set; }
         public EmployeeBll()
         {
+       
             throw new Exception();
+           
         }
     }
 }

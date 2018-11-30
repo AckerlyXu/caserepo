@@ -33,9 +33,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <asp:GridView ID="gvCustomers" runat="server" AutoGenerateColumns="false">
+       <asp:GridView ID="gvCustomers" runat="server" AutoGenerateColumns="false" >
         <Columns>
-            <asp:TemplateField HeaderText="Customer Id" ItemStyle-Width="110px" ItemStyle-CssClass="CustomerId">
+            <asp:TemplateField HeaderText="Customer Id" ItemStyle-Width="110px" ItemStyle-CssClass="CustomerId" >
                 <ItemTemplate>
                     <asp:Label Text='<%# Eval("CustomerId") %>' runat="server" />
                 </ItemTemplate>

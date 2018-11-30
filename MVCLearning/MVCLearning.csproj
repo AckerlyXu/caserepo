@@ -163,8 +163,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DataController.cs" />
+    <Compile Include="Controllers\DataTableController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudyController.cs" />
+    <Compile Include="Controllers\Test1Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,6 +178,7 @@
     <Compile Include="Models\EntityDb2.cs" />
     <Compile Include="Models\JoinView.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,11 +229,13 @@
     </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.filedrop.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -256,6 +262,10 @@
     <Content Include="Views\Study\Parent.cshtml" />
     <Content Include="Views\Study\Child.cshtml" />
     <Content Include="Views\Study\Join.cshtml" />
+    <Content Include="Views\DataTable\Index.cshtml" />
+    <Content Include="Views\Study\EditStudent.cshtml" />
+    <Content Include="Views\Test1\Index.cshtml" />
+    <Content Include="Views\File\UploadAttendeeFile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

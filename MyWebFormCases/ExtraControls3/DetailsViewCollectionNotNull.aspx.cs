@@ -17,7 +17,7 @@ namespace MyWebFormCases.ExtraControls3
         {
             if (!IsPostBack)
             {
-                BindDetail();              
+                //BindDetail();              
             }
         }
 
