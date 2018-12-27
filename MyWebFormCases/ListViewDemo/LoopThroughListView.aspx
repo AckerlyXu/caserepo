@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <asp:ListView ID="ListView_Budget" runat="server" DataSourceID="SqlDataSource1" ItemPlaceholderID="itemPlaceholder" OnDataBound="ListView1_DataBound">
+             <asp:ListView ID="ListView_Budget" runat="server" DataKeyNames="sid" ItemPlaceholderID="itemPlaceholder" OnDataBound="ListView1_DataBound" OnItemDeleting="ListView_Budget_ItemDeleting">
                  <LayoutTemplate   >
                      <table   class="table table-bordered">
 
@@ -22,9 +22,10 @@
                  <ItemTemplate>
                      <tr>
                         
-                          <td><asp:Label ID="dincome" runat="server" Text=' <%# Eval("name") %>'></asp:Label></td>
-                           <td><asp:Label ID="Label1" runat="server" Text=' <%# Eval("sid") %>'></asp:Label></td>
-                           <td><asp:Label ID="Label2" runat="server" Text=' <%# Eval("city") %>'></asp:Label></td>
+                          <td><asp:Label ID="dincome" runat="server" Text=' <%# Bind("name") %>'></asp:Label></td>
+                           <td><asp:Label ID="Label1" runat="server" Text=' <%# Bind("sid") %>'></asp:Label></td>
+                           <td><asp:Label ID="Label2" runat="server" Text='<%# Eval("city") %> '></asp:Label></td>
+                           <td> <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" /></td>
                      </tr>
                     
                  </ItemTemplate>
@@ -32,7 +33,7 @@
              </asp:ListView>
             <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
 
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebFormCases.Models.supplyModelConnectionString %>" SelectCommand="SELECT * FROM [Suppliers]"></asp:SqlDataSource>
+            <%-- <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebFormCases.Models.supplyModelConnectionString %>" SelectCommand="SELECT * FROM [Suppliers]"></asp:SqlDataSource>--%>
         </div>
     </form>
    

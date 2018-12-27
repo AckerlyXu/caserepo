@@ -49,7 +49,7 @@ namespace MyWebFormCases.sqlserver
                     com.Parameters.AddRange(ParamArr);
                    con.Open();
                     com.ExecuteNonQuery();
-                    com.Parameters[0]= new SqlParameter("@StartDate", Convert.ToDateTime("2000-09-12"));
+                    //com.Parameters[0]= new SqlParameter("@StartDate", Convert.ToDateTime("2000-09-12"));
                     com.ExecuteNonQuery();
                 }
             }

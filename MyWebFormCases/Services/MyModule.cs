@@ -24,9 +24,13 @@ namespace MyWebFormCases.Services
             //context.EndRequest += MyOnEndRequest;
            // context.Error += MyOnEndRequest;
             context.PreSendRequestHeaders += MyOnEndRequest;
+            context.BeginRequest += MyBeginRequest;
 
         }
-
+        public void MyBeginRequest(Object source, EventArgs e)
+        {
+            string addr = HttpContext.Current.Request.UserHostAddress;
+        }
         #endregion
 
         public void MyOnEndRequest(Object source, EventArgs e)

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div class="conDiv" id="conDivID"></div>
+
+    <div class="myInputtextDiv">
+        <input style="color:black;" type="text" id="myInput" maxlength="10000">
+        <input type="text" id="baseimage" onkeyup=" sendImage()" hidden>
+        <img id="img"  />
+        </br>
+        <script type="text/javascript">
+      function sendImage(){
+          alert ("sent")
+      }
+
+        </script>
+        <input id="myBtn" type="button" onclick="sendFunction();" value=" Send">
+        <input id="fileInput" type="file" style="display: none;" />
+        <input type="button" value="Choose Image!" onclick="document.getElementById                ('fileInput').click();" />
+
+    </div>
+    <div class=" chooseBottun">
+    </div>
+    <br>
+  
+    <script>
+       function sendFunction(img) {
+           var d = new Date()
+           var h12 = d.getHours();
+           var h24 = d.getHours();
+           var m = d.getMinutes();
+           var s = d.getSeconds();
+           if (s < 10) {
+               s = "0" + s
+           }
+           if (m < 10) {
+               m = "0" + m
+           }
+           if (h12 > 12) {
+               h12 = h12 - 12
+           }
+           if (h12 == 00) {
+                   h12  = 12
+               }
+
+           var timeStamp = h12 + ":" + m + ":" + s + " ";
+           if (h24 > 11) {
+               timeStamp += "PM";
+           } else {
+               timeStamp += "AM";
+           }
+
+          
+           userName = "abc";
+          if (regex.test(userName)& imagesrc.value !="") {
+$('#conDivID').append("<span style='color: red'>" + userName + ': </span>');
+            //  $('#conDivID').append(embedUrls(userinput));
+              $('#conDivID').append("abc");
+$('#conDivID').append('</br>');
+//$('#conDivID').append(img);
+              $('#conDivID').append("../images/pagination_icons.png");
+$('#conDivID').append('</br>');
+$('#conDivID').append("<span class='timeSpan'>" + timeStamp + '</span>');
+              $('#conDivID').append('</br>');
+              $('#conDivID').append(img);
+               document.getElementById('baseimage').value = "";
+               document.getElementById('myInput').value = "";
+               document.getElementById("myInput").focus();
+               }else {
+
+               alert("Please Enter Your Username To Start Chat,Only English Letters And Numbers Allowed Without Spaces Between Them In The Username Field.");
+               document.getElementById("myUserName").value = "";
+               document.getElementById("myUserName").focus();
+
+           }
+           //To use scrolls on the conDivID.
+           document.getElementById("conDivID").scrollTop =
+           document.getElementById("conDivID").scrollHeight;
+       }
+    </script>
+    </form>
+    <br>
+
+    <script>
+// To display image after browsing for it
+    document.getElementById("fileInput").onchange = function () {
+        var reader = new FileReader();
+        var file = this.files[0];
+        reader.readAsDataURL(file);
+        reader.onload = function (e) {
+            $('#fileInput').attr('src', e.target.result);
+            $('#baseimage').val(e.target.result);
+            var img = $("<img id='img'  />").attr("src", e.target.result)
+      
+            sendFunction(img);
+
+        };
+
+        var xhr = new XMLHttpRequest()
+
+        // new一个FormData实例
+        var formData = new FormData()
+
+        // 将file对象添加到FormData实例
+        formData.append('file', file)
+
+        xhr.open('POST', '/Services/res1.ashx', true)
+        xhr.send(formData)
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    // doSomeThing(this)
+                } else {
+                    // error(this)
+                }
+            }
+        }
+
+       
+
+        }
+
+       
+    </script>
+</body>
+</html>

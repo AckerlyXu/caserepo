@@ -5,62 +5,58 @@
 
 <h2>Table</h2>
 
-<table id="divPartialAddRow">
-
-
-</table>
+<table id="divPartialAddRow"></table>
 
 <input type="button" name="name" value="addRow" id="btnAddRow" />
+@ViewData["flag"]
+
+@section scripts{
+
+    <script>
+        var dynamicImageId;
+        var dynamicTextboxId;
 
 
-
-@section scripts{ 
-
-<script>
-    var dynamicImageId;
-    var dynamicTextboxId;
-
-
-    function testDynamicCtrl(txtVal) {
-        $("#"+txtVal).val(dynamicImageId)
-        $.ajax({
-            url: '/Study/anotherPartial/',
-            data: { i: i },
-            success: function (data) {
-                $("#divAnotherPartial").append(data);
-            }
-        })
-    }
-
-    var i = 1;
-    $(function () {
-    
-        $('#btnAddRow').on('click', function () {
-       
+        function testDynamicCtrl(txtVal) {
+            $("#" + txtVal).val(dynamicImageId)
             $.ajax({
-                url: '/Study/partialAddRow/',
+                url: '/Home/About/',
                 data: { i: i },
                 success: function (data) {
-                    $("#divPartialAddRow").append(data);
-                   
-
-                    //find the newly added row to bind click event to new img
-                    $("#divPartialAddRow tr").last().find("img").click(
-                        function () {
-                 //$(this).parent().prev().find("input").val($(this).attr("id"));
-                 //           $(this).parent().prev().find("input").attr("id",$(this).attr("id"));
-                            dynamicImageId = this.id;
-                            dynamicTextboxId = $(this).parent().prev().find("input").attr("id");
-                            testDynamicCtrl(dynamicTextboxId);
-                        }
-                    )
-                  
+                    $("#divAnotherPartial").append(data);
                 }
             })
-            i++;
+        }
 
+        var i = 1;
+        $(function () {
+
+            $('#btnAddRow').on('click', function () {
+
+                $.ajax({
+                    url: '/Home/About/',
+                    data: { i: i },
+                    success: function (data) {
+                        $("#divPartialAddRow").append(data);
+
+
+                        //find the newly added row to bind click event to new img
+                        $("#divPartialAddRow tr").last().find("img").click(
+                            function () {
+                                //$(this).parent().prev().find("input").val($(this).attr("id"));
+                                //           $(this).parent().prev().find("input").attr("id",$(this).attr("id"));
+                                dynamicImageId = this.id;
+                                dynamicTextboxId = $(this).parent().prev().find("input").attr("id");
+                                testDynamicCtrl(dynamicTextboxId);
+                            }
+                        )
+
+                    }
+                })
+                i++;
+
+            })
         })
-    })
-</script>
+    </script>
 
 }

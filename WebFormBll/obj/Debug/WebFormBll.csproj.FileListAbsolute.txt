@@ -1,9 +1,0 @@
-D:\develop\vsworkspace\WebFormCases\WebFormBll\bin\Debug\WebFormBll.dll
-D:\develop\vsworkspace\WebFormCases\WebFormBll\bin\Debug\WebFormBll.pdb
-D:\develop\vsworkspace\WebFormCases\WebFormBll\bin\Debug\WebFormModel.dll
-D:\develop\vsworkspace\WebFormCases\WebFormBll\bin\Debug\WebFormModel.pdb
-D:\develop\vsworkspace\WebFormCases\WebFormBll\obj\Debug\WebFormBll.csprojAssemblyReference.cache
-D:\develop\vsworkspace\WebFormCases\WebFormBll\obj\Debug\WebFormBll.csproj.CoreCompileInputs.cache
-D:\develop\vsworkspace\WebFormCases\WebFormBll\obj\Debug\WebFormBll.csproj.CopyComplete
-D:\develop\vsworkspace\WebFormCases\WebFormBll\obj\Debug\WebFormBll.dll
-D:\develop\vsworkspace\WebFormCases\WebFormBll\obj\Debug\WebFormBll.pdb

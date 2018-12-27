@@ -1,0 +1,39 @@
+﻿<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">模态弹出窗标题</h4>
+</div>
+<div class="modal-body">
+    <form id="ff" method="post" style="text-align:center;">
+        <table class="table table-bordered">
+            <tr style="display:none;">
+                <td>父功能点编码:</td>
+                <td><input class="textbox-icon-readonly" style="color: #B2B2A6;" value="" type="text" readonly="readonly" name="Pid" /></td>
+            </tr>
+            <tr>
+                <td>父功能点名称:</td>
+                <td><input class="textbox-icon-readonly" type="text" value="" name="ParentName" id="ParentNameid" /></td>
+            </tr>
+            <tr>
+                <td>功能点编码:</td>
+                <td>
+                    <input class="textbox-icon-readonly" type="text" value="" readonly="readonly" id="FunctionCodeid" name="FunctionCode" />
+
+                </td>
+            </tr>
+            <tr>
+                <td>功能点名称:</td>
+                <td><input class="easyui-validatebox" value="" data-options="required:true,validType:'length[0,50]'" name="FunctionName" type="text" /></td>
+            </tr>
+            <tr style="height:10px;"></tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <a href="javascript:void(0)" class="easyui-linkbutton" style="background:#c52034;width:80px;color:white" data-options="iconCls:''" onclick="submitForm(this)">保存</a>&nbsp;
+                    <a href="javascript:void(0)" class="easyui-linkbutton" style="background:#e47b00;width:80px;color:white" data-options="iconCls:''" onclick="clearForm()">关闭</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+</div>

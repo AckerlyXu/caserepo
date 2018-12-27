@@ -57,6 +57,9 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Aspose.Words, Version=18.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Words.18.12.0\lib\net40\Aspose.Words.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -76,6 +79,30 @@
     <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Api.Gax, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.2.5.0\lib\net45\Google.Api.Gax.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax.Rest, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.Rest.2.5.0\lib\net45\Google.Api.Gax.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.35.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.35.1\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.35.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.35.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.35.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.35.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.35.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.35.1\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.35.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.35.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Storage.v1, Version=1.35.1.1266, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Storage.v1.1.35.1.1266\lib\net45\Google.Apis.Storage.v1.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -88,7 +115,15 @@
     <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.12\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -112,6 +147,9 @@
       <HintPath>..\packages\NHibernate.5.1.1\lib\net461\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
+    <Reference Include="QRCoder, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.5\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.1.2\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -126,12 +164,40 @@
     </Reference>
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Interactive.Async, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.1.1\lib\net46\System.Interactive.Async.dll</HintPath>
+    </Reference>
     <Reference Include="System.Management" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Printing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Text.Encoding.CodePages, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encoding.CodePages.4.4.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
@@ -162,6 +228,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="a.aspx" />
     <Content Include="AddContacts.aspx" />
     <Content Include="ajaxUpdatePanel\ajaxWebForm.aspx" />
@@ -169,9 +236,11 @@
     <Content Include="ajaxUpdatePanel\doPostBackJs.aspx" />
     <Content Include="ajaxUpdatePanel\PostBackNotWorking.aspx" />
     <Content Include="ajaxUpdatePanel\UpdateDataInUpdatePanel.aspx" />
+    <Content Include="ajaxUpdatePanel\updatepanelDownloadfile.aspx" />
     <Content Include="ajaxUpdatePanel\UpdatePanelWithSession.aspx" />
     <Content Include="ajaxUpdatePanel\updatePanelWithTimer.aspx" />
     <Content Include="api\googleApi.aspx" />
+    <Content Include="bootstrap2\layoutdivs.aspx" />
     <Content Include="bootStrapValidationStart.aspx" />
     <Content Include="bootstrap\append.html" />
     <Content Include="bootstrap\backgroundFullPage.aspx" />
@@ -891,8 +960,15 @@
     <Content Include="crystalreportviewers13\urlreporting\activexviewer.js" />
     <Content Include="crystalreportviewers13\urlreporting\appletviewer.js" />
     <Content Include="csharpDemo2\CombineDataInDatabase.aspx" />
+    <Content Include="csharpDemo2\DebugMyCode.aspx" />
+    <Content Include="csharpDemo2\DivideNumber.aspx" />
+    <Content Include="csharpDemo2\ele.gif" />
     <Content Include="csharpDemo2\EncryptDecrypt.aspx" />
+    <Content Include="csharpDemo2\EventLogStart.aspx" />
+    <Content Include="csharpDemo2\generateQRcodeExe.aspx" />
+    <Content Include="csharpDemo2\LinqAggregateExe.aspx" />
     <Content Include="csharpDemo2\linqDistinct.aspx" />
+    <Content Include="csharpDemo2\qrcode.txt" />
     <Content Include="csharpDemo2\regexDate.aspx" />
     <Content Include="csharpDemo2\WindowManagement.aspx" />
     <Content Include="csharpDemo\check.txt" />
@@ -912,12 +988,14 @@
     <Content Include="CssCase\bottom.html" />
     <Content Include="CssCase\cssSelectWebFormControl.aspx" />
     <Content Include="CssCase\KeepFootAtFooter.aspx" />
+    <Content Include="CssCase\LayOutOfLabel.aspx" />
     <Content Include="CssCase\ResponsiveLink.aspx" />
     <Content Include="CssCase\TextInlineWithButton.aspx" />
     <Content Include="DataBase\InsertToAnotherDataBase.aspx" />
-    <Content Include="DropDownListDemo\CascadeDropDown.aspx" />
     <Content Include="DropDownListDemo\DropDownSelectedValue.aspx" />
     <Content Include="DropDownListDemo\GridViewHideColumn.aspx" />
+    <Content Include="DropDownListDemo\ListBoxClient.aspx" />
+    <Content Include="DropDownListDemo\SelectDropDownThroughQueryString.aspx" />
     <Content Include="DropDownListDemo\ShowAllItems.aspx" />
     <Content Include="DropDownListDemo\SpaceItem.aspx" />
     <Content Include="DropDownListDemo\TextboxWithDropdown.aspx" />
@@ -932,22 +1010,33 @@
     <Content Include="ExtraControls2\TextboxExe.aspx" />
     <Content Include="ExtraControls2\WebForm1.aspx" />
     <Content Include="ExtraControls3\CrystleStart.aspx" />
+    <Content Include="ExtraControls3\CrystleUsingDataSet.aspx" />
     <Content Include="ExtraControls3\DetailsViewCollectionNotNull.aspx" />
     <Content Include="ExtraControls3\emptyDetailsViewoccupySpace.aspx" />
     <Content Include="ExtraControls3\getCheckBox.aspx" />
+    <Content Include="ExtraControls3\HtmlEditorExe.aspx" />
     <Content Include="ExtraControls3\PrintRepeater.aspx" />
     <Content Include="ExtraControls3\RegularExpressionExe.aspx" />
     <Content Include="ExtraControls3\RepeaterFooterLayout.aspx" />
     <Content Include="ExtraControls3\RepeaterLayout.aspx" />
     <Content Include="ExtraControls3\RepeaterWithCheckBox.aspx" />
+    <Content Include="ExtraControls3\ShowTableInTextarea.aspx" />
+    <Content Include="FileDemo\AddImageToAnotherImage.aspx" />
     <Content Include="FileDemo\AddMarkOnImage.aspx" />
     <Content Include="FileDemo\CombineImages.aspx" />
     <Content Include="FileDemo\DownFileInupdatePanel.aspx" />
     <Content Include="FileDemo\downloadImage.aspx" />
     <Content Include="FileDemo\DownLoadMp4.aspx" />
     <Content Include="FileDemo\mitupleFilesWithFileUpload.aspx" />
+    <Content Include="FileDemo\ResizeImageInMemorey.aspx" />
+    <Content Include="FileDemo\ShowImages.aspx" />
+    <Content Include="FileDemo\ShowMutiFilesNames.aspx" />
+    <Content Include="FileDemo\table.html" />
+    <Content Include="FileDemo\UploadImage.aspx" />
+    <Content Include="FileDemo\UploadMutipleFilesExe.aspx" />
     <Content Include="FileDemo\UserStreamReader.aspx" />
     <Content Include="FileDemo\WriteTextOnBigmap.aspx" />
+    <Content Include="FileDemo\XmlToLinqExe.aspx" />
     <Content Include="Format\DateFormat.txt" />
     <Content Include="Format\GetWeekDayNameDemo.aspx" />
     <Content Include="Format\GridAlign.aspx" />
@@ -972,6 +1061,13 @@
     <Content Include="gridview3\AggregateMutiColumns.aspx" />
     <Content Include="gridview3\batchUpdateGridview.aspx" />
     <Content Include="gridview3\childgrid.aspx" />
+    <Content Include="gridview3\DealWithNullExe.aspx" />
+    <Content Include="gridview3\DeleteImages.aspx" />
+    <Content Include="gridview3\NestedGridViewWithAjax.aspx" />
+    <Content Include="gridview3\OneToMany1.aspx" />
+    <Content Include="gridview3\oneToManyExe\showDetail.aspx" />
+    <Content Include="gridview3\oneToManyExe\showDetailsOfOne.aspx" />
+    <Content Include="gridview3\SaveDatatableInSession.aspx" />
     <Content Include="gridview3\StopJquery.aspx" />
     <Content Include="gridview\EditTemplateWithDropDown.aspx" />
     <Content Include="highlight\css\main.css" />
@@ -984,7 +1080,13 @@
     <Content Include="highlight\scripts\main.js" />
     <Content Include="highlight\scripts\zoom-image - Copy.js" />
     <Content Include="highlight\scripts\zoom-image.js" />
+    <Content Include="Html5\datetime.gif" />
+    <Content Include="Html5\edit.gif" />
+    <Content Include="Html5\FileUpLoad.html" />
+    <Content Include="Html5\FileUploadTest.html" />
     <Content Include="Html5\httpMixedInHttps.aspx" />
+    <Content Include="Html5\images.gif" />
+    <Content Include="Html5\responsiveImageExe.html" />
     <Content Include="Html5\VideoControl.aspx" />
     <Content Include="images\linksOnImage.jpg" />
     <Content Include="javascriptTwo\ajaxSubmit.aspx" />
@@ -1004,9 +1106,570 @@
     <Content Include="javascript\ReduceSizeOfWindow.aspx" />
     <Content Include="javascript\ScrollAnimate.aspx" />
     <Content Include="javascript\scrollToExe.aspx" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.print.css" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\fullcalendar.print.min.css" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\gcal.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\gcal.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale-all.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\af.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-dz.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-kw.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-ly.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-ma.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-sa.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar-tn.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ar.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\bg.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\bs.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\cs.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\da.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\de-at.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\de-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\de.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\el.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\en-au.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\en-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\en-gb.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\en-ie.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\en-nz.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\es-do.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\es-us.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\es.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\et.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\eu.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\fa.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\fi.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\fr-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\fr-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\fr.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\gl.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\he.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\hi.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\hr.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\hu.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\id.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\is.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\it.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ja.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ka.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\kk.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ko.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\lb.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\lt.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\lv.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\mk.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ms-my.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ms.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\nb.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\nl-be.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\nl.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\nn.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\pl.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\pt-br.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\pt.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ro.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\ru.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sk.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sl.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sq.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sr-cyrl.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sr.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\sv.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\th.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\tr.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\uk.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\vi.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\zh-cn.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\dist\locale\zh-tw.js" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\LICENSE.txt" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\AUTHORS.txt" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\core.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.slim.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.slim.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\external\sizzle\dist\sizzle.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\external\sizzle\dist\sizzle.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\external\sizzle\LICENSE.txt" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\LICENSE.txt" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\jsonp.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\load.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\parseXML.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\script.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\var\location.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\var\nonce.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\var\rquery.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\ajax\xhr.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes\attr.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes\classes.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes\prop.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\attributes\val.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\callbacks.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\access.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\camelCase.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\DOMEval.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\init.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\nodeName.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\parseHTML.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\ready-no-deferred.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\ready.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\readyException.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\stripAndCollapse.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\toType.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\addGetHookIf.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\adjustCSS.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\curCSS.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\showHide.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\cssExpand.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\getStyles.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\isHiddenWithinTree.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\rboxStyle.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\css\var\swap.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\data.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\data\Data.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\data\var\acceptData.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\data\var\dataPriv.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\data\var\dataUser.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\deferred.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\deferred\exceptionHook.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\deprecated.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\dimensions.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\effects.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\effects\animatedSelector.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\effects\Tween.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event\ajax.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event\alias.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event\focusin.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\event\trigger.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\exports\amd.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\exports\global.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\jquery.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\getAll.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\setGlobalEval.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\var\rscriptType.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\var\rtagName.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\wrapMap.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\offset.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\queue.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\queue\delay.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\selector-native.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\selector-sizzle.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\selector.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\serialize.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\traversing.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\traversing\findFilter.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\traversing\var\dir.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\traversing\var\siblings.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\arr.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\class2type.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\concat.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\document.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\documentElement.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\fnToString.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\getProto.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\hasOwn.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\indexOf.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\isFunction.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\isWindow.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\ObjectFunctionString.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\pnum.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\push.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\rcssNum.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\rnothtmlwhite.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\slice.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\support.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\var\toString.js" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\wrap.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\af.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-dz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-kw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-ly.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-ma.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-sa.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar-tn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ar.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\az.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\be.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\bg.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\bm.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\bn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\bo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\br.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\bs.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\cs.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\cv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\cy.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\da.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\de-at.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\de-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\de.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\dv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\el.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-au.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-gb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-ie.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-il.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\en-nz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\eo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\es-do.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\es-us.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\es.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\et.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\eu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fa.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fr-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fr-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\fy.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\gd.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\gl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\gom-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\gu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\he.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\hi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\hr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\hu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\hy-am.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\id.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\is.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\it.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ja.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\jv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ka.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\kk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\km.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\kn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ko.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ku.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ky.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\lb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\lo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\lt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\lv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\me.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\mi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\mk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ml.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\mn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\mr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ms-my.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ms.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\mt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\my.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\nb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ne.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\nl-be.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\nl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\nn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\pa-in.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\pl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\pt-br.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\pt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ro.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ru.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sd.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\se.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\si.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sq.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sr-cyrl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ss.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\sw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ta.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\te.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tet.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tg.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\th.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tl-ph.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tlh.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tzl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tzm-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\tzm.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ug-cn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\uk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\ur.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\uz-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\uz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\vi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\x-pseudo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\yo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\zh-cn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\zh-hk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\locale\zh-tw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\min\locales.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\min\locales.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\min\moment-with-locales.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\min\moment-with-locales.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\min\moment.min.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\moment.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\check-overflow.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\date-from-array.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-anything.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-array.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-object.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-string-and-array.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-string-and-format.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\from-string.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\local.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\parsing-flags.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\utc.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\create\valid.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\abs.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\add-subtract.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\as.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\bubble.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\clone.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\constructor.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\create.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\duration.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\get.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\humanize.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\iso-string.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\prototype.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\duration\valid.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\format\format.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\base-config.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\calendar.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\constructor.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\en.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\formats.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\invalid.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\lists.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\locale.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\locales.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\ordinal.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\pre-post-format.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\prototype.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\relative.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\locale\set.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\add-subtract.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\calendar.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\clone.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\compare.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\constructor.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\creation-data.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\diff.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\format.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\from.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\get-set.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\locale.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\min-max.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\moment.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\now.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\prototype.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\start-end-of.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\to-type.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\to.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\moment\valid.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\parse\regex.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\parse\token.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\aliases.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\constants.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\day-of-month.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\day-of-week.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\day-of-year.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\hour.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\millisecond.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\minute.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\month.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\offset.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\priorities.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\quarter.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\second.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\timestamp.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\timezone.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\units.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\week-calendar-utils.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\week-year.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\week.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\units\year.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\abs-ceil.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\abs-floor.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\abs-round.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\compare-arrays.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\defaults.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\deprecate.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\extend.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\has-own-prop.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\hooks.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\index-of.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-array.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-date.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-function.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-number.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-object-empty.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-object.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\is-undefined.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\keys.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\map.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\mod.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\some.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\to-int.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\lib\utils\zero-fill.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\af.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-dz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-kw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-ly.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-ma.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-sa.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar-tn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ar.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\az.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\be.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\bg.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\bm.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\bn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\bo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\br.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\bs.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\cs.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\cv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\cy.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\da.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\de-at.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\de-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\de.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\dv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\el.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-au.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-gb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-ie.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-il.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\en-nz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\eo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\es-do.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\es-us.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\es.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\et.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\eu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fa.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fr-ca.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fr-ch.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\fy.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\gd.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\gl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\gom-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\gu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\he.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\hi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\hr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\hu.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\hy-am.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\id.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\is.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\it.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ja.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\jv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ka.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\kk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\km.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\kn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ko.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ku.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ky.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\lb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\lo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\lt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\lv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\me.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\mi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\mk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ml.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\mn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\mr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ms-my.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ms.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\mt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\my.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\nb.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ne.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\nl-be.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\nl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\nn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\pa-in.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\pl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\pt-br.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\pt.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ro.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ru.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sd.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\se.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\si.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sq.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sr-cyrl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ss.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sv.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\sw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ta.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\te.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tet.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tg.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\th.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tl-ph.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tlh.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tr.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tzl.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tzm-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\tzm.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ug-cn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\uk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\ur.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\uz-latn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\uz.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\vi.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\x-pseudo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\yo.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\zh-cn.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\zh-hk.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\locale\zh-tw.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\src\moment.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\templates\default.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\templates\locale-header.js" />
+    <Content Include="jqueryUiPlugin\calendar\moment\templates\test-header.js" />
     <Content Include="jqueryUiPlugin\DateTimeWithTimeSpan.aspx" />
     <Content Include="jqueryUiPlugin\Default.aspx" />
+    <Content Include="jqueryUiPlugin\fullCalendarExe.aspx" />
     <Content Include="jqueryUiPlugin\GoogleChartsTableStart.aspx" />
+    <Content Include="jqueryUiPlugin\highchars3.aspx" />
     <Content Include="jqueryUiPlugin\highlight.html" />
     <Content Include="jqueryUiPlugin\images\5.png" />
     <Content Include="jqueryUiPlugin\images\enewspaper.png" />
@@ -1174,8 +1837,17 @@
     <Content Include="Format\myLabel.pdf" />
     <Content Include="crossPages\Site1WithDropdowlist.Master" />
     <Content Include="jqueryUiPlugin\ServerSidePagingDataTable.aspx" />
+    <Content Include="jqueryUiPlugin\signatureExe.aspx" />
+    <Content Include="jqueryUiPlugin\singnaturejs\flashcanvas.js" />
+    <Content Include="jqueryUiPlugin\singnaturejs\flashcanvas.min.js" />
+    <Content Include="jqueryUiPlugin\singnaturejs\flashcanvas.swf" />
+    <Content Include="jqueryUiPlugin\singnaturejs\jquery.js" />
+    <Content Include="jqueryUiPlugin\singnaturejs\jSignature.min.js" />
+    <Content Include="jqueryUiPlugin\singnaturejs\jSignature.min.noconflict.js" />
+    <Content Include="jqueryUiPlugin\singnaturejs\modernizr.js" />
     <Content Include="jqueryUiPlugin\slider.html" />
     <Content Include="jqueryUiPlugin\sliderVertical.aspx" />
+    <Content Include="jqueryUiPlugin\target.aspx" />
     <Content Include="jqueryUiPlugin\WebForm1.aspx" />
     <Content Include="json\GetPartJson.aspx" />
     <Content Include="json\user.json" />
@@ -1219,6 +1891,28 @@
     <Content Include="jqueryUiPlugin\jcarousel-master\README.md" />
     <Content Include="behaviors.config" />
     <Content Include="jqueryUiPlugin\JqueryDataTable.Master" />
+    <Content Include="FrameWork\secret.json" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\.bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\CHANGELOG.md" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\CONTRIBUTING.md" />
+    <Content Include="jqueryUiPlugin\calendar\fullcalendar\README.md" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\.bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.min.map" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\dist\jquery.slim.min.map" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\external\sizzle\dist\sizzle.min.map" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\README.md" />
+    <Content Include="jqueryUiPlugin\calendar\jquery\src\.eslintrc.json" />
+    <Content Include="jqueryUiPlugin\calendar\moment\.bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\moment\bower.json" />
+    <Content Include="jqueryUiPlugin\calendar\moment\CHANGELOG.md" />
+    <Content Include="jqueryUiPlugin\calendar\moment\LICENSE" />
+    <Content Include="jqueryUiPlugin\calendar\moment\package-lock.json" />
+    <Content Include="jqueryUiPlugin\calendar\moment\README.md" />
+    <Content Include="csharpDemo2\test.doc" />
+    <Content Include="101.xlsx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="jqueryUiPlugin\plugin\jquery.maphighlight.js" />
     <Content Include="jqueryUiPlugin\plugin\jquery.maphighlight.min.js" />
@@ -1236,16 +1930,18 @@
     <Content Include="Scripts\moment-with-locales.min.js" />
     <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\moment.min.js" />
+    <Content Include="Services\ArgumentTest.asmx" />
     <Content Include="Services\GoogleChartService.asmx" />
+    <Content Include="Services\TestService.aspx" />
     <Content Include="site1Child.aspx" />
     <Content Include="sqlserver\insertDatetime.aspx" />
     <Content Include="sqlserver\JoinEntityFromDifferentContext.aspx" />
     <Content Include="sqlserver\MysqlConnect.aspx" />
+    <Content Include="sqlserver\mysqlDatetime.aspx" />
     <Content Include="sqlserver\SimpifySqlCondition.aspx" />
     <Content Include="sqlserver\sqlparameterAlreadyContainedByAnotherSqlparameterCollection.aspx" />
     <Content Include="sqlserver\sqlServerInsertedValue.aspx" />
     <Content Include="sqlserver\TransactionTwoInsert.aspx" />
-    <Content Include="upload\another.mp4" />
     <Content Include="WebForm3.aspx" />
     <Content Include="xml\customer.xml" />
     <Content Include="xml\difference.xml" />
@@ -1259,6 +1955,8 @@
     <Content Include="xml\RenameXml.aspx" />
     <Content Include="xml\SampleDoc1.xml" />
     <Content Include="xml\xmlfile\message.xml" />
+    <Content Include="xml\xmlfile\response.xml" />
+    <Content Include="xml\XmlLinqExe.aspx" />
     <Content Include="xml\XmlReaderStart.aspx" />
     <Content Include="xml\xslt\changeCustomer.xslt" />
     <Content Include="xml\xslt\Comparison.xslt" />
@@ -1273,7 +1971,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="csharpDemo\ControlTheComputer.aspx" />
-    <Content Include="csharpDemo\sortArrayDemo.aspx" />
     <Content Include="csharpDemo\SplitMethodDemo.aspx" />
     <Content Include="DataBase\CarouselWithAdo.aspx" />
     <Content Include="DataBase\DateSetXsdWeb.aspx" />
@@ -1285,10 +1982,8 @@
     <Content Include="DataBase\RemoveRepeated.aspx" />
     <Content Include="DataBase\SqlDataSourceConflictDetection.aspx" />
     <Content Include="DataBase\SqlErrorDemo.aspx" />
-    <Content Include="DropDownListDemo\DisableDropDownList.aspx" />
     <Content Include="DropDownListDemo\DropdownSelectListBox.aspx" />
     <Content Include="DropDownListDemo\DropDownWithMultipleCheckbox.aspx" />
-    <Content Include="DropDownListDemo\WebForm1.aspx" />
     <Content Include="ExtraControls\AjaxToolKitDisableFutureDate.aspx" />
     <Content Include="ExtraControls\CalendarTextIntoDatabase.aspx" />
     <Content Include="ExtraControls\DropDownUserControl.ascx" />
@@ -1526,7 +2221,6 @@
     <Content Include="test.html" />
     <Content Include="TextBoxOnChange.aspx" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm2.aspx" />
     <Content Include="WebUserControl1.ascx" />
     <Content Include="xml\LoopThroughXmlNode.aspx" />
     <Content Include="xml\mutiMailProperties.xml" />
@@ -2373,8 +3067,16 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="a.aspx.cs">
       <DependentUpon>a.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2424,6 +3126,13 @@
     <Compile Include="ajaxUpdatePanel\UpdateDataInUpdatePanel.aspx.designer.cs">
       <DependentUpon>UpdateDataInUpdatePanel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ajaxUpdatePanel\updatepanelDownloadfile.aspx.cs">
+      <DependentUpon>updatepanelDownloadfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxUpdatePanel\updatepanelDownloadfile.aspx.designer.cs">
+      <DependentUpon>updatepanelDownloadfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ajaxUpdatePanel\UpdatePanelWithSession.aspx.cs">
       <DependentUpon>UpdatePanelWithSession.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2447,6 +3156,13 @@
     </Compile>
     <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap2\layoutdivs.aspx.cs">
+      <DependentUpon>layoutdivs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootstrap2\layoutdivs.aspx.designer.cs">
+      <DependentUpon>layoutdivs.aspx</DependentUpon>
     </Compile>
     <Compile Include="bootStrapValidationStart.aspx.cs">
       <DependentUpon>bootStrapValidationStart.aspx</DependentUpon>
@@ -2701,12 +3417,47 @@
     <Compile Include="csharpDemo2\CombineDataInDatabase.aspx.designer.cs">
       <DependentUpon>CombineDataInDatabase.aspx</DependentUpon>
     </Compile>
+    <Compile Include="csharpDemo2\DebugMyCode.aspx.cs">
+      <DependentUpon>DebugMyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo2\DebugMyCode.aspx.designer.cs">
+      <DependentUpon>DebugMyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDemo2\DivideNumber.aspx.cs">
+      <DependentUpon>DivideNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo2\DivideNumber.aspx.designer.cs">
+      <DependentUpon>DivideNumber.aspx</DependentUpon>
+    </Compile>
     <Compile Include="csharpDemo2\EncryptDecrypt.aspx.cs">
       <DependentUpon>EncryptDecrypt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="csharpDemo2\EncryptDecrypt.aspx.designer.cs">
       <DependentUpon>EncryptDecrypt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDemo2\EventLogStart.aspx.cs">
+      <DependentUpon>EventLogStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo2\EventLogStart.aspx.designer.cs">
+      <DependentUpon>EventLogStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDemo2\generateQRcodeExe.aspx.cs">
+      <DependentUpon>generateQRcodeExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo2\generateQRcodeExe.aspx.designer.cs">
+      <DependentUpon>generateQRcodeExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDemo2\LinqAggregateExe.aspx.cs">
+      <DependentUpon>LinqAggregateExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharpDemo2\LinqAggregateExe.aspx.designer.cs">
+      <DependentUpon>LinqAggregateExe.aspx</DependentUpon>
     </Compile>
     <Compile Include="csharpDemo2\linqDistinct.aspx.cs">
       <DependentUpon>linqDistinct.aspx</DependentUpon>
@@ -2715,6 +3466,7 @@
     <Compile Include="csharpDemo2\linqDistinct.aspx.designer.cs">
       <DependentUpon>linqDistinct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="csharpDemo2\QRCodeEncoder.cs" />
     <Compile Include="csharpDemo2\regexDate.aspx.cs">
       <DependentUpon>regexDate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2815,13 +3567,6 @@
     <Compile Include="csharpDemo\sendMailToLoalDirectory.aspx.designer.cs">
       <DependentUpon>sendMailToLoalDirectory.aspx</DependentUpon>
     </Compile>
-    <Compile Include="csharpDemo\sortArrayDemo.aspx.cs">
-      <DependentUpon>sortArrayDemo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="csharpDemo\sortArrayDemo.aspx.designer.cs">
-      <DependentUpon>sortArrayDemo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="csharpDemo\SortFile.aspx.cs">
       <DependentUpon>SortFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2849,6 +3594,13 @@
     </Compile>
     <Compile Include="CssCase\KeepFootAtFooter.aspx.designer.cs">
       <DependentUpon>KeepFootAtFooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CssCase\LayOutOfLabel.aspx.cs">
+      <DependentUpon>LayOutOfLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CssCase\LayOutOfLabel.aspx.designer.cs">
+      <DependentUpon>LayOutOfLabel.aspx</DependentUpon>
     </Compile>
     <Compile Include="CssCase\ResponsiveLink.aspx.cs">
       <DependentUpon>ResponsiveLink.aspx</DependentUpon>
@@ -2959,20 +3711,6 @@
     <Compile Include="DataBase\SqlErrorDemo.aspx.designer.cs">
       <DependentUpon>SqlErrorDemo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DropDownListDemo\CascadeDropDown.aspx.cs">
-      <DependentUpon>CascadeDropDown.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DropDownListDemo\CascadeDropDown.aspx.designer.cs">
-      <DependentUpon>CascadeDropDown.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DropDownListDemo\DisableDropDownList.aspx.cs">
-      <DependentUpon>DisableDropDownList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DropDownListDemo\DisableDropDownList.aspx.designer.cs">
-      <DependentUpon>DisableDropDownList.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DropDownListDemo\dropDownReader.aspx.cs">
       <DependentUpon>dropDownReader.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3008,6 +3746,13 @@
     <Compile Include="DropDownListDemo\GridViewHideColumn.aspx.designer.cs">
       <DependentUpon>GridViewHideColumn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DropDownListDemo\ListBoxClient.aspx.cs">
+      <DependentUpon>ListBoxClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\ListBoxClient.aspx.designer.cs">
+      <DependentUpon>ListBoxClient.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DropDownListDemo\PassValueToServer.aspx.cs">
       <DependentUpon>PassValueToServer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3021,6 +3766,13 @@
     </Compile>
     <Compile Include="DropDownListDemo\RemoveItem.aspx.designer.cs">
       <DependentUpon>RemoveItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListDemo\SelectDropDownThroughQueryString.aspx.cs">
+      <DependentUpon>SelectDropDownThroughQueryString.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListDemo\SelectDropDownThroughQueryString.aspx.designer.cs">
+      <DependentUpon>SelectDropDownThroughQueryString.aspx</DependentUpon>
     </Compile>
     <Compile Include="DropDownListDemo\ShowAllItems.aspx.cs">
       <DependentUpon>ShowAllItems.aspx</DependentUpon>
@@ -3042,13 +3794,6 @@
     </Compile>
     <Compile Include="DropDownListDemo\TextboxWithDropdown.aspx.designer.cs">
       <DependentUpon>TextboxWithDropdown.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DropDownListDemo\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DropDownListDemo\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls2\AjaxListSearchExt.aspx.cs">
       <DependentUpon>AjaxListSearchExt.aspx</DependentUpon>
@@ -3127,12 +3872,25 @@
     <Compile Include="ExtraControls2\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExtraControls3\CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ExtraControls3\CrystleStart.aspx.cs">
       <DependentUpon>CrystleStart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExtraControls3\CrystleStart.aspx.designer.cs">
       <DependentUpon>CrystleStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls3\CrystleUsingDataSet.aspx.cs">
+      <DependentUpon>CrystleUsingDataSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls3\CrystleUsingDataSet.aspx.designer.cs">
+      <DependentUpon>CrystleUsingDataSet.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls3\DetailsViewCollectionNotNull.aspx.cs">
       <DependentUpon>DetailsViewCollectionNotNull.aspx</DependentUpon>
@@ -3154,6 +3912,13 @@
     </Compile>
     <Compile Include="ExtraControls3\getCheckBox.aspx.designer.cs">
       <DependentUpon>getCheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls3\HtmlEditorExe.aspx.cs">
+      <DependentUpon>HtmlEditorExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls3\HtmlEditorExe.aspx.designer.cs">
+      <DependentUpon>HtmlEditorExe.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls3\PrintRepeater.aspx.cs">
       <DependentUpon>PrintRepeater.aspx</DependentUpon>
@@ -3189,6 +3954,13 @@
     </Compile>
     <Compile Include="ExtraControls3\RepeaterWithCheckBox.aspx.designer.cs">
       <DependentUpon>RepeaterWithCheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls3\ShowTableInTextarea.aspx.cs">
+      <DependentUpon>ShowTableInTextarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls3\ShowTableInTextarea.aspx.designer.cs">
+      <DependentUpon>ShowTableInTextarea.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls\Ajax CalenderMakeDateSelected.aspx.cs">
       <DependentUpon>Ajax CalenderMakeDateSelected.aspx</DependentUpon>
@@ -3358,6 +4130,13 @@
     <Compile Include="ExtraControls\WizardStyle.aspx.designer.cs">
       <DependentUpon>WizardStyle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FileDemo\AddImageToAnotherImage.aspx.cs">
+      <DependentUpon>AddImageToAnotherImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\AddImageToAnotherImage.aspx.designer.cs">
+      <DependentUpon>AddImageToAnotherImage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FileDemo\AddMarkOnImage.aspx.cs">
       <DependentUpon>AddMarkOnImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3421,6 +4200,41 @@
     <Compile Include="FileDemo\mitupleFilesWithFileUpload.aspx.designer.cs">
       <DependentUpon>mitupleFilesWithFileUpload.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FileDemo\ResizeImageInMemorey.aspx.cs">
+      <DependentUpon>ResizeImageInMemorey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\ResizeImageInMemorey.aspx.designer.cs">
+      <DependentUpon>ResizeImageInMemorey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\ShowImages.aspx.cs">
+      <DependentUpon>ShowImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\ShowImages.aspx.designer.cs">
+      <DependentUpon>ShowImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\ShowMutiFilesNames.aspx.cs">
+      <DependentUpon>ShowMutiFilesNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\ShowMutiFilesNames.aspx.designer.cs">
+      <DependentUpon>ShowMutiFilesNames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\UploadImage.aspx.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\UploadImage.aspx.designer.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\UploadMutipleFilesExe.aspx.cs">
+      <DependentUpon>UploadMutipleFilesExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\UploadMutipleFilesExe.aspx.designer.cs">
+      <DependentUpon>UploadMutipleFilesExe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FileDemo\UserStreamReader.aspx.cs">
       <DependentUpon>UserStreamReader.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3434,6 +4248,13 @@
     </Compile>
     <Compile Include="FileDemo\WriteTextOnBigmap.aspx.designer.cs">
       <DependentUpon>WriteTextOnBigmap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDemo\XmlToLinqExe.aspx.cs">
+      <DependentUpon>XmlToLinqExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDemo\XmlToLinqExe.aspx.designer.cs">
+      <DependentUpon>XmlToLinqExe.aspx</DependentUpon>
     </Compile>
     <Compile Include="Format\decimalFormat.aspx.cs">
       <DependentUpon>decimalFormat.aspx</DependentUpon>
@@ -3676,6 +4497,55 @@
     </Compile>
     <Compile Include="gridview3\childgrid.aspx.designer.cs">
       <DependentUpon>childgrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\DealWithNullExe.aspx.cs">
+      <DependentUpon>DealWithNullExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\DealWithNullExe.aspx.designer.cs">
+      <DependentUpon>DealWithNullExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\DeleteImages.aspx.cs">
+      <DependentUpon>DeleteImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\DeleteImages.aspx.designer.cs">
+      <DependentUpon>DeleteImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\NestedGridViewWithAjax.aspx.cs">
+      <DependentUpon>NestedGridViewWithAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\NestedGridViewWithAjax.aspx.designer.cs">
+      <DependentUpon>NestedGridViewWithAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\OneToMany1.aspx.cs">
+      <DependentUpon>OneToMany1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\OneToMany1.aspx.designer.cs">
+      <DependentUpon>OneToMany1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\oneToManyExe\showDetail.aspx.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\oneToManyExe\showDetail.aspx.designer.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\oneToManyExe\showDetailsOfOne.aspx.cs">
+      <DependentUpon>showDetailsOfOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\oneToManyExe\showDetailsOfOne.aspx.designer.cs">
+      <DependentUpon>showDetailsOfOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridview3\SaveDatatableInSession.aspx.cs">
+      <DependentUpon>SaveDatatableInSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview3\SaveDatatableInSession.aspx.designer.cs">
+      <DependentUpon>SaveDatatableInSession.aspx</DependentUpon>
     </Compile>
     <Compile Include="gridview3\StopJquery.aspx.cs">
       <DependentUpon>StopJquery.aspx</DependentUpon>
@@ -4200,12 +5070,26 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="jqueryUiPlugin\fullCalendarExe.aspx.cs">
+      <DependentUpon>fullCalendarExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\fullCalendarExe.aspx.designer.cs">
+      <DependentUpon>fullCalendarExe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="jqueryUiPlugin\GoogleChartsTableStart.aspx.cs">
       <DependentUpon>GoogleChartsTableStart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="jqueryUiPlugin\GoogleChartsTableStart.aspx.designer.cs">
       <DependentUpon>GoogleChartsTableStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\highchars3.aspx.cs">
+      <DependentUpon>highchars3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\highchars3.aspx.designer.cs">
+      <DependentUpon>highchars3.aspx</DependentUpon>
     </Compile>
     <Compile Include="jqueryUiPlugin\highcharts2.aspx.cs">
       <DependentUpon>highcharts2.aspx</DependentUpon>
@@ -4277,6 +5161,13 @@
     <Compile Include="jqueryUiPlugin\ServerSidePagingDataTable.aspx.designer.cs">
       <DependentUpon>ServerSidePagingDataTable.aspx</DependentUpon>
     </Compile>
+    <Compile Include="jqueryUiPlugin\signatureExe.aspx.cs">
+      <DependentUpon>signatureExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\signatureExe.aspx.designer.cs">
+      <DependentUpon>signatureExe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="jqueryUiPlugin\sliderVertical.aspx.cs">
       <DependentUpon>sliderVertical.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4290,6 +5181,13 @@
     </Compile>
     <Compile Include="jqueryUiPlugin\SortingRemoveIcon.aspx.designer.cs">
       <DependentUpon>SortingRemoveIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\target.aspx.cs">
+      <DependentUpon>target.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jqueryUiPlugin\target.aspx.designer.cs">
+      <DependentUpon>target.aspx</DependentUpon>
     </Compile>
     <Compile Include="jqueryUiPlugin\WebCamUsing.aspx.cs">
       <DependentUpon>WebCamUsing.aspx</DependentUpon>
@@ -4426,6 +5324,7 @@
     <Compile Include="Models\FitnessCenter.cs" />
     <Compile Include="Models\Fruit.cs" />
     <Compile Include="Models\IAApplication.cs" />
+    <Compile Include="Models\item.cs" />
     <Compile Include="Models\Item_Table.cs" />
     <Compile Include="Models\MyUserItem.cs" />
     <Compile Include="Models\NorthWindDbContext.cs" />
@@ -4529,6 +5428,10 @@
     <Compile Include="Services\ajaxToolKitTest.aspx.designer.cs">
       <DependentUpon>ajaxToolKitTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Services\ArgumentTest.asmx.cs">
+      <DependentUpon>ArgumentTest.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Services\ArrayData.asmx.cs">
       <DependentUpon>ArrayData.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -4561,6 +5464,12 @@
       <DependentUpon>GoogleChartService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Services\HandlerXslx.ashx.cs">
+      <DependentUpon>HandlerXslx.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\HandleXlsxOutside.ashx.cs">
+      <DependentUpon>HandleXlsxOutside.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Services\MyModule.cs" />
     <Compile Include="Services\myWebService.asmx.cs">
       <DependentUpon>myWebService.asmx</DependentUpon>
@@ -4571,6 +5480,16 @@
     </Compile>
     <Compile Include="Services\res2.ashx.cs">
       <DependentUpon>res2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TestService.aspx.cs">
+      <DependentUpon>TestService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\TestService.aspx.designer.cs">
+      <DependentUpon>TestService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
     </Compile>
     <Compile Include="Services\WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
@@ -4642,6 +5561,13 @@
     <Compile Include="sqlserver\MysqlConnect.aspx.designer.cs">
       <DependentUpon>MysqlConnect.aspx</DependentUpon>
     </Compile>
+    <Compile Include="sqlserver\mysqlDatetime.aspx.cs">
+      <DependentUpon>mysqlDatetime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sqlserver\mysqlDatetime.aspx.designer.cs">
+      <DependentUpon>mysqlDatetime.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sqlserver\SimpifySqlCondition.aspx.cs">
       <DependentUpon>SimpifySqlCondition.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4707,13 +5633,6 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4756,6 +5675,13 @@
     </Compile>
     <Compile Include="xml\RenameXml.aspx.designer.cs">
       <DependentUpon>RenameXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xml\XmlLinqExe.aspx.cs">
+      <DependentUpon>XmlLinqExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\XmlLinqExe.aspx.designer.cs">
+      <DependentUpon>XmlLinqExe.aspx</DependentUpon>
     </Compile>
     <Compile Include="xml\XmlReaderStart.aspx.cs">
       <DependentUpon>XmlReaderStart.aspx</DependentUpon>
@@ -4817,6 +5743,9 @@
     <Content Include="Services\res2.ashx" />
     <Content Include="Services\DataTablePaging.ashx" />
     <Content Include="services.config" />
+    <Content Include="Services\HandlerXslx.ashx" />
+    <Content Include="Services\HandleXlsxOutside.ashx" />
+    <Content Include="Services\upload.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -4890,9 +5819,15 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExtraControls3\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="ts\greeter.ts" />
+    <TypeScriptCompile Include="jqueryUiPlugin\calendar\moment\moment.d.ts" />
+    <None Include="ts\greeter.ts.bac" />
+    <TypeScriptCompile Include="ts\ts2.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

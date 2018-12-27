@@ -192,6 +192,7 @@
     <Content Include="Content\jquery.tagit.css" />
     <Content Include="Content\Site.css" />
     <Content Include="crossPages\from.aspx" />
+    <Content Include="crossPages\OpenThreeWindows.aspx" />
     <Content Include="crossPages\Page1.aspx" />
     <Content Include="crossPages\ToMyPage.aspx" />
     <Content Include="crystalreportviewers13\ActiveXControls\PrintControl.cab" />
@@ -770,10 +771,13 @@
     <Content Include="csharpdemo\getWorkDays.aspx" />
     <Content Include="csharpdemo\RegexExe.aspx" />
     <Content Include="csharpdemo\ShowValueInList.aspx" />
+    <Content Include="csharpdemo\SimpleEncrypt.aspx" />
     <Content Include="dataControl\AspTableShowData.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropDownList\DropDownPostback.aspx" />
+    <Content Include="DropDownList\ListBoxClient.aspx" />
     <Content Include="DropDownList\ListBoxToTextBox.aspx" />
+    <Content Include="ExtraControlls\BarchartStart.aspx" />
     <Content Include="ExtraControlls\crystalStart.aspx" />
     <Content Include="ExtraControlls\DetailsViewEmptyData.aspx" />
     <Content Include="ExtraControlls\MenuNoPostback.aspx" />
@@ -816,6 +820,7 @@
     <Content Include="gridviewDemo\filterColumns.aspx" />
     <Content Include="gridviewDemo\FilterGridview.aspx" />
     <Content Include="gridviewDemo\InsertAvoidMitupleSubmit.aspx" />
+    <Content Include="gridviewDemo\layoutGridview.aspx" />
     <Content Include="gridviewDemo\onlyEffectOneRow.aspx" />
     <Content Include="gridviewDemo\PreventMultipleInsert.aspx" />
     <Content Include="gridviewDemo\ShowHeader.aspx" />
@@ -846,6 +851,7 @@
     <Content Include="listviewdemo\ListViewGetCheckbox.aspx" />
     <Content Include="listviewdemo\ListViewPagingData.aspx" />
     <Content Include="listviewdemo\listViewWithRepeater.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="RepeaterDemo\RepeaterWithCheckbox.aspx" />
     <Content Include="RepeaterDemo\SplitOneRowIntoThree.aspx" />
     <Content Include="Scripts\tag-it.min.js" />
@@ -995,6 +1001,13 @@
       <DependentUpon>from.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="crossPages\OpenThreeWindows.aspx.designer.vb">
+      <DependentUpon>OpenThreeWindows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crossPages\OpenThreeWindows.aspx.vb">
+      <DependentUpon>OpenThreeWindows.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="crossPages\Page1.aspx.designer.vb">
       <DependentUpon>Page1.aspx</DependentUpon>
     </Compile>
@@ -1085,6 +1098,13 @@
       <DependentUpon>ShowValueInList.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="csharpdemo\SimpleEncrypt.aspx.designer.vb">
+      <DependentUpon>SimpleEncrypt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharpdemo\SimpleEncrypt.aspx.vb">
+      <DependentUpon>SimpleEncrypt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="dataControl\AspTableShowData.aspx.designer.vb">
       <DependentUpon>AspTableShowData.aspx</DependentUpon>
     </Compile>
@@ -1106,11 +1126,25 @@
       <DependentUpon>DropDownPostback.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="DropDownList\ListBoxClient.aspx.designer.vb">
+      <DependentUpon>ListBoxClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList\ListBoxClient.aspx.vb">
+      <DependentUpon>ListBoxClient.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="DropDownList\ListBoxToTextBox.aspx.designer.vb">
       <DependentUpon>ListBoxToTextBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="DropDownList\ListBoxToTextBox.aspx.vb">
       <DependentUpon>ListBoxToTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControlls\BarchartStart.aspx.designer.vb">
+      <DependentUpon>BarchartStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControlls\BarchartStart.aspx.vb">
+      <DependentUpon>BarchartStart.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ExtraControlls\crystalStart.aspx.designer.vb">
@@ -1242,6 +1276,13 @@
       <DependentUpon>InsertAvoidMitupleSubmit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="gridviewDemo\layoutGridview.aspx.designer.vb">
+      <DependentUpon>layoutGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gridviewDemo\layoutGridview.aspx.vb">
+      <DependentUpon>layoutGridview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="gridviewDemo\onlyEffectOneRow.aspx.designer.vb">
       <DependentUpon>onlyEffectOneRow.aspx</DependentUpon>
     </Compile>
@@ -1329,6 +1370,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RepeaterDataBindDemo.aspx.designer.vb">
       <DependentUpon>RepeaterDataBindDemo.aspx</DependentUpon>

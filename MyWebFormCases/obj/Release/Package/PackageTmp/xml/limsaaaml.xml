@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<limsaaaml  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <header> <parameter name="SESSION"> 209103</parameter> </header> <body> <transaction id="TRAN1"><system response_type="system"><entity type="SAMPLE"><actions><action><command>CREATE</command><parameter name="TEMPLATE">AZEEM</parameter></action></actions> <fields> <field id="AREA" direction="in" datatype="Text">XXXX</field>
+
+<field id="SSSSS" direction="in" datatype="Text">TFFFLE</field>
+
+<field id="CFFFY" direction="in" datatype="Text">TLsss-0</field>
+
+<field id="POINT" direction="in" datatype="Text">ssssse-110</field>
+
+<field id="LssAsssB" direction="in" datatype="Text">saasdad</field>
+
+<field id="s_DATE" direction="in" datatype="Date">9/17/2018 12:31:10 AM</field>
+
+<field id="PRIORITY" direction="in" datatype="Text">3</field>
+
+<field id="REASON" direction="in" datatype="Text">Reason</field>
+
+<field id="COLLECTED" direction="in" datatype="Text">asdasad</field>
+
+<field id="RI" direction="in" datatype="Text">hhhhhh</field>
+
+<field id="dddddd" direction="in" datatype="Text">asdasda</field>
+
+<field id="SCOMMENTS" direction="in" datatype="Text">COMMENTS</field>
+
+<field id="AscaeeeDddddUCT" direction="in" datatype="Text">Bla</field>
+
+<field id="ID_NUMERIC" direction="out" datatype="Text"> 711355</field>
+
+</fields><children><entity type="TEST"><actions /><fields>
+
+<field id="Hut" direction="in" datatype="Text">Base</field>
+
+<field id="COMPONENT_LIST" direction="in" datatype="Text">D</field>
+
+</fields><children />
+
+</entity></children></entity></system>
+
+</transaction></body><errors /></limsaaaml>

@@ -27,6 +27,16 @@ namespace WebFormCases
         }
        protected void Application_EndRequest(object sender, EventArgs e)
         {
+          //HttpResponse response=     HttpContext.Current.Response;
+          //  if (response.StatusCode == 404 && HttpContext.Current.Request.Path !="/404.aspx")
+          //  {
+          //      Response.Redirect("/404.aspx");
+          //  }
+          //  if(HttpContext.Current.Request.Path == "/404.aspx")
+          //  {
+          //      response.StatusCode = 404;
+          //  }
+
           // HttpContext.Current.Response.Headers.Remove("Server");
         }
 

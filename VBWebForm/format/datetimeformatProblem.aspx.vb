@@ -7,6 +7,7 @@ Public Class datetimeformatProblem
 
     Private constr As String = ConfigurationManager.ConnectionStrings("EntityExeConnectionString").ConnectionString
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Response.Write(DateTime.ParseExact("12/09/1994", "dd/MM/yyyy", CultureInfo.InvariantCulture).ToString("dd/MM/yyyy"))
         Using con As SqlConnection = New SqlConnection(constr)
 
             Using com As SqlCommand = New SqlCommand("insert into myTime (tDate,tDateTime) values(@tDate,@tDateTime) ", con)
@@ -18,6 +19,8 @@ Public Class datetimeformatProblem
         End Using
 
         Dim outputDateTime As DateTime
+
+
         If DateTime.TryParseExact(TextBox1.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, outputDateTime) Then
             Response.Write(outputDateTime)
         Else

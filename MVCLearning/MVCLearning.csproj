@@ -20,9 +20,9 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -177,6 +177,8 @@
     <Compile Include="Models\EntityDb1.cs" />
     <Compile Include="Models\EntityDb2.cs" />
     <Compile Include="Models\JoinView.cs" />
+    <Compile Include="Models\PartionDb.cs" />
+    <Compile Include="Models\pation.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -264,8 +266,10 @@
     <Content Include="Views\Study\Join.cshtml" />
     <Content Include="Views\DataTable\Index.cshtml" />
     <Content Include="Views\Study\EditStudent.cshtml" />
-    <Content Include="Views\Test1\Index.cshtml" />
+    <Content Include="Views\Test1\Upload.cshtml" />
     <Content Include="Views\File\UploadAttendeeFile.cshtml" />
+    <Content Include="Views\Test1\Index.cshtml" />
+    <Content Include="Views\Test1\ShowPation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

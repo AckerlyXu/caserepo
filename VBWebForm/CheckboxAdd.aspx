@@ -8,13 +8,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+ 
 </head>
 <body>
     <script src="Scripts/jquery-3.3.1.js"></script>
 
         <script type="text/javascript">
             $(function () {
-
+         
                 $("#Grv_CGL_Product_List :checkbox").on('change', function () {
                   
                     var idtSum = "";

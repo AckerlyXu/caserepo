@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product Gallery With Image Zoom Example</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #fafafa;
+            min-height: 100vh;
+        }
+
+        .container {
+            margin: 150px auto;
+            max-width: 960px;
+        }
+    </style>
+
+    <!--<script src="../Scripts/jquery-1.10.2.min.js"></script>-->
+
+
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <!--<script src="../Scripts/jquery-3.3.1.js"></script>-->
+    <script src="plugin/jquery.maphighlight.js"></script>
+
+    <script type="text/javascript">
+        //var jq = $.noConflict();
+        //console.log(jQuery.fn.jquery)
+
+        $(function () {
+          
+            $('.map').maphilight({ fade: false });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Product Gallery With Image Zoom Example</h1>
+        <p>
+            
+            <div class="map" style="display: block; background: url(&quot;https://www.jqueryscript.net/demo/Simple-jQuery-Plugin-For-Highlighting-Image-Map-Maphilight/docs/demo_simple.png&quot;); position: relative; padding: 0px; width: 420px; height: 300px;"><canvas style="width: 420px; height: 300px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" width="420" height="300"></canvas><canvas style="width: 420px; height: 300px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px; opacity: 1;" height="300" width="420"></canvas><img src="demo_simple.png" width="420" height="300" class="map maphilighted" usemap="#simple" style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;"></div>
+            <map name="simple">
+                <area href="#" shape="poly" coords="47,62,106,61,134,72,135,118,30,116" alt="Link" title="Default behavior">
+                <area href="#" shape="poly" coords="32,157,133,157,127,192,127,211,28,211" alt="Link" data-maphilight="{&quot;strokeColor&quot;:&quot;0000ff&quot;,&quot;strokeWidth&quot;:5,&quot;fillColor&quot;:&quot;ff0000&quot;,&quot;fillOpacity&quot;:0.6}" title="Metadata'd up a bit">
+                <area id="squidhead" href="#" shape="circle" coords="290,102,30" alt="Octoface" data-maphilight="{&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;ff0000&quot;,&quot;fillOpacity&quot;:0.6}" title="Metadata'd up a bit">
+                <area href="#" shape="poly" coords="219,190,225,175,237,157,239,148,245,142,251,140,263,140,265,139,310,139,311,145,364,182,363,201,343,221,333,213,329,181,313,177,330,234,295,231,292,174,279,176,282,204,269,220,255,206,267,167,235,193" alt="Legs" data-maphilight="{&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;000000&quot;,&quot;fillOpacity&quot;:1,&quot;alwaysOn&quot;:true}" title="Metadata'd up a bit">
+            </map>
+        </p>
+
+        <!--<div class="small-img">
+            <img src="../images/slider_handle.png" class="icon-left" alt="" id="prev-img">
+            <div class="small-container">
+                <div id="small-img-roll">
+                    <img src="images/1.png" class="show-small-img" alt="">
+                    <img src="https://placeimg.com/1000/1000/arch" class="show-small-img" alt="">
+                    <img src="https://placeimg.com/1000/1000/nature" class="show-small-img" alt="">
+                    <img src="https://placeimg.com/1000/1000/people" class="show-small-img" alt="">
+                    <img src="https://placeimg.com/1000/1000/tech" class="show-small-img" alt="">
+                    <img src="https://picsum.photos/1000/1000/?random" class="show-small-img" alt="">
+                </div>
+            </div>
+
+
+            <img src="../images/slider_handle.png" class="icon-right" alt="" id="next-img">
+        </div>
+        <div class="show">
+            <img src="../images/slider_handle.png" id="show-img" usemap="#enewspaper" class="map">
+            <map name="enewspaper">
+                <area shape="rect" coords="0,112,119,453" href="javascript:;" />
+                <area shape="rect" coords="119,235,410,453" href="javascript:;" />
+                <area shape="rect" coords="411,232,490,453" href="javascript:;" />
+                <area shape="rect" coords="122,112,490,230" href="javascript:;" />
+            </map>
+        </div>-->
+
+    </div>
+
+    <!--<script src="../Scripts/jquery-3.3.1.js"></script>-->
+
+    <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+
+</html>

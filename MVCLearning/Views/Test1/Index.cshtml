@@ -1,69 +1,9 @@
-﻿
+﻿@model string
+
 @{
     ViewBag.Title = "Index";
 }
 
-<div class="panel panel-warning" id="dropbox" style="margin:20px; min-height:200px;">
-    <div class="panel-heading">
-        <h3 class="panel-title">上传测试用例</h3>
-    </div>
-    <div class="panel-body" style="text-align:center;">拖动测试用例文件到这里开始测试</div>
-    <div class="panel-body" style="text-align:center;" id="uploadFileNames"></div>
-    <div id="upload_loading_layout" class="layout" style="text-align:center;display: none;"><img src="images/loading.gif" /></div>
-</div>
-<button id="startTestBtn" type="button" class="btn btn-info" onClick="runTest('')" style="margin:20px;">开始测试</button>
-<button id="clearFilesBtn" type="button" class="btn btn-danger" onClick="deleteUploadFiles('')">清空上传文件</button>
-<div class="panel panel-info" id="resultbox" style="margin:20px;min-height:200px;">
-    <div class="panel-heading">
-        <h3 class="panel-title">测试结果</h3>
-    </div>
-    <div id="result_layout" class="panel-body"></div>
-    <div id="run_loading_layout" class="layout" style="text-align:center;display: none;"><img src="images/loading.gif" /></div>
-</div>
+<h2>Index</h2>
 
-@section scripts{
- <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-
-
-    <script src="~/Scripts/jquery.filedrop.js"></script>
-    <script>
-        $(function () {
-            
-            var dropbox = $('#dropbox');
-
-            dropbox.filedrop({
-                // The name of the $_FILES entry:
-                paramname: 'pic',
-
-                // 最多传输文件的个数
-                maxfiles: 5,
-                // 最大传输文件的大小，单位是M
-                maxfilesize: 2,
-                // 文件上传对应的服务url
-                url: 'uploadFiles',
-
-                // 文件上传开始时的回调
-                uploadStarted: function (i, file, len) {
-                    document.getElementById("upload_loading_layout").style.display = "block";
-                },
-
-                // 文件上传过程中的回调
-                progressUpdated: function (i, file, progress) {
-                    document.getElementById("upload_loading_layout").style.display = "block";
-                    //alert(progress);
-                },
-
-                // 文件上传结束时的回调
-                uploadFinished: function (i, file, response) {
-                    document.getElementById("upload_loading_layout").style.display = "none";
-                }
-
-
-
-            });
-        })
-
-    </script>
-
-}
-
+@Model

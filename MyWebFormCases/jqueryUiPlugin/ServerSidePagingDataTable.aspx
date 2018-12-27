@@ -71,7 +71,7 @@ var oTable = $('.acelistTable').dataTable(
                     {"bSearchable": false, "aTargets": [1, 2, 3, 4]}, 
                 ],
 　　　　　　　　　　"aaSorting": [[0, "desc"]], 
-                "fnRowCallback": function(nRow, aData, iDisplayIndex) {/
+                "fnRowCallback": function(nRow, aData, iDisplayIndex) {
                     return nRow;
                 },
                 "fnInitComplete": function(oSettings, json) { 

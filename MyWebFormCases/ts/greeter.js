@@ -70,4 +70,17 @@ function sumMatrix(matrix) {
     }
     return sum;
 }
+var o = {
+    alet: "foo",
+    blet: 12,
+    c: "bar"
+};
+var alet = o.alet, blet = o.blet;
+//console.log(alet, blet);
+var _a = [3, 2], afirst = _a[0], bfirst = _a[1];
+//let { alet, ...pass } = o;
+//为属性添加默认值
+var def;
+var a = def.a, _b = def.b, b = _b === void 0 ? 1001 : _b;
+def = { a: "a" };
 //# sourceMappingURL=greeter.js.map

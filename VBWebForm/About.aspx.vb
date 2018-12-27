@@ -1,4 +1,5 @@
-﻿Imports WebFormBll
+﻿Imports System.Globalization
+Imports WebFormBll
 
 Public Class About
     Inherits Page

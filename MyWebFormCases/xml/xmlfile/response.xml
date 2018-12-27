@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<response uri="/recruit/private/xml/Candidates/addRecords">
+  <result>
+    <message>Record(s) already exists</message>
+    <recorddetail>
+      <FL val="Id">316886000014241044</FL>
+      <FL val="Created Time">2018-12-14 20:26:50</FL>
+      <FL val="Modified Time">2018-12-14 20:26:50</FL>
+      <FL val="Created By"><![CDATA[d Pvt Ltd]]></FL>
+      <FL val="Modified By"><![CDATA[d Pvt Ltd]]></FL>
+    </recorddetail>
+  </result>
+</response>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html ng-app="plunker">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+   
+
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js" data-semver="1.0.7"></script>
+
+</head>
+<body ng-controller="Ctrl">
+    <ul>
+        <li data-ng-repeat="person in people">
+     
+            <div class="changeIt" get-data-fn="form.test(person.name)"></div>
+        </li>
+    </ul>
+</body>
+
+
+<script>
+    var app = angular.module('plunker', []);
+
+    app.controller('Ctrl', function ($scope, peopleFactory) {
+
+        $scope.people = ['john', 'sam', 'roy'];
+
+        $scope.test = function () {
+            var person = peopleFactory.person(name);
+            return person;
+        }
+    });
+
+    app.factory('peopleFactory', function () {
+        var factory = {};
+
+        factory.person = function (name) {
+            var people = {
+                john: {
+                    firstName: "John",
+                    lastName: "Smith",
+                    id: 123,
+                    tag: "<div>{{person.firstName}} is a doctor and his id is {{person.id}}</div>" +
+                        "<h1>{{person.lastName}}</h1>"
+                },
+                sam: {
+                    firstName: "Sam",
+                    lastName: "Cole",
+                    id: 456,
+                    tag: "<div>{{person.firstName}} has a different text</div>" +
+                        "<h1>{{person.lastName}}</h1>"
+                },
+                roy: {
+                    firstName: "Will",
+                    lastName: "Kan",
+                    id: 789,
+                    tag: "<h4>Some text about this person named {{person.firstName}} {{person.lastName}}</h4>"
+                }
+            };
+
+            return person[name];
+        };
+
+
+        return factory;
+    })
+    app.directive('changeIt', function ($compile) {
+        return {
+            restrict: 'CA',
+            scope: { getDataFn: '&' },
+            template: '{{getDataFn().tag}}'
+        }
+    }); 
+
+</script>
+</html>

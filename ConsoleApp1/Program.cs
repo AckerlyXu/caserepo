@@ -15,8 +15,9 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void MainA(string[] args)
         {
+            
 
             //ArrayList hardDriveDetails = new ArrayList();
             //ManagementObjectSearcher moSearch = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDriv ");

@@ -28,10 +28,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      
-    <div class="container">
+        <div class="row"><div class="col col-sm-3"></div><div  class="col-10 col-sm-6" ><img id="img" src="../images/WingtipToys/planeglider.png" width="100%" ></div><div class="col-3"></div></div>
+     <div class="row" id="table"><div class="col-1"></div> <div class="col-10">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >Add New</button><br /><br />
-        <table id="tblCategory" class="ui celled table">
+        <table id="tblCategory" class="ui celled table" width="100%" >
             <thead class="bg-primary text-white">
                 <tr>
                     <th>No</th>
@@ -42,14 +42,16 @@
                 </tr>  
             </thead>  
         </table>
-    </div>
+    </div><div class="col-1 col-sm-3"></div></div>
 
     </form>
 </body>
     <script>
         loadData();
       function loadData()
-{
+      {
+          $("#table").hide();
+
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -59,18 +61,18 @@
             var dt = $('#tblCategory').DataTable({
                 //stop initial ordering
                 order: [],
-                dom: 'lBfrtip',
+//                dom: 'lBfrtip',
 
-buttons: [
-'copy', 'csv', 'excel', 'pdf',"print"
-],
-                "searching": true,
-                "ordering": true,
-                "pagingType": "full_numbers",
-                "caption": 'List Of Categories',
+//buttons: [
+//'copy', 'csv', 'excel', 'pdf',"print"
+//],
+//                "searching": true,
+//                "ordering": true,
+//                "pagingType": "full_numbers",
+//                "caption": 'List Of Categories',
 
-                "columnDefs": [{ "orderable": false, "targets": [4] }, { "visible":false,"targets":[0]}],
-                "emptyrecords": 'No records to display',
+//                "columnDefs": [{ "orderable": false, "targets": [4] }, { "visible":false,"targets":[0]}],
+//                "emptyrecords": 'No records to display',
                 "data": data.d,
                 "columns": [
                     { 'data': 'No' },
@@ -82,14 +84,16 @@ buttons: [
                             return '<a class="btn btn-warning" onClick="getbyID(row.No)" href="#">Edit</a>';
                         }
                     }],
-                "fnDrawCallback": function( oSettings ) { 
-                    $("#tblCategory thead  th").removeClass("sorting_asc");//移除checkbox列的排序箭头 
-                    $("#tblCategory thead  th").removeClass("sorting");
-                      $("#tblCategory thead  th").removeClass("sorting_desc");
-}
+//                "fnDrawCallback": function( oSettings ) { 
+//                    $("#tblCategory thead  th").removeClass("sorting_asc");//移除checkbox列的排序箭头 
+//                    $("#tblCategory thead  th").removeClass("sorting");
+//                      $("#tblCategory thead  th").removeClass("sorting_desc");
+//}
                     
             });
-         
+
+            $("#table").show();
+            $("#img").hide();
         }
     });
         }

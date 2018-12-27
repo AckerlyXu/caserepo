@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\develop\vsworkspace\WebSite1</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\develop\vsworkspace\mvc</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -64,10 +64,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MVCLearning.dll">
-      <publishTime>09/26/2018 17:51:07</publishTime>
+      <publishTime>12/03/2018 11:12:49</publishTime>
     </File>
     <File Include="bin/MVCLearning.pdb">
-      <publishTime>09/26/2018 17:51:07</publishTime>
+      <publishTime>12/03/2018 11:12:49</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/18/2018 09:44:54</publishTime>
@@ -273,6 +273,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/icons/blank.gif">
       <publishTime>09/20/2018 14:28:25</publishTime>
     </File>
+    <File Include="Content/icons/busred.png">
+      <publishTime>10/16/2018 10:07:05</publishTime>
+    </File>
     <File Include="Content/icons/cancel.png">
       <publishTime>09/20/2018 14:28:25</publishTime>
     </File>
@@ -390,6 +393,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>07/13/2018 13:16:07</publishTime>
     </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>10/22/2018 10:34:05</publishTime>
+    </File>
     <File Include="Scripts/jquery-3.3.1.js">
       <publishTime>07/13/2018 13:16:07</publishTime>
     </File>
@@ -407,6 +413,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/jquery-3.3.1.slim.min.map">
       <publishTime>07/13/2018 13:16:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.filedrop.js">
+      <publishTime>02/10/2017 04:10:58</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>07/13/2018 13:16:09</publishTime>
@@ -426,29 +435,50 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Test.html">
       <publishTime>08/30/2018 15:28:47</publishTime>
     </File>
+    <File Include="Views/DataTable/Index.cshtml">
+      <publishTime>10/22/2018 11:28:39</publishTime>
+    </File>
+    <File Include="Views/File/UploadAttendeeFile.cshtml">
+      <publishTime>11/28/2018 13:32:05</publishTime>
+    </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>09/14/2018 13:24:02</publishTime>
+      <publishTime>10/05/2018 15:32:52</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>08/28/2018 15:21:06</publishTime>
+      <publishTime>10/16/2018 10:14:36</publishTime>
     </File>
     <File Include="Views/Home/GetSelection.cshtml">
       <publishTime>08/15/2018 10:36:15</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/13/2018 13:15:59</publishTime>
+      <publishTime>10/16/2018 10:08:12</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/13/2018 13:15:59</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>09/20/2018 14:38:48</publishTime>
+      <publishTime>10/22/2018 10:16:45</publishTime>
+    </File>
+    <File Include="Views/Study/Child.cshtml">
+      <publishTime>09/27/2018 16:34:28</publishTime>
+    </File>
+    <File Include="Views/Study/EditStudent.cshtml">
+      <publishTime>10/31/2018 09:55:37</publishTime>
+    </File>
+    <File Include="Views/Study/Join.cshtml">
+      <publishTime>10/17/2018 16:40:24</publishTime>
+    </File>
+    <File Include="Views/Study/Parent.cshtml">
+      <publishTime>09/27/2018 16:29:23</publishTime>
     </File>
     <File Include="Views/Study/partialAddRow.cshtml">
       <publishTime>09/20/2018 15:00:57</publishTime>
     </File>
     <File Include="Views/Study/Table.cshtml">
-      <publishTime>09/21/2018 15:36:33</publishTime>
+      <publishTime>10/22/2018 10:22:07</publishTime>
+    </File>
+    <File Include="Views/Test1/Index.cshtml">
+      <publishTime>11/06/2018 11:23:23</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/13/2018 13:15:59</publishTime>
@@ -457,7 +487,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/13/2018 13:15:59</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/26/2018 17:49:52</publishTime>
+      <publishTime>12/03/2018 11:12:50</publishTime>
     </File>
   </ItemGroup>
 </Project>

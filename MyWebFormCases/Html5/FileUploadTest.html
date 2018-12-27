@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr style='text-align:center;color:white;background-color:red'><th colspan='6'></th><th colspan='6'>Sale</th><th colspan='6'>Purchase</th><th colspan='6'></th></tr>
+        </table>
+        <div class="conDiv" id="conDivID"></div>
+
+        <div class="myInputtextDiv">
+            <input style="color:black;" type="text" id="myInput" maxlength="10000">
+            <input type="text" id="baseimage" onkeyup=" sendImage()" hidden>
+            <img id="img" />
+            </br>
+            <script type="text/javascript">
+                function sendImage() {
+                    alert("sent")
+                }
+
+            </script>
+            <!--  -->
+            <input id="myUserName" type="text" />
+            <input id="myBtn" type="button" onclick="sendFunction();" value=" Send">
+            <input id="fileInput" type="file" style="display: none;" />
+            <input type="button" value="Choose Image!" onclick="document.getElementById                ('fileInput').click();" />
+
+        </div>
+        <div class=" chooseBottun">
+        </div>
+        <br>
+
+        <script>
+            function sendFunction(newImage) {//please set a argument in your function,or it won't receive the value you pass
+                var d = new Date()
+                var h12 = d.getHours();
+                var h24 = d.getHours();
+                var m = d.getMinutes();
+                var s = d.getSeconds();
+                if (s < 10) {
+                    s = "0" + s
+                }
+                if (m < 10) {
+                    m = "0" + m
+                }
+                if (h12 > 12) {
+                    h12 = h12 - 12
+                }
+                if (h12 == 00) {
+                    h12 = 12
+                }
+
+                var timeStamp = h12 + ":" + m + ":" + s + " ";
+                if (h24 > 11) {
+                    timeStamp += "PM";
+                } else {
+                    timeStamp += "AM";
+                }
+
+                var userName = document.getElementById("myUserName").value;
+                var userinput = document.getElementById("myInput").value;
+                var imagesrc = document.getElementById("baseimage");
+                var img = $('<img class="img" width=" =100px;" height=" 100px">')
+                    .attr('src', imagesrc.value);
+
+                $('#conDivID').append("<span style='color: red'>" + userName + ': </span>');
+                //$('#conDivID').append(embedUrls(userinput));
+                $('#conDivID').append('</br>');
+                $('#conDivID').append(newImage);
+                $('#conDivID').append('</br>');
+                $('#conDivID').append("<span class='timeSpan'>" + timeStamp + '</span>');
+                $('#conDivID').append('</br>');
+
+
+
+            }
+        </script>
+    </form>
+    <script>
+        // To display image after browsing for it
+        document.getElementById("fileInput").onchange = function () {
+            var reader = new FileReader();
+            var file = this.files[0];
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                $('#fileInput').attr('src', e.target.result);
+                $('#baseimage').val(e.target.result);
+                // create an image
+                var img = $("<img />").attr("src", e.target.result)
+
+                sendFunction(img);
+
+            };
+        }
+
+    </script>
+</body>
+</html>

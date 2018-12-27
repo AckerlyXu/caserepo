@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "ShowPation";
+}
+
+@model  Dictionary <string,List <MVCLearning.Controllers.UserRange>>
+<h2>ShowPation</h2>
+
+
+
+<table border="1" class="table table-responsive table-bordered table-hover table-striped ">
+
+    
+    @foreach (string key in Model.Keys)
+    {
+    
+        <tr><td colspan="3">@key</td></tr>
+        <tr>
+            @foreach (MVCLearning.Controllers.UserRange item1 in Model[key])
+            {
+                <td>@item1.Agerange</td>
+            }
+          
+        </tr>
+        <tr>
+            @foreach (MVCLearning.Controllers.UserRange item1 in Model[key])
+            {
+                <td>@item1.Count</td>
+            }
+        </tr>
+
+    }
+
+    
+</table>
+
+
+

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Services;
 
@@ -20,6 +21,7 @@ namespace MyWebFormCases.Services
         [WebMethod]
         public Category[] GetCategories()
         {
+           
             Category[] categories = new Category[] {
 
                 new Category{No=1,Code="hello",Description="product",Months=11},
@@ -28,6 +30,7 @@ namespace MyWebFormCases.Services
                       new Category{No=86,Code="mobile",Description="it's good",Months=5},
                         new Category{No=67,Code="apple",Description="fruit",Months=7},
             };
+            Thread.Sleep(3000);
             return categories;
         }
 

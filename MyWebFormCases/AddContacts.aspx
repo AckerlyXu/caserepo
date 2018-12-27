@@ -23,7 +23,9 @@
                 <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
                 <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/ShowSuppliers.aspx" >go to suppliers</asp:LinkButton>
             </div>
-            
+            <script>
+
+            </script>
         </div>
     </form>
 </body>
