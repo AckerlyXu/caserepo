@@ -1003,6 +1003,8 @@
     <Content Include="ExtraControls2\ChartStart.aspx" />
     <Content Include="ExtraControls2\DynamiclyAddTextBox.aspx" />
     <Content Include="ExtraControls2\MenuItemDemo2.aspx" />
+    <Content Include="ExtraControls2\ModelExtenderExe.aspx" />
+    <Content Include="ExtraControls2\MouseOvertoTriggerModelpop.aspx" />
     <Content Include="ExtraControls2\Page1.aspx" />
     <Content Include="ExtraControls2\Page2.aspx" />
     <Content Include="ExtraControls2\PieChartStart.aspx" />
@@ -3829,6 +3831,20 @@
     </Compile>
     <Compile Include="ExtraControls2\MenuItemDemo2.aspx.designer.cs">
       <DependentUpon>MenuItemDemo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls2\ModelExtenderExe.aspx.cs">
+      <DependentUpon>ModelExtenderExe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls2\ModelExtenderExe.aspx.designer.cs">
+      <DependentUpon>ModelExtenderExe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraControls2\MouseOvertoTriggerModelpop.aspx.cs">
+      <DependentUpon>MouseOvertoTriggerModelpop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraControls2\MouseOvertoTriggerModelpop.aspx.designer.cs">
+      <DependentUpon>MouseOvertoTriggerModelpop.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExtraControls2\Page1.aspx.cs">
       <DependentUpon>Page1.aspx</DependentUpon>

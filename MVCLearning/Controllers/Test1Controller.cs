@@ -50,10 +50,10 @@ new CourseVm {Number = "TRAN201", Name = "Transfiguration", Instructor = "Minerv
 
             var query2 = from g in query1.OrderBy(i => i.Key.Year).ThenBy(i => i.Key.Month).ThenByDescending(i => i.Key.Agerange) //sort the data let it in the order of Agerange
                        
-                        select new { mycount = g.Count(),g.Key.Year,g.Key.Month,g.Key.Agerange };  //select count of every group
-
-
-            var query3 = from i in query2                               //group every agerange in the according to the year
+                        select new { boyCount = g.Where(item => item.sex=="boys").Count(), girlCount = g.Where(item => item.sex == "girls").Count() ,g.Key.Year,g.Key.Month,g.Key.Agerange };  //select count of every group
+         
+          
+            var query3 = from i in query2                               //group every agerange in the according to the year and month
                          group i by new { i.Year, i.Month } into g
                          select g;
 
@@ -70,7 +70,7 @@ new CourseVm {Number = "TRAN201", Name = "Transfiguration", Instructor = "Minerv
                         dic[item.Key.Month + "/" + item.Key.Year] = new List<UserRange>();
                       
                     }
-                    dic[item.Key.Month + "/" + item.Key.Year].Add(new UserRange { Count = item1.mycount, Agerange = item1.Agerange });
+                    dic[item.Key.Month + "/" + item.Key.Year].Add(new UserRange { BoyCount = item1.boyCount, GirlCount = item1.girlCount, Agerange = item1.Agerange });
                    
                 }
                 dic[item.Key.Month + "/" + item.Key.Year] = dic[item.Key.Month + "/" + item.Key.Year].OrderByDescending(i => i.Agerange).ToList();
@@ -93,7 +93,8 @@ new CourseVm {Number = "TRAN201", Name = "Transfiguration", Instructor = "Minerv
     public class UserRange
     {
         public string Agerange { get; set; }
-        public int Count { get; set; }
+        public int BoyCount { get; set; }
+        public int GirlCount { get; set; }
 
     }
 }
